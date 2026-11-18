@@ -4,6 +4,8 @@ Rogue Lab is maintained by Boyan Georgiev. Report bugs, suggest features, or sha
 
 External pull requests are currently not accepted. The maintainer handles implementation and reviews automated data-update PRs.
 
+Use the bug report, calculation correction, or feature request form when opening an issue. For security vulnerabilities, follow the [security policy](.github/SECURITY.md) and report privately.
+
 ## Reporting a bug
 
 Include:

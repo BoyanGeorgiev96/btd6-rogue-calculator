@@ -90,6 +90,21 @@ test('production calculator, all workspace routes, data and notebook work offlin
   await page.locator('#offline-status').scrollIntoViewIfNeeded();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBeTruthy();
   await page.screenshot({path:testInfo.outputPath('offline-phone.png')});
+
+  await page.locator('.site-footer').getByRole('link', { name:'User guide', exact:true }).click();
+  await expect(page.getByRole('heading', { name:'Using Rogue Lab', exact:true })).toBeVisible();
+  await page.getByRole('link', { name:'calculation scope', exact:true }).click();
+  await expect(page.locator('h1')).toBeVisible();
+  await page.getByRole('link', { name:'User guide', exact:true }).click();
+  await page.getByRole('navigation', { name:'On this page' }).getByRole('link', { name:'Offline use and updates', exact:true }).click();
+  await expect(page.getByRole('heading', { name:'Offline use and updates', exact:true })).toBeInViewport();
+  await page.setViewportSize({ width:1440, height:900 });
+  await page.goto(`${origin}/${site}/docs/user-guide.html`);
+  await page.screenshot({path:testInfo.outputPath('guide-desktop.png')});
+  await page.setViewportSize({ width:390, height:844 });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBeTruthy();
+  await page.screenshot({path:testInfo.outputPath('guide-phone.png')});
+
 });
 
 test('code/data update waits without changing a running plan; closing every tab activates it', async ({ page, context }) => {

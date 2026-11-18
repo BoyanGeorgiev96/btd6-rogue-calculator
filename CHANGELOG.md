@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## 0.1.2 — 2026-11-18 — Beta
+
+- Fix offline reloads of user-guide and documentation section links.
+
 ## 0.1.1 — 2026-11-18 — Beta
 
 - Add a browser-readable user guide with section links, tables, and links from the footer and Reference. The guide and linked documentation are included offline.

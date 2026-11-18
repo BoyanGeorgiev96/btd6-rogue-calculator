@@ -98,6 +98,8 @@ test('production calculator, all workspace routes, data and notebook work offlin
   await page.getByRole('link', { name:'User guide', exact:true }).click();
   await page.getByRole('navigation', { name:'On this page' }).getByRole('link', { name:'Offline use and updates', exact:true }).click();
   await expect(page.getByRole('heading', { name:'Offline use and updates', exact:true })).toBeInViewport();
+  await page.reload();
+  await expect(page.getByRole('heading', { name:'Offline use and updates', exact:true })).toBeInViewport();
   await page.setViewportSize({ width:1440, height:900 });
   await page.goto(`${origin}/${site}/docs/user-guide.html`);
   await page.screenshot({path:testInfo.outputPath('guide-desktop.png')});

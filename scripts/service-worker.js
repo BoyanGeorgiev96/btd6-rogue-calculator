@@ -31,6 +31,8 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
   const url = new URL(event.request.url);
+  // Section fragments identify a position in the same cached document.
+  url.hash = '';
   const navigation = event.request.mode === 'navigate' &&
     (url.pathname === base.pathname || url.pathname === new URL(shell).pathname) && url.origin === base.origin;
   const key = navigation ? shell : url.href;

@@ -1,0 +1,70 @@
+name: Propose artifact data updates
+on:
+  schedule:
+    - cron: '23 7 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: artifact-data-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: '.nvmrc'
+      - name: Keep existing review intact
+        id: existing
+        run: |
+          count=$(gh pr list --state open --search '"Artifact data update" in:title' --json number --jq length)
+          if [ "$count" -gt 0 ]; then
+            echo 'exists=true' >> "$GITHUB_OUTPUT"
+            echo 'An artifact update PR is already open; finish that review first.' >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Fetch and classify source changes
+        if: steps.existing.outputs.exists != 'true'
+        run: |
+          if node scripts/refresh-data.mjs; then
+            exit 0
+          else
+            refresh_status=$?
+            if [ "$refresh_status" -ne 2 ]; then
+              exit "$refresh_status"
+            fi
+          fi
+      - name: Check proposed active catalog
+        if: steps.existing.outputs.exists != 'true'
+        id: checks
+        continue-on-error: true
+        run: |
+          npm ci
+          npm test
+          npm run build
+      - name: Open a draft for review
+        if: steps.existing.outputs.exists != 'true'
+        env:
+          CHECK_RESULT: ${{ steps.checks.outcome }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git add data/
+          if git diff --cached --quiet; then
+            echo 'No upstream changes detected.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          echo "Validation result: $CHECK_RESULT. Review the diff and candidate before merging." >> data/refresh-report.md
+          git add data/refresh-report.md
+          branch="automation/artifact-data-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          git switch -c "$branch"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Propose artifact data update'
+          git push origin "$branch"
+          gh pr create --draft --base "$DEFAULT_BRANCH" --head "$branch" --title 'Artifact data update' --body-file data/refresh-report.md

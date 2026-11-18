@@ -1,0 +1,28 @@
+{
+  "name": "btd6-rogue-calculator",
+  "version": "0.1.0",
+  "license": "GPL-3.0-only",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test",
+    "data:refresh": "node scripts/refresh-data.mjs",
+    "data:check": "node scripts/check-data.mjs",
+    "towers:refresh": "node scripts/import-towers.mjs",
+    "heroes:refresh": "node scripts/import-heroes.mjs",
+    "test:browser": "playwright test",
+    "eligibility:review": "node scripts/review-hit-eligibility.mjs",
+    "eligibility:components": "node scripts/review-component-eligibility.mjs",
+    "eligibility:bloons": "node scripts/review-bloon-properties.mjs",
+    "powers:refresh": "node scripts/import-powers.mjs"
+  },
+  "engines": {
+    "node": "26.x"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.0",
+    "esbuild": "0.28.2"
+  }
+}

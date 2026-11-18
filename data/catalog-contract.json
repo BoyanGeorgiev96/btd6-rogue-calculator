@@ -1,0 +1,2906 @@
+{
+  "schemaVersion": 1,
+  "artifacts": {
+    "AbilityStacking": {
+      "name": "Ability Stacking",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Ability cooldowns loop to gain {0} extra charge(s). Ability cooldowns are {1}% slower for all Monkeys except Psi",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Ability cooldowns loop to gain {0} extra charge(s). Ability cooldowns are {1}% slower for all Monkeys except Psi",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Ability cooldowns loop to gain {0} extra charge(s). Ability cooldowns are {1}% slower for all Monkeys except Psi",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "AbsoluteAbility": {
+      "name": "Absolute Ability",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Monkeys attack {0}% slower, but ability cooldowns are {1}% faster",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Monkeys attack {0}% slower, but ability cooldowns are {1}% faster",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Monkeys attack {0}% slower, but ability cooldowns are {1}% faster",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "AbundantChoices": {
+      "name": "Abundant Choices",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Rare": {
+          "template": "Get {0} extra choice(s) when picking a Boost, Artifact, or new Monkey",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Get {0} extra choice(s) when picking a Boost, Artifact, or new Monkey",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "AddedPreservatives": {
+      "name": "Added Preservatives",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Projectile lifespan increased {0}% and will bounce off map borders",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Projectile lifespan increased {0}% and will bounce off map borders",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Projectile lifespan increased {0}% and will bounce off map borders",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "AlchemicEngineering": {
+      "name": "Alchemic Engineering",
+      "category": "Support",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Tier 3 and higher Engineers have pierce reduced {0}%, and convert Bloons to Gold. Adds a {1} Engineer to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Rare": {
+          "template": "Tier 3 and higher Engineers have pierce reduced {0}%, and convert Bloons to Gold. Adds a {1} Engineer to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Tier 3 and higher Engineers have pierce reduced {0}%, and convert Bloons to Gold. Adds a {1} Engineer to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "BargainingChip": {
+      "name": "Bargaining Chip",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Boost Reroll cost reduced {0}%. This Artifact is worth {1}x to Merchants",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Boost Reroll cost reduced {0}%. This Artifact is worth {1}x to Merchants",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Boost Reroll cost reduced {0}%. This Artifact is worth {1}x to Merchants",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "BattlefieldCommission": {
+      "name": "Battlefield Commission",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Rare": {
+          "template": "Heroes don't gain XP for each round, but gain {0} XP for each Bloon they pop",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Heroes don't gain XP for each round, but gain {0} XP for each Bloon they pop",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "BBGatlingGun": {
+      "name": "BB Gatling Gun",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Monkeys are less accurate with increased shot spread, but attack {0}% faster",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Monkeys are less accurate with increased shot spread, but attack {0}% faster",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Monkeys are less accurate with increased shot spread, but attack {0}% faster",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "BiggestBeacon": {
+      "name": "Biggest Beacon",
+      "category": "Support",
+      "boss": false,
+      "variants": {
+        "Legendary": {
+          "template": "Villages have 2.5x influence radius and other support towers have 20% extra range. Adds a 0-1-0 Village to your Party",
+          "parameterTypes": []
+        }
+      }
+    },
+    "BlitzingApeBarrageEmitter": {
+      "name": "Blitzing Ape Barrage Emitter",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Rare": {
+          "template": "Get {0} Super Monkey Beacon(s)",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Get {0} Super Monkey Beacon(s)",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "BouncingProjectiles": {
+      "name": "Bouncing Projectiles",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "All projectiles will bounce off blocking objects and projectiles travel 10% further",
+          "parameterTypes": []
+        },
+        "Rare": {
+          "template": "All projectiles will bounce off blocking objects and projectiles travel 18% further",
+          "parameterTypes": []
+        },
+        "Legendary": {
+          "template": "All projectiles will bounce off blocking objects and map borders, and projectiles travel 30% further",
+          "parameterTypes": []
+        }
+      }
+    },
+    "CarryABigStick": {
+      "name": "Carry A Big Stick",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Grants {0} Cave Monkey(s) per tile",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Grants {0} Cave Monkey(s) per tile",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Grants {0} Cave Monkey(s) per tile",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "CatsMeow": {
+      "name": "Cats Meow",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Rare": {
+          "template": "Maximum lives is set to 9, but any Bloon leaked only counts as 1 life regardless of RBE. Regenerate {0} lives at the end of each round. Disables Mana Shield generation. Adds a {1} Bomb Shooter to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Maximum lives is set to 9, but any Bloon leaked only counts as 1 life regardless of RBE. Regenerate {0} lives at the end of each round. Disables Mana Shield generation. Adds a {1} Bomb Shooter to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "CeramicChunker": {
+      "name": "Ceramic Chunker",
+      "category": "Primary",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Primary Monkeys deal {0} bonus damage to Ceramic Bloons",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Primary Monkeys deal {0} bonus damage to Ceramic Bloons",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Primary Monkeys deal {0} bonus damage to Ceramic Bloons",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "CharismaticLeader": {
+      "name": "Charismatic Leader",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Rare": {
+          "template": "Can recruit {0} additional Monkey(s) at every Rest tile.",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Can recruit {0} additional Monkey(s) at every Rest tile.",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "ColdSteel": {
+      "name": "Cold Steel",
+      "category": "Military",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Military Monkeys tier 3 or higher have a {0}% chance to freeze Bloons they hit",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Military Monkeys tier 3 or higher have a {0}% chance to freeze Bloons they hit",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Military Monkeys tier 3 or higher have a {0}% chance to freeze Bloons they hit",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "ConfuddlingSpelling": {
+      "name": "Confuddling Spelling",
+      "category": "Magic",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Heroes and Magic Monkeys deal {0}x damage to tranced and stunned Bloons",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Heroes and Magic Monkeys deal {0}x damage to tranced and stunned Bloons",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Heroes and Magic Monkeys deal {0}x damage to tranced and stunned Bloons",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "Conscription": {
+      "name": "Conscription",
+      "category": "Military",
+      "boss": false,
+      "variants": {
+        "Rare": {
+          "template": "Military Monkeys count as all categories. Military Monkeys range reduced {0}%. Non-Military Monkeys deal {1}% less damage and their upgrades cost {2}% more",
+          "parameterTypes": [
+            "number",
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Military Monkeys count as all categories. Military Monkeys range reduced {0}%. Non-Military Monkeys deal {1}% less damage and their upgrades cost {2}% more",
+          "parameterTypes": [
+            "number",
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "CorneredBeasts": {
+      "name": "Cornered Beasts",
+      "category": "Support",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Beast Handlers tier 3 and higher have {0}% more range, and attack faster the more Bloons in radius (up to {1}%). Adds a {2} Beast Handler to your Party",
+          "parameterTypes": [
+            "number",
+            "number",
+            "string"
+          ]
+        },
+        "Rare": {
+          "template": "Beast Handlers tier 3 and higher have {0}% more range, and attack faster the more Bloons in radius (up to {1}%). Adds a {2} Beast Handler to your Party",
+          "parameterTypes": [
+            "number",
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Beast Handlers tier 3 and higher have {0}% more range, and attack faster the more Bloons in radius (up to {1}%). Adds a {2} Beast Handler to your Party",
+          "parameterTypes": [
+            "number",
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "CorrosiveTorpEDarts": {
+      "name": "Corrosive Torp-E-Darts",
+      "category": "Military",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Tier 3 and higher Monkey Subs glue Bloons with Bloon Dissolver acid for a short time. Adds a 0-1-1 Monkey Sub to your Party",
+          "parameterTypes": []
+        },
+        "Rare": {
+          "template": "Tier 3 and higher Monkey Subs glue Bloons with Bloon Liquifier acid for a short time. Adds a 0-2-1 Monkey Sub to your Party",
+          "parameterTypes": []
+        },
+        "Legendary": {
+          "template": "Tier 3 and higher Monkey Subs glue Bloons with Bloon Solver acid for a short time. Adds a 0-2-0 Monkey Sub to your Party",
+          "parameterTypes": []
+        }
+      }
+    },
+    "CriticalImpact": {
+      "name": "Critical Impact",
+      "category": "Military",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Tier 3 and higher Mortars have a 1 in {0} chance to Crit for {1}% damage. Adds a {2} Mortar to your Party",
+          "parameterTypes": [
+            "number",
+            "number",
+            "string"
+          ]
+        },
+        "Rare": {
+          "template": "Tier 3 and higher Mortars have a 1 in {0} chance to Crit for {1}% damage. Adds a {2} Mortar to your Party",
+          "parameterTypes": [
+            "number",
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Tier 3 and higher Mortars have a 1 in {0} chance to Crit for {1}% damage. Adds a {2} Mortar to your Party",
+          "parameterTypes": [
+            "number",
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "CriticalSuccess": {
+      "name": "Critical Success",
+      "category": "Primary",
+      "boss": false,
+      "variants": {
+        "Rare": {
+          "template": "Primary Monkeys attack {0}% slower, but gain a 1 in 10 chance to Crit for {1}% damage",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Primary Monkeys attack {0}% slower, but gain a 1 in 10 chance to Crit for {1}% damage",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "CrystalCrash": {
+      "name": "Crystal Crash",
+      "category": "Support",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Heroes and Support Monkeys deal {0}x damage to frozen Bloons",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Heroes and Support Monkeys deal {0}x damage to frozen Bloons",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Heroes and Support Monkeys deal {0}x damage to frozen Bloons",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "DazingFrostburn": {
+      "name": "Dazing Frostburn",
+      "category": "Primary",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Ice Monkeys stun non-MOAB Bloons and burn {0} damage a second for 5 seconds. Adds a {1} Ice Monkey to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Rare": {
+          "template": "Ice Monkeys stun non-MOAB Bloons and burn {0} damage a second for 5 seconds. Adds a {1} Ice Monkey to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Ice Monkeys stun non-MOAB Bloons and burn {0} damage a second for 5 seconds. Adds a {1} Ice Monkey to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "Discord": {
+      "name": "Discord",
+      "category": "Military",
+      "boss": false,
+      "variants": {
+        "Rare": {
+          "template": "Military Monkeys tier 2 and higher deal {0}% more damage and have {1}% more pierce. Projectiles shirk coordination, bringing a sense of chaos to the battlefield.",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Military Monkeys tier 2 and higher deal {0}% more damage and have {1}% more pierce. Projectiles shirk coordination, bringing a sense of chaos to the battlefield.",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "DivineInspiration": {
+      "name": "Divine Inspiration",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Heroes & Powers have {0}% more pierce, and {1}% more attack range.",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Heroes & Powers have {0}% more pierce, and {1}% more attack range.",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Heroes & Powers have {0}% more pierce, and {1}% more attack range.",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "DivineIntervention": {
+      "name": "Divine Intervention",
+      "category": "Magic",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Super Monkeys and Adora have a 1 in {0} chance to smite Bloons for the Sun God with {1}x damage. Adds a 0-0-0 Super Monkey to your Party",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Super Monkeys and Adora have a 1 in {0} chance to smite Bloons for the Sun God with {1}x damage. Adds a 0-0-0 Super Monkey to your Party",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Super Monkeys and Adora have a 1 in {0} chance to smite Bloons for the Sun God with {1}x damage. Adds a 0-0-0 Super Monkey to your Party",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "DivinePrecision": {
+      "name": "Divine Precision",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Heroes & Powers deal {0}% more damage, and have {1}% reduced shot spread.",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Heroes & Powers deal {0}% more damage, and have {1}% reduced shot spread.",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Heroes & Powers deal {0}% more damage, and have {1}% reduced shot spread.",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "DivineQuickening": {
+      "name": "Divine Quickening",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Heroes & Powers attack speed and ability cooldowns are {0}% faster, and projectile speed {1}% faster.",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Heroes & Powers attack speed and ability cooldowns are {0}% faster, and projectile speed {1}% faster.",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Heroes & Powers attack speed and ability cooldowns are {0}% faster, and projectile speed {1}% faster.",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "DreamTeams": {
+      "name": "Dream Teams",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Monkey Subs, Ninja Monkeys, Druids, Wizards, and Beast Handlers attack speed and ability cooldowns are 11% faster, get {0}% more range, and placement cooldown reduced {1} round(s)",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Monkey Subs, Ninja Monkeys, Druids, Wizards, and Beast Handlers attack speed and ability cooldowns are 11% faster, get {0}% more range, and placement cooldown reduced {1} round(s)",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Monkey Subs, Ninja Monkeys, Druids, Wizards, and Beast Handlers attack speed and ability cooldowns are 11% faster, get {0}% more range, and placement cooldown reduced {1} round(s)",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "Duckageddon": {
+      "name": "Duckageddon",
+      "category": "Support",
+      "boss": false,
+      "variants": {
+        "Rare": {
+          "template": "Pat Fusty and Support Monkeys have a rare chance to send out a Duck to play with the Bloons. Duck has {0} pierce and deals {1} damage",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Pat Fusty and Support Monkeys have a rare chance to send out a Duck to play with the Bloons. Duck has {0} pierce and deals {1} damage",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "EliteMilitaryInspiration": {
+      "name": "Elite Military Inspiration",
+      "category": "Military",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Military Monkeys have {0}% more pierce, and {1}% more attack range",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Military Monkeys have {0}% more pierce, and {1}% more attack range",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Military Monkeys have {0}% more pierce, and {1}% more attack range",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "EliteMilitaryPrecision": {
+      "name": "Elite Military Precision",
+      "category": "Military",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Military Monkeys deal {0}% more damage and have {1}% reduced shot spread",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Military Monkeys deal {0}% more damage and have {1}% reduced shot spread",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Military Monkeys deal {0}% more damage and have {1}% reduced shot spread",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "EliteMilitaryQuickening": {
+      "name": "Elite Military Quickening",
+      "category": "Military",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Military Monkeys attack speed and ability cooldowns are {0}% faster, and projectile speed increased {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Military Monkeys attack speed and ability cooldowns are {0}% faster, and projectile speed increased {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Military Monkeys attack speed and ability cooldowns are {0}% faster, and projectile speed increased {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "EnchantedRebuttal": {
+      "name": "Enchanted Rebuttal",
+      "category": "Magic",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Magic Monkeys push Bloons back on hit",
+          "parameterTypes": []
+        },
+        "Rare": {
+          "template": "Magic Monkeys push Bloons back even more on hit",
+          "parameterTypes": []
+        },
+        "Legendary": {
+          "template": "Magic Monkeys push Bloons and small MOAB-class back on hit",
+          "parameterTypes": []
+        }
+      }
+    },
+    "EsotericElementalist": {
+      "name": "Esoteric Elementalist",
+      "category": "Magic",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Wizard Monkeys have a {0}% chance to freeze or blow back, and set Bloons on fire for {1} damage/s over 4.5s. Adds a {2} Wizard to your Party",
+          "parameterTypes": [
+            "number",
+            "number",
+            "string"
+          ]
+        },
+        "Rare": {
+          "template": "Wizard Monkeys have a {0}% chance to freeze or blow back, and set Bloons on fire for {1} damage/s over 4.5s. Adds a {2} Wizard to your Party",
+          "parameterTypes": [
+            "number",
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Wizard Monkeys have a {0}% chance to freeze or blow back, and set Bloons on fire for {1} damage/s over 4.5s. Adds a {2} Wizard to your Party",
+          "parameterTypes": [
+            "number",
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "EssenceOfBlastapopoulos": {
+      "name": "Essence Of Blastapopoulos",
+      "category": "All monkeys",
+      "boss": true,
+      "variants": {
+        "Legendary": {
+          "template": "Tier 4 Monkeys and level 15 Heroes burn Bloons, and affected Bloons take an extra +4 damage from all sources",
+          "parameterTypes": []
+        }
+      }
+    },
+    "EssenceOfBloonarius": {
+      "name": "Essence Of Bloonarius",
+      "category": "All monkeys",
+      "boss": true,
+      "variants": {
+        "Legendary": {
+          "template": "All Monkeys tier 3 and lower deal 1.5x damage to Bloons and MOAB-Class Bloons and have 100% more pierce. Monkeys tier 4 and above attack 16% slower",
+          "parameterTypes": []
+        }
+      }
+    },
+    "EssenceOfDiamondback": {
+      "name": "Essence Of Diamondback",
+      "category": "All monkeys",
+      "boss": true,
+      "variants": {
+        "Legendary": {
+          "template": "Tier {0} Monkeys and level {1} Heroes' projectiles can re-hit Bloons after {2} seconds, and projectiles move at {3} speed.",
+          "parameterTypes": [
+            "number",
+            "number",
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "EssenceOfDreadbloon": {
+      "name": "Essence Of Dreadbloon",
+      "category": "All monkeys",
+      "boss": true,
+      "variants": {
+        "Legendary": {
+          "template": "Tier 4 Monkeys and level 15 Heroes count as all categories, and deal 1.5x damage to Fortified and Ceramic Bloons",
+          "parameterTypes": []
+        }
+      }
+    },
+    "EssenceOfLych": {
+      "name": "Essence Of Lych",
+      "category": "All monkeys",
+      "boss": true,
+      "variants": {
+        "Legendary": {
+          "template": "Tier 4 Monkeys and level 15 Heroes have a chance to produce Zombie Bloons when their projectiles expire. When your lives reach zero, Zombie ZOMGs and BFBs are summoned and you'll be revived with your lives restored back to their full amount. This effect has three charges and this Artifact will be banished when the final charge is used.",
+          "parameterTypes": []
+        }
+      }
+    },
+    "EssenceOfPhayze": {
+      "name": "Essence Of Phayze",
+      "category": "All monkeys",
+      "boss": true,
+      "variants": {
+        "Legendary": {
+          "template": "Tier 4 Monkeys and level 15 Heroes can see Camo, and deal triple damage to Camo Bloons.",
+          "parameterTypes": []
+        }
+      }
+    },
+    "EssenceOfVortex": {
+      "name": "Essence Of Vortex",
+      "category": "All monkeys",
+      "boss": true,
+      "variants": {
+        "Legendary": {
+          "template": "Tier 4 Monkeys and level 15 Heroes knock back MOAB-Class Bloons on hit, and 10% chance to blow back regular Bloons",
+          "parameterTypes": []
+        }
+      }
+    },
+    "ExplosiveEconomics": {
+      "name": "Explosive Economics",
+      "category": "Support",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "When Support Monkeys are sold, an Area of Effect explosion deals {0} damage to all nearby Bloons. Spike Factory, Engineer, and Beast Handler placement cooldown reduced {1} round(s)",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "When Support Monkeys are sold, an Area of Effect explosion deals {0} damage to all nearby Bloons. Spike Factory, Engineer, and Beast Handler placement cooldown reduced {1} round(s)",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "When Support Monkeys are sold, an Area of Effect explosion deals {0} damage to all nearby Bloons. Spike Factory, Engineer, and Beast Handler placement cooldown reduced {1} round(s)",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "ExtraChange": {
+      "name": "Extra Change",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Start with {0} more cash. Gain an extra {1} cash at the end of each round. Monkey cash generation is reduced {2}%",
+          "parameterTypes": [
+            "number",
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Start with {0} more cash. Gain an extra {1} cash at the end of each round. Monkey cash generation is reduced {2}%",
+          "parameterTypes": [
+            "number",
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Start with {0} more cash. Gain an extra {1} cash at the end of each round. Monkey cash generation is reduced {2}%",
+          "parameterTypes": [
+            "number",
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "FataMorgana": {
+      "name": "Fata Morgana",
+      "category": "Magic",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Mermonkey range, pierce, projectile lifespan, and ability cooldown speed increased {0}%. Mermonkey projectiles reflect off map borders. Adds a {1} Mermonkey to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Rare": {
+          "template": "Mermonkey range, pierce, projectile lifespan, and ability cooldown speed increased {0}%. Mermonkey projectiles reflect off map borders. Adds a {1} Mermonkey to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Mermonkey range, pierce, projectile lifespan, and ability cooldown speed increased {0}%. Mermonkey projectiles reflect off map borders. Adds a {1} Mermonkey to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "FirstClassSupportInspiration": {
+      "name": "First Class Support Inspiration",
+      "category": "Support",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Support Monkeys have {0}% more pierce, and {1}% more attack range",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Support Monkeys have {0}% more pierce, and {1}% more attack range",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Support Monkeys have {0}% more pierce, and {1}% more attack range",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "FirstClassSupportPrecision": {
+      "name": "First Class Support Precision",
+      "category": "Support",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Support Monkeys deal {0}% more damage and have {1}% reduced shot spread",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Support Monkeys deal {0}% more damage and have {1}% reduced shot spread",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Support Monkeys deal {0}% more damage and have {1}% reduced shot spread",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "FirstClassSupportQuickening": {
+      "name": "First Class Support Quickening",
+      "category": "Support",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Support Monkeys attack speed and ability cooldowns are {0}% faster, and projectile speed increased {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Support Monkeys attack speed and ability cooldowns are {0}% faster, and projectile speed increased {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Support Monkeys attack speed and ability cooldowns are {0}% faster, and projectile speed increased {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "FishNova": {
+      "name": "Fish Nova",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Tier 3 and higher Bomb Shooter, Mortar, Ice Monkey, Glue Gunner & Banana Farm attacks have a chance to release swarms of fish each dealing {0} damage to {1} Bloons",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Tier 3 and higher Bomb Shooter, Mortar, Ice Monkey, Glue Gunner & Banana Farm attacks have a chance to release swarms of fish each dealing {0} damage to {1} Bloons",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Tier 3 and higher Bomb Shooter, Mortar, Ice Monkey, Glue Gunner & Banana Farm attacks have a chance to release swarms of fish each dealing {0} damage to {1} Bloons",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "FlamingHotPunchARang": {
+      "name": "Flaming Hot Punch-A-Rang",
+      "category": "Primary",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Red Hot Rangs knock back Bloons and have a 20% chance to set them on fire for {0} damage per 1.5s over 4.5s. Adds a {1} Boomerang Monkey to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Rare": {
+          "template": "Red Hot Rangs knock back Bloons and have a 20% chance to set them on fire for {0} damage per 1.5s over 4.5s. Adds a {1} Boomerang Monkey to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Red Hot Rangs knock back Bloons and have a 20% chance to set them on fire for {0} damage per 1.5s over 4.5s. Adds a {1} Boomerang Monkey to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "FollowMe": {
+      "name": "Follow Me",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Dart Monkeys, Boomerang Monkeys, Bomb Shooters, Tack Shooters, Super Monkeys, Druids, and Mermonkeys follow cursor like a Dartling Gunner with a turn rate of {0}, and constantly fire as long as Bloons are on screen. Attack speed reduced by {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Dart Monkeys, Boomerang Monkeys, Bomb Shooters, Tack Shooters, Super Monkeys, Druids, and Mermonkeys follow cursor like a Dartling Gunner with a turn rate of {0}, and constantly fire as long as Bloons are on screen. Attack speed reduced by {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Dart Monkeys, Boomerang Monkeys, Bomb Shooters, Tack Shooters, Super Monkeys, Druids, and Mermonkeys follow cursor like a Dartling Gunner with a turn rate of {0}, and constantly fire as long as Bloons are on screen. Attack speed reduced by {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "FrostedTips": {
+      "name": "Frosted Tips",
+      "category": "Primary",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Dart Monkey pierce and range increased {0}%, and projectiles apply permafrost, slowing Bloons by 50%. Adds a {1} Dart Monkey to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Rare": {
+          "template": "Dart Monkey pierce and range increased {0}%, and projectiles apply permafrost, slowing Bloons by 50%. Adds a {1} Dart Monkey to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Dart Monkey pierce and range increased {0}%, and projectiles apply permafrost, slowing Bloons by 50%. Adds a {1} Dart Monkey to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "FullBroadside": {
+      "name": "Full Broadside",
+      "category": "Military",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Monkey Buccaneers can store up to 3 ability charges, and pierce and ability cooldown speed increased {0}%. Adds a {1} Buccaneer to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Rare": {
+          "template": "Monkey Buccaneers can store up to 3 ability charges, and pierce and ability cooldown speed increased {0}%. Adds a {1} Buccaneer to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Monkey Buccaneers can store up to 3 ability charges, and pierce and ability cooldown speed increased {0}%. Adds a {1} Buccaneer to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "GeneralsDisposition": {
+      "name": "General's Disposition",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Hero radius reduced 20%. All Monkeys in radius do {0}% more damage to MOAB-Class Bloons and have Camo detection",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Hero radius reduced 20%. All Monkeys in radius do {0}% more damage to MOAB-Class Bloons and have Camo detection",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Hero radius reduced 20%. All Monkeys in radius do {0}% more damage to MOAB-Class Bloons and have Camo detection",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "GetToTheChopper": {
+      "name": "Get to the Chopper",
+      "category": "Military",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Heli Pilots can store up to 3 ability charges. Main Heli Pilot pierce and ability cooldown rate increased {0}%. Adds a {1} Heli Pilot to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Rare": {
+          "template": "Heli Pilots can store up to 3 ability charges. Main Heli Pilot pierce and ability cooldown rate increased {0}%. Adds a {1} Heli Pilot to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Heli Pilots can store up to 3 ability charges. Main Heli Pilot pierce and ability cooldown rate increased {0}%. Adds a {1} Heli Pilot to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "Gluesplosion": {
+      "name": "Gluesplosion",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "When glued Bloons are popped with explosive damage, glue is splattered around the Bloon with {0} pierce",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "When glued Bloons are popped with explosive damage, glue is splattered around the Bloon with {0} pierce",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "When glued Bloons are popped with explosive damage, glue is splattered around the Bloon with {0} pierce",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "GrandMagicInspiration": {
+      "name": "Grand Magic Inspiration",
+      "category": "Magic",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Magic Monkeys have {0}% more pierce, and {1}% more attack range",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Magic Monkeys have {0}% more pierce, and {1}% more attack range",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Magic Monkeys have {0}% more pierce, and {1}% more attack range",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "GrandMagicPrecision": {
+      "name": "Grand Magic Precision",
+      "category": "Magic",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Magic Monkeys deal {0}% more damage and have {1}% reduced shot spread",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Magic Monkeys deal {0}% more damage and have {1}% reduced shot spread",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Magic Monkeys deal {0}% more damage and have {1}% reduced shot spread",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "GrandMagicQuickening": {
+      "name": "Grand Magic Quickening",
+      "category": "Magic",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Magic Monkeys attack speed and ability cooldowns are {0}% faster, and projectile speed increased {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Magic Monkeys attack speed and ability cooldowns are {0}% faster, and projectile speed increased {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Magic Monkeys attack speed and ability cooldowns are {0}% faster, and projectile speed increased {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "GreaterPrimaryInspiration": {
+      "name": "Greater Primary Inspiration",
+      "category": "Primary",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Primary Monkeys have {0}% more pierce, and {1}% more attack range",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Primary Monkeys have {0}% more pierce, and {1}% more attack range",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Primary Monkeys have {0}% more pierce, and {1}% more attack range",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "GreaterPrimaryPrecision": {
+      "name": "Greater Primary Precision",
+      "category": "Primary",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Primary Monkeys deal {0}% more damage and have {1}% reduced shot spread",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Primary Monkeys deal {0}% more damage and have {1}% reduced shot spread",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Primary Monkeys deal {0}% more damage and have {1}% reduced shot spread",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "GreaterPrimaryQuickening": {
+      "name": "Greater Primary Quickening",
+      "category": "Primary",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Primary Monkeys attack speed and ability cooldowns are {0}% faster, and projectile speed increased {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Primary Monkeys attack speed and ability cooldowns are {0}% faster, and projectile speed increased {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Primary Monkeys attack speed and ability cooldowns are {0}% faster, and projectile speed increased {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "GrowingSteady": {
+      "name": "Growing Steady",
+      "category": "Magic",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Druids attack {0}% slower, but every round Druid damage is increased by {1}, even Druids placed later! Adds a {2} Druid to your Party",
+          "parameterTypes": [
+            "number",
+            "number",
+            "string"
+          ]
+        },
+        "Rare": {
+          "template": "Druids attack {0}% slower, but every round Druid damage is increased by {1}, even Druids placed later! Adds a {2} Druid to your Party",
+          "parameterTypes": [
+            "number",
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Druids attack {0}% slower, but every round Druid damage is increased by {1}, even Druids placed later! Adds a {2} Druid to your Party",
+          "parameterTypes": [
+            "number",
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "HawksEye": {
+      "name": "Hawk's Eye",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "All Monkeys have {0}% more range. Projectiles last {1}% longer and shot spread reduced to 0",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "All Monkeys have {0}% more range. Projectiles last {1}% longer and shot spread reduced to 0",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "All Monkeys have {0}% more range. Projectiles last {1}% longer and shot spread reduced to 0",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "HeightenedPerception": {
+      "name": "Heightened Perception",
+      "category": "Primary",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Primary Monkeys attack range increased {0}%. Projectile speed reduced {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Primary Monkeys attack range increased {0}%. Projectile speed reduced {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Primary Monkeys attack range increased {0}%. Projectile speed reduced {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "HeroicEdge": {
+      "name": "Heroic Edge",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "When Hero projectiles expire there's a chance to unleash homing swords that do {0} damage. All Monkeys have {1}% more pierce",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "When Hero projectiles expire there's a chance to unleash homing swords that do {0} damage. All Monkeys have {1}% more pierce",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "When Hero projectiles expire there's a chance to unleash homing swords that do {0} damage. All Monkeys have {1}% more pierce",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "HeroicSpecialty": {
+      "name": "Heroic Specialty",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Rare": {
+          "template": "Heroes gain class category and earn {0}% less XP. Primary: Quincy, Gwendolin, Pat, Sauda. Military: Striker, Churchill, Brickell. Magic: Obyn, Ezili, Adora, Psi, Corvus. Support: Benjamin, Geraldo, Etienne, Rosalia, Silas, Dan D'Monke",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Heroes gain class category and earn {0}% less XP. Primary: Quincy, Gwendolin, Pat, Sauda. Military: Striker, Churchill, Brickell. Magic: Obyn, Ezili, Adora, Psi, Corvus. Support: Benjamin, Geraldo, Etienne, Rosalia, Silas, Dan D'Monke",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "HighImpactGlue": {
+      "name": "High Impact Glue",
+      "category": "Primary",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Glue Gunner projectiles move twice as fast and deal {0} damage on impact. Impact damage scales up to 10x with the amount of Bloons on screen. Adds a {1} Glue Gunner to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Rare": {
+          "template": "Glue Gunner projectiles move twice as fast and deal {0} damage on impact. Impact damage scales up to 10x with the amount of Bloons on screen. Adds a {1} Glue Gunner to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Glue Gunner projectiles move twice as fast and deal {0} damage on impact. Impact damage scales up to 10x with the amount of Bloons on screen. Adds a {1} Glue Gunner to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "HomeBrewAlchemy": {
+      "name": "Home Brew Alchemy",
+      "category": "Magic",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Alchemists attack speed and ability cooldowns are {0}% faster, and they have a 1 in 20 chance to Crit for 50x damage. Adds a {1} Alchemist to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Rare": {
+          "template": "Alchemists attack speed and ability cooldowns are {0}% faster, and they have a 1 in 20 chance to Crit for 50x damage. Adds a {1} Alchemist to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Alchemists attack speed and ability cooldowns are {0}% faster, and they have a 1 in 20 chance to Crit for 50x damage. Adds a {1} Alchemist to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "HomingProjectiles": {
+      "name": "Homing Projectiles",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Legendary": {
+          "template": "Grants homing projectiles for Dart Monkey, Bomb Shooter, Tack Shooter, Super Monkey, Druid, Engineer & Dartling Gunner, and all Heroes",
+          "parameterTypes": []
+        }
+      }
+    },
+    "ImprovedSpelling": {
+      "name": "Improved Spelling",
+      "category": "Magic",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Magic Monkey tier 4 middle path upgrades attack {0}% slower and ability cooldowns {1}% faster. Upgrades are {2}% cheaper for x-3-x Magic Monkeys",
+          "parameterTypes": [
+            "number",
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Magic Monkey tier 4 middle path upgrades attack {0}% slower and ability cooldowns {1}% faster. Upgrades are {2}% cheaper for x-3-x Magic Monkeys",
+          "parameterTypes": [
+            "number",
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Magic Monkey tier 4 middle path upgrades attack {0}% slower and ability cooldowns {1}% faster. Upgrades are {2}% cheaper for x-3-x Magic Monkeys",
+          "parameterTypes": [
+            "number",
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "InnateAbility": {
+      "name": "Innate Ability",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "All abilities trigger automatically when ready. Ability cooldowns are {0}% slower",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "All abilities trigger automatically when ready. Ability cooldowns are {0}% slower",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "All abilities trigger automatically when ready. Ability cooldowns are {0}% slower",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "InsiderTrading": {
+      "name": "Insider Trading",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Merchant Artifact costs are reduced by 1 for the first {0} items purchased.",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Merchant Artifact costs are reduced by 1 for the first {0} items purchased.",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Merchant Artifact costs are reduced by 1 for the first {0} items purchased.",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "IntelligenceAgent": {
+      "name": "Intelligence Agent",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Heroes give Monkey Intelligence Bureau buff to nearby Monkeys (can hit all Bloon types) but those monkeys attack {0}% slower",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Heroes give Monkey Intelligence Bureau buff to nearby Monkeys (can hit all Bloon types) but those monkeys attack {0}% slower",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Heroes give Monkey Intelligence Bureau buff to nearby Monkeys (can hit all Bloon types) but those monkeys attack {0}% slower",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "JustLikeMagic": {
+      "name": "Just Like Magic",
+      "category": "Magic",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Tier 5 Magic Monkeys' attack speed is halved, but all Monkeys in their radius deal {0}% more damage to MOAB-Class Bloons. Non-Magic Monkeys have a {1}% chance to send an Arcane Bolt backwards on projectile expiration",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Tier 5 Magic Monkeys' attack speed is halved, but all Monkeys in their radius deal {0}% more damage to MOAB-Class Bloons. Non-Magic Monkeys have a {1}% chance to send an Arcane Bolt backwards on projectile expiration",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Tier 5 Magic Monkeys' attack speed is halved, but all Monkeys in their radius deal {0}% more damage to MOAB-Class Bloons. Non-Magic Monkeys have a {1}% chance to send an Arcane Bolt backwards on projectile expiration",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "MaliciousMauling": {
+      "name": "Malicious Mauling",
+      "category": "Primary",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Bomb Shooters and Striker Jones deal {0}x damage to MOAB-Class Bloons. Bomb Shooters attack speed, ability cooldown, and projectile speed is halved. Adds a {1} Bomb Shooter to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Rare": {
+          "template": "Bomb Shooters and Striker Jones deal {0}x damage to MOAB-Class Bloons. Bomb Shooters attack speed, ability cooldown, and projectile speed is halved. Adds a {1} Bomb Shooter to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Bomb Shooters and Striker Jones deal {0}x damage to MOAB-Class Bloons. Bomb Shooters attack speed, ability cooldown, and projectile speed is halved. Adds a {1} Bomb Shooter to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "MasterOfAllTrades": {
+      "name": "Master of all Trades",
+      "category": "Support",
+      "boss": false,
+      "variants": {
+        "Rare": {
+          "template": "Support Monkeys count as all categories. Support Monkeys range reduced {0}%. Non-Support Monkeys deal {1}% less damage and their upgrades cost {2}% more",
+          "parameterTypes": [
+            "number",
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Support Monkeys count as all categories. Support Monkeys range reduced {0}%. Non-Support Monkeys deal {1}% less damage and their upgrades cost {2}% more",
+          "parameterTypes": [
+            "number",
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "MightyMulligan": {
+      "name": "Mighty Mulligan",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Provides {0} Artifact Selection rerolls after beating a reward tile. Rerolls are consumed when used and don't refresh",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Provides {0} Artifact Selection rerolls after beating a reward tile. Rerolls are consumed when used and don't refresh",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Provides {0} Artifact Selection rerolls after beating a reward tile. Rerolls are consumed when used and don't refresh",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "MonkeyAcademy": {
+      "name": "Monkey Academy",
+      "category": "Magic",
+      "boss": false,
+      "variants": {
+        "Rare": {
+          "template": "Magic Monkeys count as all categories. Magic Monkeys range reduced {0}%. Non-Magic Monkeys deal {1}% less damage and their upgrades cost {2}% more",
+          "parameterTypes": [
+            "number",
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Magic Monkeys count as all categories. Magic Monkeys range reduced {0}%. Non-Magic Monkeys deal {1}% less damage and their upgrades cost {2}% more",
+          "parameterTypes": [
+            "number",
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "MysticTwister": {
+      "name": "Mystic Twister",
+      "category": "Magic",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Magic Monkeys' projectile pierce and lifespan increased by {0}% and their projectiles are pulled into orbit around the Monkey",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Magic Monkeys' projectile pierce and lifespan increased by {0}% and their projectiles are pulled into orbit around the Monkey",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Magic Monkeys' projectile pierce and lifespan increased by {0}% and their projectiles are pulled into orbit around the Monkey",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "NoMorePlease": {
+      "name": "No More Please",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Rare": {
+          "template": "Ban a Monkey from being offered as an Insta Monkey choice for the rest of the campaign. Option to Ban appears when next offered a choice of Insta Monkey. This Artifact has only {0} charges & is Banished after use",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Ban a Monkey from being offered as an Insta Monkey choice for the rest of the campaign. Option to Ban appears when next offered a choice of Insta Monkey. This Artifact has only {0} charges & is Banished after use",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "OneMonkeyArmy": {
+      "name": "One Monkey Army",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Legendary": {
+          "template": "Heroes count as all categories, deal 2x damage to Bosses and can see camo. Heroes earn 1000% less XP and non-Hero Monkeys deal no hit damage.",
+          "parameterTypes": []
+        }
+      }
+    },
+    "OneShot": {
+      "name": "One Shot",
+      "category": "Military",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Sniper Monkeys attack 2x slower, but have a 1 in {0} chance to Crit for {1}x damage. Adds a {2} Sniper Monkey to your Party",
+          "parameterTypes": [
+            "number",
+            "number",
+            "string"
+          ]
+        },
+        "Rare": {
+          "template": "Sniper Monkeys attack 2x slower, but have a 1 in {0} chance to Crit for {1}x damage. Adds a {2} Sniper Monkey to your Party",
+          "parameterTypes": [
+            "number",
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Sniper Monkeys attack 2x slower, but have a 1 in {0} chance to Crit for {1}x damage. Adds a {2} Sniper Monkey to your Party",
+          "parameterTypes": [
+            "number",
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "OverwhelmingSynergy": {
+      "name": "Overwhelming Synergy",
+      "category": "Magic",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Magic Monkeys attack {0}% faster. Upgrades for other Monkeys are {1}% more expensive",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Magic Monkeys attack {0}% faster. Upgrades for other Monkeys are {1}% more expensive",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Magic Monkeys attack {0}% faster. Upgrades for other Monkeys are {1}% more expensive",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "PerceptiveCrow": {
+      "name": "Perceptive Crow",
+      "category": "Military",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Crow's Nest Buccaneers range reduced {0}% but grant Camo detection to Monkeys in radius. Adds a {1} Buccaneer to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Rare": {
+          "template": "Crow's Nest Buccaneers range reduced {0}% but grant Camo detection to Monkeys in radius. Adds a {1} Buccaneer to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Crow's Nest Buccaneers range reduced {0}% but grant Camo detection to Monkeys in radius. Adds a {1} Buccaneer to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "PincushionFlyby": {
+      "name": "Pincushion Flyby",
+      "category": "Military",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Monkey Ace pin Bloons for 1s on pop, and have {0}% more pierce. Adds a {1} Monkey Ace to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Rare": {
+          "template": "Monkey Ace pin Bloons for 1s on pop, and have {0}% more pierce. Adds a {1} Monkey Ace to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Monkey Ace pin Bloons for 1s on pop, and have {0}% more pierce. Adds a {1} Monkey Ace to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "PopsFired": {
+      "name": "Pops Fired",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "When a Bloon on fire is popped, it explodes. Hits up to {0} nearby Bloons",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "When a Bloon on fire is popped, it explodes. Hits up to {0} nearby Bloons",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "When a Bloon on fire is popped, it explodes. Hits up to {0} nearby Bloons",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "Portability": {
+      "name": "Portability",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Grants {0} Portable Lake and Pontoon per tile",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Grants {0} Portable Lake and Pontoon per tile",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Grants {0} Portable Lake and Pontoon per tile",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "PowerNexus": {
+      "name": "Power Nexus",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Powers count as Support Category. Power attack speed increased {0}% and damage increased {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Powers count as Support Category. Power attack speed increased {0}% and damage increased {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Powers count as Support Category. Power attack speed increased {0}% and damage increased {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "PrimalInstinct": {
+      "name": "Primal Instinct",
+      "category": "Primary",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Primary Monkeys attack {0}% faster when set to 'Close' target priority",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Primary Monkeys attack {0}% faster when set to 'Close' target priority",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Primary Monkeys attack {0}% faster when set to 'Close' target priority",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "PrimarySpecialist": {
+      "name": "Primary Specialist",
+      "category": "Primary",
+      "boss": false,
+      "variants": {
+        "Rare": {
+          "template": "Primary Monkeys attack speed and ability cooldowns are {0}% faster. All other Monkey categories have pierce and ability cooldown speed reduced {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Primary Monkeys attack speed and ability cooldowns are {0}% faster. All other Monkey categories have pierce and ability cooldown speed reduced {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "PureDamage": {
+      "name": "Pure Damage",
+      "category": "Magic",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Magic Monkeys attack speed and ability cooldowns are 2x slower, but pierce is increased 100% and damage is increased by {0}% against Ceramic and MOAB-Class Bloons",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Magic Monkeys attack speed and ability cooldowns are 2x slower, but pierce is increased 100% and damage is increased by {0}% against Ceramic and MOAB-Class Bloons",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Magic Monkeys attack speed and ability cooldowns are 2x slower, but pierce is increased 100% and damage is increased by {0}% against Ceramic and MOAB-Class Bloons",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "QuantumLeap": {
+      "name": "Quantum Leap",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "For Heroes and Monkeys up to tier {0}, projectile speed is reduced 95%, but quantum tech sends most projectiles to their target instantly! (results may vary)",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "For Heroes and Monkeys up to tier {0}, projectile speed is reduced 95%, but quantum tech sends most projectiles to their target instantly! (results may vary)",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "For Heroes and Monkeys up to tier {0}, projectile speed is reduced 95%, but quantum tech sends most projectiles to their target instantly! (results may vary)",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "RubberBullets": {
+      "name": "Rubber Bullets",
+      "category": "Military",
+      "boss": false,
+      "variants": {
+        "Rare": {
+          "template": "Tier 4 and higher Sniper Monkeys only deal 1 damage per shot, but immobilize MOAB-Class Bloons briefly with each hit. Adds a 0-0-0 Sniper Monkey to your Party",
+          "parameterTypes": []
+        }
+      }
+    },
+    "SlippedOnThePeel": {
+      "name": "Slipped on the Peel",
+      "category": "Support",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Benjamin and the Banana Farms slow Bloons in radius by {0}%. Benjamin's range is doubled. Adds a {1} Banana Farm to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Rare": {
+          "template": "Benjamin and the Banana Farms slow Bloons in radius by {0}%. Benjamin's range is doubled. Adds a {1} Banana Farm to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Benjamin and the Banana Farms slow Bloons in radius by {0}%. Benjamin's range is doubled. Adds a {1} Banana Farm to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "SlowAndSteady": {
+      "name": "Slow And Steady",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Monkey damage increased {0}%. For the first 20s of each round, all Monkeys attack {1}% slower",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Monkey damage increased {0}%. For the first 20s of each round, all Monkeys attack {1}% slower",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Monkey damage increased {0}%. For the first 20s of each round, all Monkeys attack {1}% slower",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "SlowerIsHarder": {
+      "name": "Slower Is Harder",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "All projectile speed is reduced {0}%, but damage increased by {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "All projectile speed is reduced {0}%, but damage increased by {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "All projectile speed is reduced {0}%, but damage increased by {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "SpiritOfAdventure": {
+      "name": "Spirit of Adventure",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Hero end of round XP increased {0}% and Hero attack speed increased {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Hero end of round XP increased {0}% and Hero attack speed increased {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Hero end of round XP increased {0}% and Hero attack speed increased {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "SplodyDarts": {
+      "name": "Splody Darts",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Dart based Monkeys' projectiles have a {0}% chance to explode when they expire, dealing {1} damage to nearby Bloons",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Dart based Monkeys' projectiles have a {0}% chance to explode when they expire, dealing {1} damage to nearby Bloons",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Dart based Monkeys' projectiles have a {0}% chance to explode when they expire, dealing {1} damage to nearby Bloons",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "SquadronTogether": {
+      "name": "Squadron Together Strong",
+      "category": "Military",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Military Monkeys attack {0}% faster. Upgrades for other Monkeys are {1}% more expensive",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Military Monkeys attack {0}% faster. Upgrades for other Monkeys are {1}% more expensive",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Military Monkeys attack {0}% faster. Upgrades for other Monkeys are {1}% more expensive",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "StartingStong": {
+      "name": "Starting Strong",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "For the first 20s of each round, Monkeys attack {0}% faster",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "For the first 20s of each round, Monkeys attack {0}% faster",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "For the first 20s of each round, Monkeys attack {0}% faster",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "StickySituation": {
+      "name": "Sticky Situation",
+      "category": "Primary",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Heroes and Primary Monkeys deal {0}x damage to glued Bloons",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Heroes and Primary Monkeys deal {0}x damage to glued Bloons",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Heroes and Primary Monkeys deal {0}x damage to glued Bloons",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "SummerFun": {
+      "name": "Summer Fun",
+      "category": "Military",
+      "boss": false,
+      "variants": {
+        "Rare": {
+          "template": "Admiral Brickell and tier 2 or lower Buccaneers and Monkey Subs have a rare chance to attract excited summer vibes Monkeys that will push Bloons up to {0} back along the track. Adds a {1} Buccaneer to your Party",
+          "parameterTypes": [
+            "string",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Admiral Brickell and tier 2 or lower Buccaneers and Monkey Subs have a rare chance to attract excited summer vibes Monkeys that will push Bloons up to {0} back along the track. Adds a {1} Buccaneer to your Party",
+          "parameterTypes": [
+            "string",
+            "string"
+          ]
+        }
+      }
+    },
+    "BattleCat": {
+      "name": "Summon Battle Cat",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Rare": {
+          "template": "Grants {0} Battle Cat power(s) per tile",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Grants {0} Battle Cat power(s) per tile",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "SupportSpecialist": {
+      "name": "Support Specialist",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Rare": {
+          "template": "Support Monkeys attack speed and ability cooldowns are {0}% faster. All other Monkey categories have pierce and ability cooldown speed reduced {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Support Monkeys attack speed and ability cooldowns are {0}% faster. All other Monkey categories have pierce and ability cooldown speed reduced {1}%",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "SwellingSpikes": {
+      "name": "Swelling Spikes",
+      "category": "Support",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Spike Factories attack half as fast, but have {0}% more pierce. Adds a {1} Spike Factory to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Rare": {
+          "template": "Spike Factories attack half as fast, but have {0}% more pierce. Adds a {1} Spike Factory to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Spike Factories attack half as fast, but have {0}% more pierce. Adds a {1} Spike Factory to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "SwiftestToBusiness": {
+      "name": "Swiftest To Business",
+      "category": "Magic",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Ninja Monkeys tier 3 or higher have {0}% faster projectile speed, attack speed and ability cooldowns are {1}% faster, and placement cooldown reduced {3} round(s). Adds a {2} Ninja Monkey to your Party",
+          "parameterTypes": [
+            "number",
+            "number",
+            "string",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Ninja Monkeys tier 3 or higher have {0}% faster projectile speed, attack speed and ability cooldowns are {1}% faster, and placement cooldown reduced {3} round(s). Adds a {2} Ninja Monkey to your Party",
+          "parameterTypes": [
+            "number",
+            "number",
+            "string",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Ninja Monkeys tier 3 or higher have {0}% faster projectile speed, attack speed and ability cooldowns are {1}% faster, and placement cooldown reduced {3} round(s). Adds a {2} Ninja Monkey to your Party",
+          "parameterTypes": [
+            "number",
+            "number",
+            "string",
+            "number"
+          ]
+        }
+      }
+    },
+    "TheUnspokenHeroes": {
+      "name": "The Unspoken Heroes",
+      "category": "Support",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Attacks from Tier 3 or higher Support Monkeys have a chance to burst into a ring of tacks, each tack dealing {0} damage to {1} Bloons",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Attacks from Tier 3 or higher Support Monkeys have a chance to burst into a ring of tacks, each tack dealing {0} damage to {1} Bloons",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Attacks from Tier 3 or higher Support Monkeys have a chance to burst into a ring of tacks, each tack dealing {0} damage to {1} Bloons",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "TitForTat": {
+      "name": "Tit For Tat",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "All Monkeys attack {0}% faster. Bloons move {1}% faster when in range of Monkeys",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "All Monkeys attack {0}% faster. Bloons move {1}% faster when in range of Monkeys",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "All Monkeys attack {0}% faster. Bloons move {1}% faster when in range of Monkeys",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "TooManyCooks": {
+      "name": "Too Many Cooks",
+      "category": "Military",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Military Monkeys attack {0}% faster, but attack {1}% slower for each Military Monkey placed",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Military Monkeys attack {0}% faster, but attack {1}% slower for each Military Monkey placed",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Military Monkeys attack {0}% faster, but attack {1}% slower for each Military Monkey placed",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "TrickShotATacks": {
+      "name": "Trick Shot A-Tacks",
+      "category": "Primary",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Tack Shooter projectiles rebound off obstacles. Range and projectile lifespan increased {0}%. Adds a {1} Tack Shooter to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Rare": {
+          "template": "Tack Shooter projectiles rebound off obstacles. Range and projectile lifespan increased {0}%. Adds a {1} Tack Shooter to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Tack Shooter projectiles rebound off obstacles. Range and projectile lifespan increased {0}%. Adds a {1} Tack Shooter to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "Unification": {
+      "name": "Unification",
+      "category": "Primary",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Primary Monkeys now count as all Monkey categories. Primary Monkey attack range reduced {0}%. Non-Primary Monkeys deal {1}% less damage and their upgrades cost {2}% more",
+          "parameterTypes": [
+            "number",
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "Primary Monkeys now count as all Monkey categories. Primary Monkey attack range reduced {0}%. Non-Primary Monkeys deal {1}% less damage and their upgrades cost {2}% more",
+          "parameterTypes": [
+            "number",
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Primary Monkeys now count as all Monkey categories. Primary Monkey attack range reduced {0}%. Non-Primary Monkeys deal {1}% less damage and their upgrades cost {2}% more",
+          "parameterTypes": [
+            "number",
+            "number",
+            "number"
+          ]
+        }
+      }
+    },
+    "Wackywibblywavey": {
+      "name": "Wacky Wibbly Wavey",
+      "category": "Military",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "Heli Pilots attack {0}% faster and fire in a wacky wiggly pattern. Adds a {1} Heli Pilot to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Rare": {
+          "template": "Heli Pilots attack {0}% faster and fire in a wacky wiggly pattern. Adds a {1} Heli Pilot to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "Heli Pilots attack {0}% faster and fire in a wacky wiggly pattern. Adds a {1} Heli Pilot to your Party",
+          "parameterTypes": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "WhatInTarnation": {
+      "name": "What In Tarnation",
+      "category": "Primary",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "All Desperado attacks have a small chance to stun, freeze, and glue Bloons. Desperado up to 5-5-2 can fire up to 3 additional {0} damage shots at a {1}% chance each. Adds a {2} Desperado to your Party",
+          "parameterTypes": [
+            "number",
+            "number",
+            "string"
+          ]
+        },
+        "Rare": {
+          "template": "All Desperado attacks have a small chance to stun, freeze, and glue Bloons. Desperado up to 5-5-2 can fire up to 3 additional {0} damage shots at a {1}% chance each. Adds a {2} Desperado to your Party",
+          "parameterTypes": [
+            "number",
+            "number",
+            "string"
+          ]
+        },
+        "Legendary": {
+          "template": "All Desperado attacks have a small chance to stun, freeze, and glue Bloons. Desperado up to 5-5-2 can fire up to 3 additional {0} damage shots at a {1}% chance each. Adds a {2} Desperado to your Party",
+          "parameterTypes": [
+            "number",
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "WindowShopping": {
+      "name": "Window Shopping",
+      "category": "All monkeys",
+      "boss": false,
+      "variants": {
+        "Rare": {
+          "template": "Leaving a Merchant tile without making any purchases recovers 1 Heart, so long as the number of currently owned Tokens is lower than {0}",
+          "parameterTypes": [
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "Leaving a Merchant tile without making any purchases recovers 1 Heart, so long as the number of currently owned Tokens is lower than {0}",
+          "parameterTypes": [
+            "number"
+          ]
+        }
+      }
+    },
+    "ZigThenZag": {
+      "name": "Zig Then Zag",
+      "category": "Military",
+      "boss": false,
+      "variants": {
+        "Common": {
+          "template": "All Military Monkeys shoot in a Zig Zag pattern. Projectiles move {0}% slower, but attack speed is {1}% faster",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Rare": {
+          "template": "All Military Monkeys shoot in a Zig Zag pattern. Projectiles move {0}% slower, but attack speed is {1}% faster",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        },
+        "Legendary": {
+          "template": "All Military Monkeys shoot in a Zig Zag pattern. Projectiles move {0}% slower, but attack speed is {1}% faster",
+          "parameterTypes": [
+            "number",
+            "number"
+          ]
+        }
+      }
+    }
+  }
+}

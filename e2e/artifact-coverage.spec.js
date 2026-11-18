@@ -1,0 +1,60 @@
+import {test,expect} from '@playwright/test';
+
+for(const viewport of [{width:1440,height:900},{width:1366,height:768},{width:390,height:844}])test(`coverage evidence and filters at ${viewport.width}px preserve the calculator`,async({page},testInfo)=>{
+  await page.setViewportSize(viewport);
+  await page.goto('/?workspace=reference');
+  await expect(page.locator('#coverage-summary')).toContainText('117 artifacts');
+  await page.locator('#coverage-search').scrollIntoViewIfNeeded();
+  await page.screenshot({path:testInfo.outputPath('coverage.png')});
+  const before=await page.evaluate(()=>localStorage.getItem('rogue-lab-v1'));
+  const allRows=await page.locator('#coverage-rows tr').count();
+  expect(allRows).toBe(50);
+  await expect(page.locator('#coverage-count')).toContainText('1–50');
+  await expect(page.getByRole('button',{name:'Previous effects'})).toBeDisabled();
+  const first=await page.locator('#coverage-rows tr').first().textContent();
+  await page.getByRole('button',{name:'Next effects'}).click();
+  await expect(page.locator('#coverage-count')).toContainText('51–100');
+  expect(await page.locator('#coverage-rows tr').first().textContent()).not.toBe(first);
+  await page.getByLabel('Search coverage').fill('Absolute Ability');
+  await expect(page.locator('#coverage-rows tr')).toHaveCount(6);
+  await expect(page.getByRole('button',{name:'Previous effects'})).toBeDisabled();
+  await expect(page.getByRole('button',{name:'Next effects'})).toBeDisabled();
+  await page.getByLabel('Evidence status').selectOption('Verified export cooldown');
+  await expect(page.locator('#coverage-rows tr')).toHaveCount(3);
+  const row=page.locator('#coverage-rows tr').first();
+  await expect(row).toContainText('Attack rate');
+  await expect(row.getByRole('link',{name:'Pinned v56.0 AbsoluteAbility1.json'})).toHaveAttribute('href',/\/f818c39e6d7cc4e0f8fb02a2e3d1a929bcfe6a24\/Artifacts\/AbsoluteAbility1.json$/);
+  const bundled=row.getByRole('link',{name:'Bundled v57 description'});
+  expect((await page.request.get(await bundled.getAttribute('href'))).ok()).toBeTruthy();
+  await row.locator('summary').click();await expect(row.locator('details p')).toContainText('ability cooldowns');
+  await page.getByLabel('Evidence status').selectOption('Description estimate');
+  await expect(page.locator('#coverage-rows tr')).toHaveCount(3);
+  await expect(page.locator('#coverage-rows')).toContainText('Ability recharge rate');
+  await page.getByLabel('Search coverage').fill('No such artifact xyz');
+  await expect(page.locator('#coverage-count')).toContainText('No matching effects');
+  await expect(page.locator('#coverage-rows tr')).toHaveCount(0);
+  await page.getByLabel('Search coverage').fill('camo detection');
+  await page.getByLabel('Evidence status').selectOption('Unmodeled');
+  await expect(page.locator('#coverage-rows')).toContainText('Camo detection');
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
+  expect(await page.evaluate(()=>localStorage.getItem('rogue-lab-v1'))).toBe(before);
+  await page.locator('.workspace-nav [data-workspace="calculator"]').click();
+  await expect(page.locator('.live-stat-bar')).toBeVisible();
+  await page.locator('[data-workspace="reference"]').first().click();
+  await expect(page.getByLabel('Search coverage')).toHaveValue('camo detection');
+  await expect(page.locator('#coverage-heading')).toBeVisible();
+});
+
+test('coverage routes and evidence files work under a repository path',async({page})=>{
+  await page.route('**/btd6-rogue-calculator/**',async route=>{
+    const url=new URL(route.request().url());url.pathname=url.pathname.replace('/btd6-rogue-calculator/','/');
+    await route.fulfill({response:await route.fetch({url:url.href})});
+  });
+  await page.goto('/btd6-rogue-calculator/?workspace=reference');
+  await expect(page.locator('#coverage-heading')).toBeVisible();
+  await page.getByLabel('Search coverage').fill('One Shot');
+  const link=page.locator('#coverage-rows').getByRole('link',{name:'Implemented rule & conditions'}).first();
+  const url=await link.evaluate(a=>a.href);
+  expect(url).toContain('/btd6-rogue-calculator/src/artifact-rules.js');
+  expect(await page.evaluate(async url=>(await fetch(url)).ok,url)).toBeTruthy();
+});

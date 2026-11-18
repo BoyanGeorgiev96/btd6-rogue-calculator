@@ -1,0 +1,126 @@
+{
+  "reviewed": "2026-11-13",
+  "source": {
+    "schemaVersion": 1,
+    "repository": "Btd6ModHelper/btd6-game-data",
+    "revision": "f818c39e6d7cc4e0f8fb02a2e3d1a929bcfe6a24",
+    "gameVersion": "56.0",
+    "exportedAt": "2026-08-07"
+  },
+  "models": [
+    {
+      "path": "Powers/BattleCat.json",
+      "blob": "8c745ec704e2f9bd7bdb0d4f89942f0eea2d6295"
+    },
+    {
+      "path": "Powers/CaveMonkey.json",
+      "blob": "fe3918d9d97c5e8924341566c51604711833ae4c"
+    },
+    {
+      "path": "Towers/SuperMonkeyBeacon/SuperMonkeyBeacon-001.json",
+      "blob": "31b2c1ac161a0d15a73f889884a23bafc381878f"
+    },
+    {
+      "path": "Towers/SuperMonkeyBeacon/SuperMonkeyBeacon-002.json",
+      "blob": "dc7f28f538c883a7659b6e3ac83056a9adbe131d"
+    },
+    {
+      "path": "Towers/SuperMonkeyBeacon/SuperMonkeyBeacon-003.json",
+      "blob": "5b54174e8f0fa7b4028365cadac167af1d1863b5"
+    },
+    {
+      "path": "Towers/SuperMonkeyBeacon/SuperMonkeyBeacon-010.json",
+      "blob": "17fd1f7a9d0a077de0f83f9e28c0d8588936eecc"
+    },
+    {
+      "path": "Towers/SuperMonkeyBeacon/SuperMonkeyBeacon-020.json",
+      "blob": "cb8447d9f2d74d55a978ff7a7bfe38d7160b7e65"
+    },
+    {
+      "path": "Towers/SuperMonkeyBeacon/SuperMonkeyBeacon-030.json",
+      "blob": "c06c13c1562501aca935824bc4a035b525e9e041"
+    },
+    {
+      "path": "Towers/SuperMonkeyBeacon/SuperMonkeyBeacon-100.json",
+      "blob": "e8e075b8b4ec4e6463d92c9e2eb8f8b63dfb2f14"
+    },
+    {
+      "path": "Towers/SuperMonkeyBeacon/SuperMonkeyBeacon-200.json",
+      "blob": "2c125397f0ff3e8c35564ee5a5cb691550325cae"
+    },
+    {
+      "path": "Towers/SuperMonkeyBeacon/SuperMonkeyBeacon-300.json",
+      "blob": "6f6ba3d7c82e5f3dad0640dbce78776d5dd4db39"
+    },
+    {
+      "path": "Towers/SuperMonkeyBeacon/SuperMonkeyBeacon.json",
+      "blob": "36ab86d9910b16b7aad797b73e506ad8ff974711"
+    }
+  ],
+  "artifactModels": [
+    {
+      "path": "Artifacts/PowerNexus1.json",
+      "blob": "d8c0640314036af32a0f597b3eddcdec43aa10de"
+    },
+    {
+      "path": "Artifacts/PowerNexus2.json",
+      "blob": "a5595ef7f0b49eaaf1270ede0dfca1de811a595e"
+    },
+    {
+      "path": "Artifacts/PowerNexus3.json",
+      "blob": "43953e87ae8a4f437a103d3e630a7047d9e016c5"
+    },
+    {
+      "path": "Artifacts/DivinePrecision1.json",
+      "blob": "f96f13ce9c8dd1ed6d87b82c2338b2a87554dc8b"
+    },
+    {
+      "path": "Artifacts/DivinePrecision2.json",
+      "blob": "baca1b1da2c9291e9ac540386f02b6bba774eda1"
+    },
+    {
+      "path": "Artifacts/DivinePrecision3.json",
+      "blob": "db7663e9ef3014183b6f9b70126b06e0f87aa5c0"
+    },
+    {
+      "path": "Artifacts/DivineInspiration1.json",
+      "blob": "fdcdf27229d85bd54866cc585f39de244b317256"
+    },
+    {
+      "path": "Artifacts/DivineInspiration2.json",
+      "blob": "d032bdadb72f2f3d2e370d4c70bfaec3aa01e6ac"
+    },
+    {
+      "path": "Artifacts/DivineInspiration3.json",
+      "blob": "a139a5bbdc7a212dd7b1dbd66d72768524f84ae0"
+    },
+    {
+      "path": "Artifacts/DivineQuickening1.json",
+      "blob": "1ede9577579c5e1a096e8118f54159b7fba66de3"
+    },
+    {
+      "path": "Artifacts/DivineQuickening2.json",
+      "blob": "4c7fde0772e402269c2b09a9d3ecb08ac42387ba"
+    },
+    {
+      "path": "Artifacts/DivineQuickening3.json",
+      "blob": "19908c5ec8840a3a34df33280b8d2bd74fe8190e"
+    },
+    {
+      "path": "Artifacts/OneMonkeyArmy3.json",
+      "blob": "44dcfaa17058042ab7ee01bf517cd2ac16a50123"
+    },
+    {
+      "path": "Artifacts/HeroicEdge1.json",
+      "blob": "57f7caa784198c5ec035d41cf3a28ce3c2c6b42c"
+    },
+    {
+      "path": "Artifacts/HeroicEdge2.json",
+      "blob": "a0c7a232150f61fa5659571671a4ac26a7f4bda5"
+    },
+    {
+      "path": "Artifacts/HeroicEdge3.json",
+      "blob": "593ce01675ee1bcf532de13eed4b7c71c80b9e6f"
+    }
+  ]
+}

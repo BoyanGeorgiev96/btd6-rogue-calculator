@@ -1,0 +1,2223 @@
+{
+  "reviewed": "2026-11-12",
+  "artifactVersion": 57,
+  "towerSource": {
+    "schemaVersion": 1,
+    "repository": "Btd6ModHelper/btd6-game-data",
+    "revision": "f818c39e6d7cc4e0f8fb02a2e3d1a929bcfe6a24",
+    "gameVersion": "56.0",
+    "exportedAt": "2026-08-07"
+  },
+  "scope": "All 117 bundled descriptions/rarities compared with implemented rules. New effect source files checked against pinned Git blob hashes. Source fields are evidence, not claims of current-game runtime verification.",
+  "reviewedSources": [
+    {
+      "id": "Conscription",
+      "rarity": "Rare",
+      "file": "Conscription2.json",
+      "blob": "68589676ba76e7175a60b2672f7ccf7eb97fdbe3"
+    },
+    {
+      "id": "Conscription",
+      "rarity": "Legendary",
+      "file": "Conscription3.json",
+      "blob": "e2555e63fcfbb36bc190ce9b1c7218cd872d6a26"
+    },
+    {
+      "id": "Unification",
+      "rarity": "Common",
+      "file": "Unification1.json",
+      "blob": "d5ca12260b3c8255ecf0a65e7353a6d3e84f3678"
+    },
+    {
+      "id": "Unification",
+      "rarity": "Rare",
+      "file": "Unification2.json",
+      "blob": "69925a17f49357a21b11895f742556248e691806"
+    },
+    {
+      "id": "Unification",
+      "rarity": "Legendary",
+      "file": "Unification3.json",
+      "blob": "b129ca8b5a22ab6fb2f0d90d27185929a5cc1acb"
+    },
+    {
+      "id": "MonkeyAcademy",
+      "rarity": "Rare",
+      "file": "MonkeyAcademy2.json",
+      "blob": "0cd461c4fc99a2de5eac8ab477036b3897d0b2e9"
+    },
+    {
+      "id": "MonkeyAcademy",
+      "rarity": "Legendary",
+      "file": "MonkeyAcademy3.json",
+      "blob": "91503d0915c776adfa1c1045e915139d02a2e574"
+    },
+    {
+      "id": "MasterOfAllTrades",
+      "rarity": "Rare",
+      "file": "MasterOfAllTrades2.json",
+      "blob": "840481515ef53439569ea288b054850244cd9df1"
+    },
+    {
+      "id": "MasterOfAllTrades",
+      "rarity": "Legendary",
+      "file": "MasterOfAllTrades3.json",
+      "blob": "187dfca0fd91927b2ce974a201b0b7a6afae69aa"
+    },
+    {
+      "id": "GrowingSteady",
+      "rarity": "Common",
+      "file": "GrowingSteady1.json",
+      "blob": "ac5e0dd5add4a470e3fae5d829e0f802daa5b1d0"
+    },
+    {
+      "id": "GrowingSteady",
+      "rarity": "Rare",
+      "file": "GrowingSteady2.json",
+      "blob": "f1c79b06142a27bb8f2d3d71789e089e0a459075"
+    },
+    {
+      "id": "GrowingSteady",
+      "rarity": "Legendary",
+      "file": "GrowingSteady3.json",
+      "blob": "30cda044b8b999678e7cd8c7a883e690199e88ab"
+    },
+    {
+      "id": "HighImpactGlue",
+      "rarity": "Common",
+      "file": "HighImpactGlue1.json",
+      "blob": "2a01d19437e241b390aab8522a31c26dc7f86860"
+    },
+    {
+      "id": "HighImpactGlue",
+      "rarity": "Rare",
+      "file": "HighImpactGlue2.json",
+      "blob": "6521299858108fc983b7830b0795b723266047dd"
+    },
+    {
+      "id": "HighImpactGlue",
+      "rarity": "Legendary",
+      "file": "HighImpactGlue3.json",
+      "blob": "6b7d699d4f21ff398abbbe53d4153726e145da40"
+    },
+    {
+      "id": "IntelligenceAgent",
+      "rarity": "Common",
+      "file": "IntelligenceAgent1.json",
+      "blob": "3acf5db2adfb62d2056f0205b284e07c3332b291"
+    },
+    {
+      "id": "IntelligenceAgent",
+      "rarity": "Rare",
+      "file": "IntelligenceAgent2.json",
+      "blob": "4c1e7190a4fee647969b1a8b437633913f54af65"
+    },
+    {
+      "id": "IntelligenceAgent",
+      "rarity": "Legendary",
+      "file": "IntelligenceAgent3.json",
+      "blob": "20aa8857ef4113cff25c3f8852d93570266f8c1a"
+    },
+    {
+      "id": "EssenceOfPhayze",
+      "rarity": "Legendary",
+      "file": "EssenceOfPhayze1.json",
+      "blob": "4b6f8d3e1401c03ce1c09c22fa6b0fb619edef5f"
+    },
+    {
+      "id": "RubberBullets",
+      "rarity": "Rare",
+      "file": "RubberBullets1.json",
+      "blob": "2119ebec971987fc7285e6d9653320651fdaa90d"
+    },
+    {
+      "id": "TooManyCooks",
+      "rarity": "Common",
+      "file": "TooManyCooks1.json",
+      "blob": "60f53ae50835761228c06e821c8da891668943c1"
+    },
+    {
+      "id": "TooManyCooks",
+      "rarity": "Rare",
+      "file": "TooManyCooks2.json",
+      "blob": "5977b4c4e7a3991f7769789b04d15abec81ec177"
+    },
+    {
+      "id": "TooManyCooks",
+      "rarity": "Legendary",
+      "file": "TooManyCooks3.json",
+      "blob": "476e665c2cff00a60d804ffde387d436ea552b5d"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "AbilityStacking",
+      "name": "Ability Stacking",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "f44cc1e1a36213a594546711e8cdeb30120be33f8b5926861b972344a2aadb7a",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "abilityRate"
+      ],
+      "exclusions": [
+        "Extra ability charges and charge-loop behavior"
+      ],
+      "reason": null
+    },
+    {
+      "id": "AbsoluteAbility",
+      "name": "Absolute Ability",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "4a44e7a8a3876eb4f05b36dd5e2647d773307d9ff0de9e24a5aa56b7f750181b",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate",
+        "abilityRate"
+      ],
+      "exclusions": [],
+      "reason": null
+    },
+    {
+      "id": "AbundantChoices",
+      "name": "Abundant Choices",
+      "rarities": [
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "6c53bad1e998eab69435a27455bc24170de17ac36288ccea6ec7e2c59864911a",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Reward choices; offer availability is not simulated."
+    },
+    {
+      "id": "AddedPreservatives",
+      "name": "Added Preservatives",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "ee4e7eb53e4887095a0460e2e39429b8a22ec68d5a0769e6941e3dace924f963",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Projectile lifespan and border bounces require travel/geometry simulation."
+    },
+    {
+      "id": "AlchemicEngineering",
+      "name": "Alchemic Engineering",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "8686f079d34a61304aafff82a844d59354f95a8b95f5fcd99c6df3507881585e",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "pierce"
+      ],
+      "exclusions": [
+        "Bloon-to-Gold conversion",
+        "Granted party tower"
+      ],
+      "reason": null
+    },
+    {
+      "id": "BargainingChip",
+      "name": "Bargaining Chip",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "0bccde282a69de9bd105c312163d72c6881068d5da2640da28bb5aadf5a53965",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Reroll costs and merchant resale value are economy effects."
+    },
+    {
+      "id": "BattlefieldCommission",
+      "name": "Battlefield Commission",
+      "rarities": [
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "76f57cf9dbf56f41e93951a5d21840c9c4e86389113b15e9687f12c01473dccf",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Hero XP progression is not simulated."
+    },
+    {
+      "id": "BBGatlingGun",
+      "name": "BB Gatling Gun",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "1239a4218124ede63771d499e03fd4af31d50f992c3537fe85dcc769b2426bb6",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate"
+      ],
+      "exclusions": [
+        "Shot spread / accuracy"
+      ],
+      "reason": null
+    },
+    {
+      "id": "BiggestBeacon",
+      "name": "Biggest Beacon",
+      "rarities": [
+        "Legendary"
+      ],
+      "descriptionSha256": "2ac68667a6153e61d0eb879acd9d4606431a12265956cd3673666037c82aafd9",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "range"
+      ],
+      "exclusions": [
+        "Granted party tower"
+      ],
+      "reason": null
+    },
+    {
+      "id": "BlitzingApeBarrageEmitter",
+      "name": "Blitzing Ape Barrage Emitter",
+      "rarities": [
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "1f4f414aedc34d6563428024308d5e1a2fce28087f8033253e06cd01b72a9e4a",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Grants consumable Super Monkey Beacons; select a Beacon power preset separately. Quantities and acquisition are not simulated."
+    },
+    {
+      "id": "BouncingProjectiles",
+      "name": "Bouncing Projectiles",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "0a005148d83bf17cda09ab13ea381d7517f1f688eb17094aeb34af8f3249d0eb",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Projectile travel distance and bounces do not change targeting range."
+    },
+    {
+      "id": "CarryABigStick",
+      "name": "Carry A Big Stick",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "129014be7790a57fe6d179d7c56ffe484e5f686d5c58ee0b0356f662d579553f",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Grants Cave Monkeys; select a Cave Monkey power preset separately. Quantities and acquisition are not simulated."
+    },
+    {
+      "id": "CatsMeow",
+      "name": "Cats Meow",
+      "rarities": [
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "93e679b659b04537421202f85cacdb8a7a94096660aff38251baa32feefa60cb",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Lives, regeneration, Mana Shield and a party grant; no ordinary stat factor."
+    },
+    {
+      "id": "CeramicChunker",
+      "name": "Ceramic Chunker",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "a1f102ccbcdafd7e7e2e5df0abdaf07448818b40b80b41d1dd867258ace858a7",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "flatDamage"
+      ],
+      "exclusions": [],
+      "reason": null
+    },
+    {
+      "id": "CharismaticLeader",
+      "name": "Charismatic Leader",
+      "rarities": [
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "24bcfd68d3de661004e56ad2dd147889ca3dbd9f7b3607a10ada78d6adbd63be",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Rest-tile recruitment choices are outside combat calculations."
+    },
+    {
+      "id": "ColdSteel",
+      "name": "Cold Steel",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "d4d71f72b680888e91a0cb82cf0f610a3e55045bc7deb30fa6a6fb74b109b258",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Freeze chance does not establish a frozen target or status uptime."
+    },
+    {
+      "id": "ConfuddlingSpelling",
+      "name": "Confuddling Spelling",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "a92ef8ff36300b2f33b94f1a6d05eb4cea1eb6b576135970d3c003eede4abd1d",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "regularDamage"
+      ],
+      "exclusions": [],
+      "reason": null
+    },
+    {
+      "id": "Conscription",
+      "name": "Conscription",
+      "rarities": [
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "c6f1590a52602f5ca7a2967d01169461030c75d024f9f69bcb935161d18d4a09",
+      "newlyModeled": true,
+      "status": "modeled",
+      "effects": [
+        "range",
+        "damage",
+        "conversion"
+      ],
+      "exclusions": [
+        "Upgrade price penalties"
+      ],
+      "reason": null
+    },
+    {
+      "id": "CorneredBeasts",
+      "name": "Cornered Beasts",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "08a25207ee5a5ed63b2ac391b3f4f0cdf4899e784c99dc278b9a592cfb18456e",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "range"
+      ],
+      "exclusions": [
+        "Bloon-count-dependent attack speed",
+        "Granted party tower"
+      ],
+      "reason": null
+    },
+    {
+      "id": "CorrosiveTorpEDarts",
+      "name": "Corrosive Torp-E-Darts",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "a1925dd784ca23020ad8ad7380237ac994d784590de3897c595fac8107094d16",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Added glue/acid DOT and party grant; no reviewed ordinary hit modifier."
+    },
+    {
+      "id": "CriticalImpact",
+      "name": "Critical Impact",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "cb61378e1cd2b25c59c0a9db0cc5f0c15ad5f7d95cea861c99a2fc551bed9ffd",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "critical"
+      ],
+      "exclusions": [
+        "Granted party tower"
+      ],
+      "reason": null
+    },
+    {
+      "id": "CriticalSuccess",
+      "name": "Critical Success",
+      "rarities": [
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "278f1e74f29736c4316685bf5738aa84fa15683cfb99a1872f636dad73f6b449",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate",
+        "critical"
+      ],
+      "exclusions": [],
+      "reason": null
+    },
+    {
+      "id": "CrystalCrash",
+      "name": "Crystal Crash",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "f88f9998639114cf33def59cf3818a183581556c39583e4c0bf847df9979824d",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "regularDamage"
+      ],
+      "exclusions": [],
+      "reason": null
+    },
+    {
+      "id": "DazingFrostburn",
+      "name": "Dazing Frostburn",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "469b04c25822100f1f9db36890d87855ed9dfb16ac16109260595a9581927b65",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Stun and burn DOT are outside ordinary hit DPS."
+    },
+    {
+      "id": "Discord",
+      "name": "Discord",
+      "rarities": [
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "d053f7d07ddbafa87af24a0a4f517baa2931d53b80f8e0f71c5cad95a381ebc3",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "damage",
+        "pierce"
+      ],
+      "exclusions": [
+        "Projectile coordination / geometry"
+      ],
+      "reason": null
+    },
+    {
+      "id": "DivineInspiration",
+      "name": "Divine Inspiration",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "5c25c9089b274002a32a758e5331c56454c563e602447c82b37b0cb4c36fcaff",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "pierce",
+        "range"
+      ],
+      "exclusions": [],
+      "reason": null
+    },
+    {
+      "id": "DivineIntervention",
+      "name": "Divine Intervention",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "323c269190f58ffb961be0e89a30e60733c5d7c7136718b53c56b1b2aff0c116",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "critical"
+      ],
+      "exclusions": [
+        "Granted party tower"
+      ],
+      "reason": null
+    },
+    {
+      "id": "DivinePrecision",
+      "name": "Divine Precision",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "adee07d48203b9a7fcee1e69939bb28095bdef18188ba8daaf98abec0c945dd6",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "damage"
+      ],
+      "exclusions": [
+        "Shot spread"
+      ],
+      "reason": null
+    },
+    {
+      "id": "DivineQuickening",
+      "name": "Divine Quickening",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "e6bbf35a2955ea0c5ba76712ea7c402bb68d4e469da88490280c083d5139e790",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate",
+        "abilityRate"
+      ],
+      "exclusions": [
+        "Projectile speed"
+      ],
+      "reason": null
+    },
+    {
+      "id": "DreamTeams",
+      "name": "Dream Teams",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "59636bdb5d3166c3ba7f411e8076202cea5da787a8a6b7dbfab955982c217dc2",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate",
+        "range",
+        "abilityRate"
+      ],
+      "exclusions": [
+        "Placement cooldown rounds"
+      ],
+      "reason": null
+    },
+    {
+      "id": "Duckageddon",
+      "name": "Duckageddon",
+      "rarities": [
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "9ea8fc9e599a106c6c24f7be94942c01ad2078cbb4b9358975dbf0feaa3153c1",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Additional duck attack; proc frequency, geometry and contacts are not modeled."
+    },
+    {
+      "id": "EliteMilitaryInspiration",
+      "name": "Elite Military Inspiration",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "d8dee3cfaff131d1ff789bbeffb714bea5c52a018951c89cdb55a9230ef97783",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "pierce",
+        "range"
+      ],
+      "exclusions": [],
+      "reason": null
+    },
+    {
+      "id": "EliteMilitaryPrecision",
+      "name": "Elite Military Precision",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "dc2e98f18796b377c83d9ffa9b9a7907dd3ddc4c2639f716edd902e017b8f1b6",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "damage"
+      ],
+      "exclusions": [
+        "Shot spread"
+      ],
+      "reason": null
+    },
+    {
+      "id": "EliteMilitaryQuickening",
+      "name": "Elite Military Quickening",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "77f4ae646022efdc1be61f2ee21016263b27ea7f3ef5cf4494ad9b6f595b3650",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate",
+        "abilityRate"
+      ],
+      "exclusions": [
+        "Projectile speed"
+      ],
+      "reason": null
+    },
+    {
+      "id": "EnchantedRebuttal",
+      "name": "Enchanted Rebuttal",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "91e0b7b3dcc77aade3972fb6097fb785672bbbcb60d342b8dfdbd00d1e860e8c",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Knockback changes exposure/coverage, not nominal contact DPS."
+    },
+    {
+      "id": "EsotericElementalist",
+      "name": "Esoteric Elementalist",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "dbdda0f065de70df028e49ab9a36cfdc61c29528f0b8455c64ed64a3376ee915",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Freeze, blowback and burn DOT; status uptime is not simulated."
+    },
+    {
+      "id": "EssenceOfBlastapopoulos",
+      "name": "Essence Of Blastapopoulos",
+      "rarities": [
+        "Legendary"
+      ],
+      "descriptionSha256": "6a1ef0b49720274b33c4bb71c5442f6aa76a30c4cbef421245ce09767d55b368",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Target-applied +4 vulnerability needs explicit debuff state and reviewed damage/crit ordering; burn DOT is excluded. Selection alone does not establish a debuffed target."
+    },
+    {
+      "id": "EssenceOfBloonarius",
+      "name": "Essence Of Bloonarius",
+      "rarities": [
+        "Legendary"
+      ],
+      "descriptionSha256": "b313f4c1f3c428b8f18f9320990cbdcc11715dfc8f380ac8ce9c1363e40ad1bf",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "damage",
+        "attackRate",
+        "pierce"
+      ],
+      "exclusions": [],
+      "reason": null
+    },
+    {
+      "id": "EssenceOfDiamondback",
+      "name": "Essence Of Diamondback",
+      "rarities": [
+        "Legendary"
+      ],
+      "descriptionSha256": "627ea091cfe2e84ec01a914dbd086fdb6532bc86c1cde42676e1115a5bec306a",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Re-hit timing and projectile speed require collision/travel simulation."
+    },
+    {
+      "id": "EssenceOfDreadbloon",
+      "name": "Essence Of Dreadbloon",
+      "rarities": [
+        "Legendary"
+      ],
+      "descriptionSha256": "2e7eb9b0fba9584e2e1ce86db9af8918e40284af985d147bbbdf1f7c15966845",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "targetDamage",
+        "conversion"
+      ],
+      "exclusions": [],
+      "reason": null
+    },
+    {
+      "id": "EssenceOfLych",
+      "name": "Essence Of Lych",
+      "rarities": [
+        "Legendary"
+      ],
+      "descriptionSha256": "c8d1cd46e6438d9fb2875ce1dc21ea31470b50c8d93c1adc4d5ba8ebc170e5a0",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Zombie summons, revival and charges are outside ordinary component stats."
+    },
+    {
+      "id": "EssenceOfPhayze",
+      "name": "Essence Of Phayze",
+      "rarities": [
+        "Legendary"
+      ],
+      "descriptionSha256": "8daedf3a4b04fd3341c8e5c574458c730e34c1d11e2e0302c0aa56f9703bb93b",
+      "newlyModeled": true,
+      "status": "modeled",
+      "effects": [
+        "targetDamage"
+      ],
+      "exclusions": [
+        "Camo detection (hit eligibility remains unknown)"
+      ],
+      "reason": null
+    },
+    {
+      "id": "EssenceOfVortex",
+      "name": "Essence Of Vortex",
+      "rarities": [
+        "Legendary"
+      ],
+      "descriptionSha256": "1a7f57ed1aa7da27fa1997b3580a3c96f3d5254588212b6865ca6eaf5ef69715",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "MOAB knockback and Bloon blowback are outside nominal contact DPS."
+    },
+    {
+      "id": "ExplosiveEconomics",
+      "name": "Explosive Economics",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "a40d111298396a154bdad472bb7683630d834245c15251ac210fa551aab16fa3",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "On-sale explosion and placement cooldown rounds; neither is repeatable attack/ability DPS."
+    },
+    {
+      "id": "ExtraChange",
+      "name": "Extra Change",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "1b5244c8f06da3ea075b8823ac3deab03fabbe3f31e1f3bd0b91476fb524dfd6",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Cash and income are outside modeled combat stats."
+    },
+    {
+      "id": "FataMorgana",
+      "name": "Fata Morgana",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "bfe339153b9ba8f047f24e393978c927ab3dd1514dbb5cb772c0fb9d81cf69e5",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "range",
+        "pierce",
+        "abilityRate"
+      ],
+      "exclusions": [
+        "Projectile lifespan and border reflection",
+        "Granted party tower"
+      ],
+      "reason": null
+    },
+    {
+      "id": "FirstClassSupportInspiration",
+      "name": "First Class Support Inspiration",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "8f2cf021a8719a99208f204da5ba8b8cc7952679caa2683e4bb92c6764e0932a",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "pierce",
+        "range"
+      ],
+      "exclusions": [],
+      "reason": null
+    },
+    {
+      "id": "FirstClassSupportPrecision",
+      "name": "First Class Support Precision",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "a27b2170013a34c0a7ffd3777d62a2f0a0be6ce5fbc45b66ff8653f32caa414f",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "damage"
+      ],
+      "exclusions": [
+        "Shot spread"
+      ],
+      "reason": null
+    },
+    {
+      "id": "FirstClassSupportQuickening",
+      "name": "First Class Support Quickening",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "ef28ee314f40ec6769d6f739320efafd288282506e4a96054fc049eb56abfc4d",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate",
+        "abilityRate"
+      ],
+      "exclusions": [
+        "Projectile speed"
+      ],
+      "reason": null
+    },
+    {
+      "id": "FishNova",
+      "name": "Fish Nova",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "92e86b8f0edd1e03ee59ced52f5dd50b74fb207d827199aec3736c6d9dfdbb7a",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Additional fish projectiles; proc frequency and contacts are not modeled."
+    },
+    {
+      "id": "FlamingHotPunchARang",
+      "name": "Flaming Hot Punch-A-Rang",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "6bac7c5c328ee22f4d6c330b7affa69548b3842fad1e52ad1e7dcee3bdaa981e",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Knockback, probabilistic burn DOT and party grant."
+    },
+    {
+      "id": "FollowMe",
+      "name": "Follow Me",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "90e10ad6c177db1255e3aff68d97b4368bf53e7f8966d2ca40ecf8698c9f7d54",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate"
+      ],
+      "exclusions": [
+        "Cursor targeting, turn rate and continuous firing behavior"
+      ],
+      "reason": null
+    },
+    {
+      "id": "FrostedTips",
+      "name": "Frosted Tips",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "09bdf438d1cbdec65b90e6b259ed13ab9ec994ef3e18796de2739cd453e1481e",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "range",
+        "pierce"
+      ],
+      "exclusions": [
+        "Permafrost / Bloon slowing",
+        "Granted party tower"
+      ],
+      "reason": null
+    },
+    {
+      "id": "FullBroadside",
+      "name": "Full Broadside",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "b9e6c3880f5e21ecb235ee2631b6bddac3c020dd1d0b076166c2afbc2af5ec31",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "pierce",
+        "abilityRate"
+      ],
+      "exclusions": [
+        "Extra ability charges",
+        "Granted party tower"
+      ],
+      "reason": null
+    },
+    {
+      "id": "GeneralsDisposition",
+      "name": "General's Disposition",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "6b6aa3e153849c30854ec8bd7a52b9424860b224f32ddc3fe5c121412a21d7a6",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "moabDamage",
+        "range"
+      ],
+      "exclusions": [
+        "Camo detection"
+      ],
+      "reason": null
+    },
+    {
+      "id": "GetToTheChopper",
+      "name": "Get to the Chopper",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "74721bd50eb11564c85f9096726f0905ee366c4238ca2a2cbe359bb20f5268d5",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "pierce",
+        "abilityRate"
+      ],
+      "exclusions": [
+        "Extra ability charges",
+        "Granted party tower"
+      ],
+      "reason": null
+    },
+    {
+      "id": "Gluesplosion",
+      "name": "Gluesplosion",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "3e2962495b2e0c46a83d6098d609f99c0fa8fbea97a88b7fbea65c654a3169f9",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "On-pop glue splatter is an added projectile, not base projectile pierce."
+    },
+    {
+      "id": "GrandMagicInspiration",
+      "name": "Grand Magic Inspiration",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "d138568769d4f47e7c721d6cdb3199d1177b4082d288694aa1d835c016ec6049",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "pierce",
+        "range"
+      ],
+      "exclusions": [],
+      "reason": null
+    },
+    {
+      "id": "GrandMagicPrecision",
+      "name": "Grand Magic Precision",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "ea880b4f8fe341bdcc6f518f7b43d8c35704243a876f3cc835be1328f192ab73",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "damage"
+      ],
+      "exclusions": [
+        "Shot spread"
+      ],
+      "reason": null
+    },
+    {
+      "id": "GrandMagicQuickening",
+      "name": "Grand Magic Quickening",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "caa7e76c60d04bde4a0a554cd8f92ab44b0e9a436d089774e42f11af059550bb",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate",
+        "abilityRate"
+      ],
+      "exclusions": [
+        "Projectile speed"
+      ],
+      "reason": null
+    },
+    {
+      "id": "GreaterPrimaryInspiration",
+      "name": "Greater Primary Inspiration",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "ec178ffc01d73d6d403f29cd134f8c786e17c3538b703ced83c09296822a3aad",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "pierce",
+        "range"
+      ],
+      "exclusions": [],
+      "reason": null
+    },
+    {
+      "id": "GreaterPrimaryPrecision",
+      "name": "Greater Primary Precision",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "1a8a74a73d3cfd71b046e92c584b18f4155fbe01c940f238cc0b8ecc33d001f4",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "damage"
+      ],
+      "exclusions": [
+        "Shot spread"
+      ],
+      "reason": null
+    },
+    {
+      "id": "GreaterPrimaryQuickening",
+      "name": "Greater Primary Quickening",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "0e180bd9f07bb5a236706e263bbcc53a86906fe70d41b97d814b8d68bc1f0180",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate",
+        "abilityRate"
+      ],
+      "exclusions": [
+        "Projectile speed"
+      ],
+      "reason": null
+    },
+    {
+      "id": "GrowingSteady",
+      "name": "Growing Steady",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "3c545108f3b91bacc08150f7f2e048f8db4330550cba1ecae72b295b6ec01975",
+      "newlyModeled": true,
+      "status": "modeled",
+      "effects": [
+        "attackRate"
+      ],
+      "exclusions": [
+        "Round-dependent damage growth: pinned roundCap and campaign/encounter counter semantics unresolved",
+        "Granted party tower"
+      ],
+      "reason": null
+    },
+    {
+      "id": "HawksEye",
+      "name": "Hawk's Eye",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "8f2fdf14e0b062434f78898aaeb16f89c9e540ffa0476934af137b98d5709d09",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "range"
+      ],
+      "exclusions": [
+        "Projectile lifespan and shot spread"
+      ],
+      "reason": null
+    },
+    {
+      "id": "HeightenedPerception",
+      "name": "Heightened Perception",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "e4de941072ac8822719de4c7a7ff80417162e1bab66b35fecbbfda7f2f7cebfc",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "range"
+      ],
+      "exclusions": [
+        "Projectile speed"
+      ],
+      "reason": null
+    },
+    {
+      "id": "HeroicEdge",
+      "name": "Heroic Edge",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "46c0a9ce01e00bee44f3e1cf7439402de2aec5154353a309b980e539a787ad48",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "pierce"
+      ],
+      "exclusions": [
+        "Additional homing sword projectiles"
+      ],
+      "reason": null
+    },
+    {
+      "id": "HeroicSpecialty",
+      "name": "Heroic Specialty",
+      "rarities": [
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "e6cb9036a93d04803952c941c0a71d5578bc07fa677671aaafd142f82d60682f",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "conversion"
+      ],
+      "exclusions": [
+        "Hero XP"
+      ],
+      "reason": null
+    },
+    {
+      "id": "HighImpactGlue",
+      "name": "High Impact Glue",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "81e9a43dfc3ffc8d5577715eac243a2f9ade55e4152cac891bbc5bde898ce171",
+      "newlyModeled": true,
+      "status": "modeled",
+      "effects": [
+        "flatDamage"
+      ],
+      "exclusions": [
+        "Projectile speed",
+        "Bloon-density/RBE-dependent extra impact damage",
+        "Granted party tower"
+      ],
+      "reason": null
+    },
+    {
+      "id": "HomeBrewAlchemy",
+      "name": "Home Brew Alchemy",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "0240de75da688c4368a4498f8da471a3e3176df1cf764a0ff0cb42db0f647ec2",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate",
+        "abilityRate",
+        "critical"
+      ],
+      "exclusions": [
+        "Granted party tower"
+      ],
+      "reason": null
+    },
+    {
+      "id": "HomingProjectiles",
+      "name": "Homing Projectiles",
+      "rarities": [
+        "Legendary"
+      ],
+      "descriptionSha256": "d123a91f7310d98e48adca2a72e2108c5082efe0f92778b95db05fb838d280b8",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Homing changes projectile contacts; it is not an attack-rate or damage multiplier."
+    },
+    {
+      "id": "ImprovedSpelling",
+      "name": "Improved Spelling",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "6fc2fbee5ecf84427498797d2b73675b36b72b3df8f5fd252d29f27973be8a0d",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate",
+        "abilityRate"
+      ],
+      "exclusions": [
+        "Upgrade discounts"
+      ],
+      "reason": null
+    },
+    {
+      "id": "InnateAbility",
+      "name": "Innate Ability",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "7cb859cdcd11c1750a9267fac3766416ff129afceddcf094f965a070a9b33d94",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "abilityRate"
+      ],
+      "exclusions": [
+        "Automatic activation"
+      ],
+      "reason": null
+    },
+    {
+      "id": "InsiderTrading",
+      "name": "Insider Trading",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "097c4ba4ba4bbc7b822626343238291d493dd345ca5d36148ae35baab10113ad",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Merchant purchase discounts are outside combat stats."
+    },
+    {
+      "id": "IntelligenceAgent",
+      "name": "Intelligence Agent",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "1ac63152e4d8fd43db4ba1ec617e83498b25b9b669ec028bffab39aa5b6801fa",
+      "newlyModeled": true,
+      "status": "modeled",
+      "effects": [
+        "attackRate"
+      ],
+      "exclusions": [
+        "Damage-type immunity coverage; assumes an eligible hero aura provider"
+      ],
+      "reason": null
+    },
+    {
+      "id": "JustLikeMagic",
+      "name": "Just Like Magic",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "f53451ee03ef4f2fbfe29db881b09bc5b5fcb1e37e7af7ed253bd2c2dec1493e",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate",
+        "moabDamage"
+      ],
+      "exclusions": [
+        "Additional Arcane Bolt projectiles"
+      ],
+      "reason": null
+    },
+    {
+      "id": "MaliciousMauling",
+      "name": "Malicious Mauling",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "0850105914730862d29674fc080244547a0340c696e5eb091e04970c46e5c85a",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate",
+        "moabDamage"
+      ],
+      "exclusions": [
+        "Ability cooldown: ambiguous halved wording and incompatible pinned export; excluded pending mechanics review",
+        "Projectile speed",
+        "Granted party tower"
+      ],
+      "reason": null
+    },
+    {
+      "id": "MasterOfAllTrades",
+      "name": "Master of all Trades",
+      "rarities": [
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "a8f1afeb645174d932d738f7804949e85796ca635f059753ed3786bb094b442f",
+      "newlyModeled": true,
+      "status": "modeled",
+      "effects": [
+        "range",
+        "damage",
+        "conversion"
+      ],
+      "exclusions": [
+        "Upgrade price penalties"
+      ],
+      "reason": null
+    },
+    {
+      "id": "MightyMulligan",
+      "name": "Mighty Mulligan",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "44d0bd673169beffddda7cc9ab5e867b9fab323eedf3404fe9b81c7ba8788b23",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Finite reward rerolls are outside combat stats."
+    },
+    {
+      "id": "MonkeyAcademy",
+      "name": "Monkey Academy",
+      "rarities": [
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "a1d92cedc94106b466040c9327f8d6fee118ea834d6e81fa124434cd9e6d1cd7",
+      "newlyModeled": true,
+      "status": "modeled",
+      "effects": [
+        "range",
+        "damage",
+        "conversion"
+      ],
+      "exclusions": [
+        "Upgrade price penalties"
+      ],
+      "reason": null
+    },
+    {
+      "id": "MysticTwister",
+      "name": "Mystic Twister",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "a64502378265c1e700320c791419438bc1ef563b2fa9d28c495667e316f8abf3",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "pierce"
+      ],
+      "exclusions": [
+        "Projectile lifespan and orbit geometry"
+      ],
+      "reason": null
+    },
+    {
+      "id": "NoMorePlease",
+      "name": "No More Please",
+      "rarities": [
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "1fc7b5c214e1fbaf4c8eb2f74987fd4cca5bc0bc3a7d475f1792d64c8a14a21b",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Insta-choice bans and consumable charges are outside combat stats."
+    },
+    {
+      "id": "OneMonkeyArmy",
+      "name": "One Monkey Army",
+      "rarities": [
+        "Legendary"
+      ],
+      "descriptionSha256": "7e9e8cd4461a5a110ae442783698c79587868db2115e0077d2e22d8b91a5f260",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "bossDamage",
+        "damage",
+        "conversion"
+      ],
+      "exclusions": [
+        "Camo detection",
+        "Hero XP"
+      ],
+      "reason": null
+    },
+    {
+      "id": "OneShot",
+      "name": "One Shot",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "7e2818b003ddcd1896a8361d1877b9e820dc21076e5d59ac87180dfef32be1b5",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate",
+        "critical"
+      ],
+      "exclusions": [
+        "Granted party tower"
+      ],
+      "reason": null
+    },
+    {
+      "id": "OverwhelmingSynergy",
+      "name": "Overwhelming Synergy",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "5939ececb3e596260c707e2b2a0aa4c9092ebbaecc0d0cd8ce41b13b94964913",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate"
+      ],
+      "exclusions": [
+        "Other Monkey upgrade prices"
+      ],
+      "reason": null
+    },
+    {
+      "id": "PerceptiveCrow",
+      "name": "Perceptive Crow",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "c2eb256c3ed96432b959a8931781b7c4bc564cd9ecc6e51921e9ce4c41bb888a",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "range"
+      ],
+      "exclusions": [
+        "Camo detection aura",
+        "Granted party tower"
+      ],
+      "reason": null
+    },
+    {
+      "id": "PincushionFlyby",
+      "name": "Pincushion Flyby",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "5bfa21d2ec4c8f6fe862cc4e72f1a67cb54bcb9ce1c3fff9acf561b3ee4be9a7",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "pierce"
+      ],
+      "exclusions": [
+        "Pinning / Bloon slowing",
+        "Granted party tower"
+      ],
+      "reason": null
+    },
+    {
+      "id": "PopsFired",
+      "name": "Pops Fired",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "98e45afb9782892181f71272520199f2afa18e6acc4ed5ebf37d00b1b42e373c",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "On-pop explosions require proc, contact and chain-reaction simulation."
+    },
+    {
+      "id": "Portability",
+      "name": "Portability",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "18fc3f7ca172a0203eb74dc10e03416dd2e60ff15f9896ba585995654e6cabba",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Grants placement powers; no ordinary stat factor."
+    },
+    {
+      "id": "PowerNexus",
+      "name": "Power Nexus",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "6f5d0e8c76af4c1ef8b7cf85de23b6c20aa60ac3347295e6e28d883ca924862d",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate",
+        "damage",
+        "conversion"
+      ],
+      "exclusions": [],
+      "reason": null
+    },
+    {
+      "id": "PrimalInstinct",
+      "name": "Primal Instinct",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "2ae57f208935a87d3556e7814253dff996afd8f105c76899d8e8166c1da73508",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate"
+      ],
+      "exclusions": [],
+      "reason": null
+    },
+    {
+      "id": "PrimarySpecialist",
+      "name": "Primary Specialist",
+      "rarities": [
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "cb829e1ba61c2ae61d12b1b02c369267beda3b8cf5c1aa4197d820fed362a4b0",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate",
+        "pierce",
+        "abilityRate"
+      ],
+      "exclusions": [],
+      "reason": null
+    },
+    {
+      "id": "PureDamage",
+      "name": "Pure Damage",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "24b536e5e32f21041aed2a60232eaae0f8bc00f9e2bcb3e7170e920fea69d9c0",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate",
+        "moabDamage",
+        "pierce",
+        "targetDamage",
+        "abilityRate"
+      ],
+      "exclusions": [],
+      "reason": null
+    },
+    {
+      "id": "QuantumLeap",
+      "name": "Quantum Leap",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "f80ac1f51aceef1c178356b0e5281b62033b2b301a189de3bd40de0dd82ce911",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Projectile teleport/travel behavior does not establish hit frequency or targeting range."
+    },
+    {
+      "id": "RubberBullets",
+      "name": "Rubber Bullets",
+      "rarities": [
+        "Rare"
+      ],
+      "descriptionSha256": "5582d458985fab913b7d78600d489729a323a026c25909b4cd14a9926a6024eb",
+      "newlyModeled": true,
+      "status": "modeled",
+      "effects": [
+        "damageSet",
+        "damageCap"
+      ],
+      "exclusions": [
+        "MOAB immobilization and damage-type changes",
+        "Critical interactions with the replacement damage cap",
+        "Granted party tower"
+      ],
+      "reason": null
+    },
+    {
+      "id": "SlippedOnThePeel",
+      "name": "Slipped on the Peel",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "caaffe26f42597f6a5258ef4dd13a5585336b16c5e9f05b84e51fe0efa861001",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "range"
+      ],
+      "exclusions": [
+        "Bloon slowing aura",
+        "Granted party tower"
+      ],
+      "reason": null
+    },
+    {
+      "id": "SlowAndSteady",
+      "name": "Slow And Steady",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "a7992d0700c23b6819930d2fda6a115c30bf5f8594e4046a5fb95480ac464d98",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "damage",
+        "attackRate"
+      ],
+      "exclusions": [],
+      "reason": null
+    },
+    {
+      "id": "SlowerIsHarder",
+      "name": "Slower Is Harder",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "2c6b4f2cab783a505b7c4812dc87f3775df486e8523504d09f3f4e9b19218df3",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "damage"
+      ],
+      "exclusions": [
+        "Projectile speed"
+      ],
+      "reason": null
+    },
+    {
+      "id": "SpiritOfAdventure",
+      "name": "Spirit of Adventure",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "e4247f2b1f65499cddcc1b695feed69c071904c10eec3d88964952370e1a39a0",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate"
+      ],
+      "exclusions": [
+        "Hero XP"
+      ],
+      "reason": null
+    },
+    {
+      "id": "SplodyDarts",
+      "name": "Splody Darts",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "985382edf37f861cdfa3690c5b4e6d291e341abea9f0f547a02a35f1d82d6f32",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "On-expiry explosions are additional attacks, not a multiplier on the base hit."
+    },
+    {
+      "id": "SquadronTogether",
+      "name": "Squadron Together Strong",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "ecb60f52e4a6bc845de74958619f54a517e4111e2c102931ec1609cc3f8fb34a",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate"
+      ],
+      "exclusions": [
+        "Other Monkey upgrade prices"
+      ],
+      "reason": null
+    },
+    {
+      "id": "StartingStong",
+      "name": "Starting Strong",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "25c82c8055e55c6649db23c4cf98b8dc5bcc9ac9ef3a742712c357d6a7b70481",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate"
+      ],
+      "exclusions": [],
+      "reason": null
+    },
+    {
+      "id": "StickySituation",
+      "name": "Sticky Situation",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "0080896626c4e6dae6dfa90f463eabd604f176ce77f8a2b034b1989e82d172b8",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "regularDamage"
+      ],
+      "exclusions": [],
+      "reason": null
+    },
+    {
+      "id": "SummerFun",
+      "name": "Summer Fun",
+      "rarities": [
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "92dc13e9bcbb57f166ed5951d55de5f91c14dd15b1cc288c82bbff9e216f2119",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Additional knockback monkeys and party grant are outside the selected component."
+    },
+    {
+      "id": "BattleCat",
+      "name": "Summon Battle Cat",
+      "rarities": [
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "deace0984d44b7ee534f3d8c7c1f638aa653d01882816d8780d6a704b97e531e",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Grants Battle Cat powers; select a Battle Cat power preset separately. Quantities and acquisition are not simulated."
+    },
+    {
+      "id": "SupportSpecialist",
+      "name": "Support Specialist",
+      "rarities": [
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "836b4c95be71bbe0ec2af23da550e03a2e90b5fd28758ef3d220f8a565e960e6",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate",
+        "pierce",
+        "abilityRate"
+      ],
+      "exclusions": [],
+      "reason": null
+    },
+    {
+      "id": "SwellingSpikes",
+      "name": "Swelling Spikes",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "a985086e478af53f634f62d2c63e0cb4b41491c318d03d74d7dc3c5dd247ba86",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate",
+        "pierce"
+      ],
+      "exclusions": [
+        "Granted party tower"
+      ],
+      "reason": null
+    },
+    {
+      "id": "SwiftestToBusiness",
+      "name": "Swiftest To Business",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "e54e8c759ac65352313ec99cc00429a658c680fcfa6b6b0352664e3af208005a",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate",
+        "abilityRate"
+      ],
+      "exclusions": [
+        "Projectile speed and placement cooldown rounds",
+        "Granted party tower"
+      ],
+      "reason": null
+    },
+    {
+      "id": "TheUnspokenHeroes",
+      "name": "The Unspoken Heroes",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "caf66cf50948815e97e8a9098d1f85c03ede99fd8a106c72d534a6a079ff5d15",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Additional tack rings have unmodeled proc frequency and contact geometry."
+    },
+    {
+      "id": "TitForTat",
+      "name": "Tit For Tat",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "325d3f3f656649a3265d584391089e6a4a6b4e6d6708d931aea69775c3abd8e4",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate"
+      ],
+      "exclusions": [
+        "Bloon movement speed"
+      ],
+      "reason": null
+    },
+    {
+      "id": "TooManyCooks",
+      "name": "Too Many Cooks",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "f70d89624cca308e73d75b19b2019b460ebb4d4f3588f84a59e67b7e1f912061",
+      "newlyModeled": true,
+      "status": "modeled",
+      "effects": [
+        "attackRate"
+      ],
+      "exclusions": [
+        "Provider availability and subtower/category exceptions; other Military aura sources are entered manually"
+      ],
+      "reason": null
+    },
+    {
+      "id": "TrickShotATacks",
+      "name": "Trick Shot A-Tacks",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "4d0e2edb2f16ded0f3c0132ff0a48245c0f01b534032644b183a94ec66204b06",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "range"
+      ],
+      "exclusions": [
+        "Projectile reflection and lifespan",
+        "Granted party tower"
+      ],
+      "reason": null
+    },
+    {
+      "id": "Unification",
+      "name": "Unification",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "cb32dd7705e5f8a7184fa67c13e775a27024bb2d77621356022226fc911f7cda",
+      "newlyModeled": true,
+      "status": "modeled",
+      "effects": [
+        "range",
+        "damage",
+        "conversion"
+      ],
+      "exclusions": [
+        "Upgrade price penalties"
+      ],
+      "reason": null
+    },
+    {
+      "id": "Wackywibblywavey",
+      "name": "Wacky Wibbly Wavey",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "908d4843f89ffa026040e1a0b99aa6ca8aca89fb07220ecc3ea7f10e7825bfa3",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate"
+      ],
+      "exclusions": [
+        "Projectile flight pattern",
+        "Granted party tower"
+      ],
+      "reason": null
+    },
+    {
+      "id": "WhatInTarnation",
+      "name": "What In Tarnation",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "6626d9d00504e0960a2e65c022b8b848eda9b130ffabf4eb767e4dbb630fc262",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Additional shots and status procs; no reviewed multiplier on the selected base component."
+    },
+    {
+      "id": "WindowShopping",
+      "name": "Window Shopping",
+      "rarities": [
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "018ac361b14ebfe37427a5013b193283cb9c77d70f565715adfb539686fee700",
+      "newlyModeled": false,
+      "status": "reference-only",
+      "effects": [],
+      "exclusions": [],
+      "reason": "Merchant tokens and campaign hearts are outside combat stats."
+    },
+    {
+      "id": "ZigThenZag",
+      "name": "Zig Then Zag",
+      "rarities": [
+        "Common",
+        "Rare",
+        "Legendary"
+      ],
+      "descriptionSha256": "f510cc727258084598f8e9e4812e3a24278b8f40e000f113c709c572bcd0396d",
+      "newlyModeled": false,
+      "status": "modeled",
+      "effects": [
+        "attackRate"
+      ],
+      "exclusions": [
+        "Projectile speed and zigzag flight pattern"
+      ],
+      "reason": null
+    }
+  ]
+}

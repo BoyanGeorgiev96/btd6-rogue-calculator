@@ -1,0 +1,63 @@
+name: Deploy calculator to GitHub Pages
+on:
+  release:
+    types: [published]
+permissions:
+  contents: read
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  release:
+    if: vars.PAGES_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    outputs:
+      sha: ${{ steps.commit.outputs.sha }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: '.nvmrc'
+      - name: Verify release metadata and main ancestry
+        env:
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: |
+          git merge-base --is-ancestor HEAD origin/main
+          node scripts/check-release.mjs
+      - name: Pin release commit
+        id: commit
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+  check:
+    needs: release
+    uses: ./.github/workflows/check.yml
+    with:
+      ref: ${{ needs.release.outputs.sha }}
+  deploy:
+    needs: [release, check]
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ needs.release.outputs.sha }}
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: '.nvmrc'
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5

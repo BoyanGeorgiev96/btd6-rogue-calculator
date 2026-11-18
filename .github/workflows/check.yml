@@ -1,0 +1,53 @@
+name: Check calculator
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_call:
+    inputs:
+      ref:
+        description: Exact release commit to verify
+        type: string
+        required: true
+permissions:
+  contents: read
+# PR/branch updates replace obsolete checks. Give each main run its own group
+# so neither running nor queued main checks are superseded.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref == 'refs/heads/main' && github.run_id || github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ inputs.ref || github.sha }}
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: '.nvmrc'
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+  browser:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2]
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ inputs.ref || github.sha }}
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: '.nvmrc'
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:browser -- --shard=${{ matrix.shard }}/2
+      - uses: actions/upload-artifact@v7
+        if: failure()
+        with:
+          name: browser-test-results-${{ matrix.shard }}
+          path: test-results/

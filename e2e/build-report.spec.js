@@ -1,0 +1,32 @@
+import {configure} from './helpers.js';
+import {test,expect} from '@playwright/test';
+import {readFile} from 'node:fs/promises';
+
+for(const viewport of [{width:1440,height:900},{width:390,height:844}]) test(`build report preview and real download at ${viewport.width}px`,async({page})=>{
+  await page.setViewportSize(viewport);
+  await page.goto('/');
+  await expect(page.locator('#result-count')).not.toHaveText('Loading catalog…');
+  await page.locator('[data-select="CeramicChunker"]').check();
+  await page.locator('.saved-builds>summary').click();
+  await page.locator('#build-name').fill('<Report>');
+  await page.locator('#build-report-panel>summary').click();
+  const text = page.locator('#build-report-text');
+  await expect(text).toHaveValue(/Ceramic Chunker/);
+  await expect(text).toHaveValue(/\\<Report\\>/);
+  await expect(text).toHaveValue(/Hit eligibility: Unknown/);
+  const before = await page.evaluate(()=>localStorage.getItem('rogue-lab-v1'));
+  const preview = await text.inputValue();
+  const event = page.waitForEvent('download');
+  await page.locator('#export-build-report').click();
+  const download = await event;
+  expect(download.suggestedFilename()).toBe('rogue-lab-build-report.md');
+  expect(await readFile(await download.path(),'utf8')).toBe(preview);
+  expect(await page.evaluate(()=>localStorage.getItem('rogue-lab-v1'))).toBe(before);
+  await page.locator('[data-select="CeramicChunker"]').uncheck();
+  await expect(text).not.toHaveValue(/Ceramic Chunker/);
+  await configure(page);
+  await page.locator('#base-damage').fill('19');
+  await expect(text).toHaveValue(/Input regular damage: 19;/);
+  await expect(text).toHaveValue(/stats: manual/);
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
+});

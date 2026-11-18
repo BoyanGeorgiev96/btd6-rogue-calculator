@@ -1,0 +1,9 @@
+# Artifact inventory capacity
+
+Reviewed 2026-11-14. The pinned [v56.0 rogueData.json](https://github.com/Btd6ModHelper/btd6-game-data/blob/f818c39e6d7cc4e0f8fb02a2e3d1a929bcfe6a24/rogueData.json) sets `maxArtifactInventorySize: 50`. Downloaded bytes matched Git blob `ed1bd1616589c87c2e8edb1355b5948eb06d3950`. [Ninja Kiwi’s v48.0 update notes](https://www.reddit.com/r/btd6/comments/1jpc827/bloons_td_6_v480_update_notes/) also establish a 50-artifact campaign limit before choosing what to keep. This is source evidence, not a project gameplay trial or a guarantee of current-game behavior.
+
+The calculator counts distinct selected catalog artifact IDs, including reference-only and boss artifacts. Changing rarity replaces the selected rarity and uses no additional slot. At 50 selections, library checkboxes and row clicks block new artifacts; selected artifacts can still be removed or have their rarities changed. Checkboxes remain keyboard-focusable with `aria-disabled` and a capacity description. A visible status explains the restriction on touch devices, and a hover title is available on blocked rows.
+
+Previews may inspect hypothetical additions, but cannot apply additions above the cap. Saved, shared, imported and historical builds retain all valid selections even above 50, with an engine warning that also appears in comparisons and planner results. The engine does not truncate selections or change arithmetic; removing artifacts and editing existing rarities remain possible. Bulk imports and planner snapshots are inspectable hypotheses rather than inventory-validity guarantees.
+
+The catalog contains permanent artifacts rather than queued boosts or reward tokens. No additional slot behavior is inferred for omitted item types. The pinned Limited Resources curse uses `artifactLimit: 10`; curse selection remains deferred, so the UI uses the normal limit and does not claim to validate cursed runs or starting-artifact power.

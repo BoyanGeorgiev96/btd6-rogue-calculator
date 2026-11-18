@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "schemaVersion": 1,
+    "repository": "Btd6ModHelper/btd6-game-data",
+    "revision": "f818c39e6d7cc4e0f8fb02a2e3d1a929bcfe6a24",
+    "gameVersion": "56.0",
+    "exportedAt": "2026-08-07"
+  },
+  "checked": "2026-11-13",
+  "powers": [
+    {
+      "id": "BattleCat",
+      "name": "Battle Cat",
+      "category": "Powers",
+      "variants": {
+        "000": {
+          "sourcePath": "Powers/BattleCat.json",
+          "range": 26,
+          "rangeMode": "finite",
+          "components": [
+            {
+              "id": "attack-0/weapon-0/child-0",
+              "name": "Normal Battle Cat",
+              "damage": 2,
+              "bossDamage": 2,
+              "damageModifiers": [],
+              "canHitMoab": true,
+              "cooldownSeconds": 1,
+              "range": 26,
+              "rangeMode": "finite",
+              "pierce": 20,
+              "projectiles": 1,
+              "trigger": "attack",
+              "notes": []
+            },
+            {
+              "id": "transformed/attack-0/weapon-0/child-0",
+              "name": "Transformed Battle Cat (4 rounds)",
+              "damage": 20,
+              "bossDamage": 20,
+              "damageModifiers": [],
+              "canHitMoab": true,
+              "cooldownSeconds": 1,
+              "range": 26,
+              "rangeMode": "finite",
+              "pierce": 20,
+              "projectiles": 1,
+              "trigger": "attack",
+              "notes": [
+                "Damage-over-time effects are excluded.",
+                "Active transformation only: replaces the normal attack, expires after 4 rounds, and is not averaged over a run."
+              ]
+            }
+          ],
+          "abilities": [],
+          "notes": [
+            "Transformation is selected as an attack component; its sentinel timer is excluded. Four-round expiry is not a duration in seconds.",
+            "One placed power and one selected attack component; consumable quantities and encounter availability are not simulated."
+          ]
+        }
+      }
+    },
+    {
+      "id": "CaveMonkey",
+      "name": "Cave Monkey",
+      "category": "Powers",
+      "variants": {
+        "000": {
+          "sourcePath": "Powers/CaveMonkey.json",
+          "range": 24,
+          "rangeMode": "finite",
+          "components": [
+            {
+              "id": "attack-0/weapon-0/child-0",
+              "name": "Main shot · AOE",
+              "damage": 1,
+              "bossDamage": 1,
+              "damageModifiers": [],
+              "canHitMoab": true,
+              "cooldownSeconds": 1.1,
+              "range": 24,
+              "rangeMode": "finite",
+              "pierce": 5,
+              "projectiles": 1,
+              "trigger": "attack",
+              "notes": []
+            }
+          ],
+          "abilities": [],
+          "notes": [
+            "Stun chance, stun duration and target control are excluded.",
+            "One placed power and one selected attack component; consumable quantities and encounter availability are not simulated."
+          ]
+        }
+      }
+    },
+    {
+      "id": "SuperMonkeyBeacon",
+      "name": "Super Monkey Beacon",
+      "category": "Powers",
+      "variants": {
+        "100": {
+          "sourcePath": "Towers/SuperMonkeyBeacon/SuperMonkeyBeacon-100.json",
+          "range": 20,
+          "rangeMode": "finite",
+          "components": [],
+          "abilities": [
+            {
+              "id": "Ability",
+              "name": "Super Monkey Beacon 3",
+              "cooldownSeconds": 120,
+              "duration": null,
+              "timingRestricted": true,
+              "notes": [
+                "Limited to 9999999 activations per round; the cap is not simulated."
+              ]
+            }
+          ],
+          "notes": [
+            "Ability attacks are excluded.",
+            "Storm ability damage, repeated contacts, knockback, placement limits and recharge purchases are excluded. Only the 0-3-0 repeatable attack contributes attack DPS; storm cooldowns remain available.",
+            "One placed power and one selected attack component; consumable quantities and encounter availability are not simulated."
+          ]
+        },
+        "200": {
+          "sourcePath": "Towers/SuperMonkeyBeacon/SuperMonkeyBeacon-200.json",
+          "range": 20,
+          "rangeMode": "finite",
+          "components": [],
+          "abilities": [
+            {
+              "id": "Ability",
+              "name": "Super Monkey Beacon 3",
+              "cooldownSeconds": 120,
+              "duration": null,
+              "timingRestricted": true,
+              "notes": [
+                "Limited to 9999999 activations per round; the cap is not simulated."
+              ]
+            }
+          ],
+          "notes": [
+            "Ability attacks are excluded.",
+            "Storm ability damage, repeated contacts, knockback, placement limits and recharge purchases are excluded. Only the 0-3-0 repeatable attack contributes attack DPS; storm cooldowns remain available.",
+            "One placed power and one selected attack component; consumable quantities and encounter availability are not simulated."
+          ]
+        },
+        "300": {
+          "sourcePath": "Towers/SuperMonkeyBeacon/SuperMonkeyBeacon-300.json",
+          "range": 20,
+          "rangeMode": "finite",
+          "components": [],
+          "abilities": [
+            {
+              "id": "Ability",
+              "name": "Super Monkey Beacon 3",
+              "cooldownSeconds": 120,
+              "duration": null,
+              "timingRestricted": true,
+              "notes": [
+                "Limited to 9999999 activations per round; the cap is not simulated."
+              ]
+            }
+          ],
+          "notes": [
+            "Ability attacks are excluded.",
+            "Storm ability damage, repeated contacts, knockback, placement limits and recharge purchases are excluded. Only the 0-3-0 repeatable attack contributes attack DPS; storm cooldowns remain available.",
+            "One placed power and one selected attack component; consumable quantities and encounter availability are not simulated."
+          ]
+        },
+        "000": {
+          "sourcePath": "Towers/SuperMonkeyBeacon/SuperMonkeyBeacon.json",
+          "range": 20,
+          "rangeMode": "finite",
+          "components": [],
+          "abilities": [
+            {
+              "id": "Ability",
+              "name": "Super Monkey Beacon 1",
+              "cooldownSeconds": 120,
+              "duration": null,
+              "timingRestricted": true,
+              "notes": [
+                "Limited to 9999999 activations per round; the cap is not simulated."
+              ]
+            }
+          ],
+          "notes": [
+            "Ability attacks are excluded.",
+            "Storm ability damage, repeated contacts, knockback, placement limits and recharge purchases are excluded. Only the 0-3-0 repeatable attack contributes attack DPS; storm cooldowns remain available.",
+            "One placed power and one selected attack component; consumable quantities and encounter availability are not simulated."
+          ]
+        },
+        "010": {
+          "sourcePath": "Towers/SuperMonkeyBeacon/SuperMonkeyBeacon-010.json",
+          "range": 20,
+          "rangeMode": "finite",
+          "components": [],
+          "abilities": [
+            {
+              "id": "Ability",
+              "name": "Super Monkey Beacon 2",
+              "cooldownSeconds": 60,
+              "duration": null,
+              "timingRestricted": true,
+              "notes": [
+                "Limited to 9999999 activations per round; the cap is not simulated."
+              ]
+            }
+          ],
+          "notes": [
+            "Ability attacks are excluded.",
+            "Storm ability damage, repeated contacts, knockback, placement limits and recharge purchases are excluded. Only the 0-3-0 repeatable attack contributes attack DPS; storm cooldowns remain available.",
+            "One placed power and one selected attack component; consumable quantities and encounter availability are not simulated."
+          ]
+        },
+        "020": {
+          "sourcePath": "Towers/SuperMonkeyBeacon/SuperMonkeyBeacon-020.json",
+          "range": 20,
+          "rangeMode": "finite",
+          "components": [],
+          "abilities": [
+            {
+              "id": "Ability",
+              "name": "Super Monkey Beacon 2",
+              "cooldownSeconds": 45,
+              "duration": null,
+              "timingRestricted": true,
+              "notes": [
+                "Limited to 9999999 activations per round; the cap is not simulated."
+              ]
+            }
+          ],
+          "notes": [
+            "Ability attacks are excluded.",
+            "Storm ability damage, repeated contacts, knockback, placement limits and recharge purchases are excluded. Only the 0-3-0 repeatable attack contributes attack DPS; storm cooldowns remain available.",
+            "One placed power and one selected attack component; consumable quantities and encounter availability are not simulated."
+          ]
+        },
+        "030": {
+          "sourcePath": "Towers/SuperMonkeyBeacon/SuperMonkeyBeacon-030.json",
+          "range": 60,
+          "rangeMode": "finite",
+          "components": [
+            {
+              "id": "attack-0/weapon-0",
+              "name": "Main shot",
+              "damage": 1,
+              "bossDamage": 1,
+              "damageModifiers": [],
+              "canHitMoab": true,
+              "cooldownSeconds": 0.045,
+              "range": 60,
+              "rangeMode": "finite",
+              "pierce": 2,
+              "projectiles": 1,
+              "trigger": "attack",
+              "notes": []
+            }
+          ],
+          "abilities": [
+            {
+              "id": "Ability",
+              "name": "Super Monkey Beacon 2",
+              "cooldownSeconds": 45,
+              "duration": null,
+              "timingRestricted": true,
+              "notes": [
+                "Limited to 9999999 activations per round; the cap is not simulated."
+              ]
+            }
+          ],
+          "notes": [
+            "Ability attacks are excluded.",
+            "Storm ability damage, repeated contacts, knockback, placement limits and recharge purchases are excluded. Only the 0-3-0 repeatable attack contributes attack DPS; storm cooldowns remain available.",
+            "One placed power and one selected attack component; consumable quantities and encounter availability are not simulated."
+          ]
+        },
+        "001": {
+          "sourcePath": "Towers/SuperMonkeyBeacon/SuperMonkeyBeacon-001.json",
+          "range": 20,
+          "rangeMode": "finite",
+          "components": [],
+          "abilities": [
+            {
+              "id": "Ability",
+              "name": "Super Monkey Beacon 4",
+              "cooldownSeconds": 120,
+              "duration": null,
+              "timingRestricted": true,
+              "notes": [
+                "Limited to 9999999 activations per round; the cap is not simulated."
+              ]
+            }
+          ],
+          "notes": [
+            "Ability attacks are excluded.",
+            "Storm ability damage, repeated contacts, knockback, placement limits and recharge purchases are excluded. Only the 0-3-0 repeatable attack contributes attack DPS; storm cooldowns remain available.",
+            "One placed power and one selected attack component; consumable quantities and encounter availability are not simulated."
+          ]
+        },
+        "002": {
+          "sourcePath": "Towers/SuperMonkeyBeacon/SuperMonkeyBeacon-002.json",
+          "range": 20,
+          "rangeMode": "finite",
+          "components": [],
+          "abilities": [
+            {
+              "id": "Ability",
+              "name": "Super Monkey Beacon 4",
+              "cooldownSeconds": 120,
+              "duration": null,
+              "timingRestricted": true,
+              "notes": [
+                "Limited to 9999999 activations per round; the cap is not simulated."
+              ]
+            }
+          ],
+          "notes": [
+            "Ability attacks are excluded.",
+            "Storm ability damage, repeated contacts, knockback, placement limits and recharge purchases are excluded. Only the 0-3-0 repeatable attack contributes attack DPS; storm cooldowns remain available.",
+            "One placed power and one selected attack component; consumable quantities and encounter availability are not simulated."
+          ]
+        },
+        "003": {
+          "sourcePath": "Towers/SuperMonkeyBeacon/SuperMonkeyBeacon-003.json",
+          "range": 20,
+          "rangeMode": "finite",
+          "components": [],
+          "abilities": [
+            {
+              "id": "Ability",
+              "name": "Super Monkey Beacon 4",
+              "cooldownSeconds": 120,
+              "duration": null,
+              "timingRestricted": true,
+              "notes": [
+                "Limited to 9999999 activations per round; the cap is not simulated."
+              ]
+            }
+          ],
+          "notes": [
+            "Ability attacks are excluded.",
+            "Storm ability damage, repeated contacts, knockback, placement limits and recharge purchases are excluded. Only the 0-3-0 repeatable attack contributes attack DPS; storm cooldowns remain available.",
+            "One placed power and one selected attack component; consumable quantities and encounter availability are not simulated."
+          ]
+        }
+      }
+    }
+  ]
+}

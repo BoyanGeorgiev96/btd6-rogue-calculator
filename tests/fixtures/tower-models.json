@@ -1,0 +1,2082 @@
+{
+  "revision": "f818c39e6d7cc4e0f8fb02a2e3d1a929bcfe6a24",
+  "note": "Only fields relevant to the importer are retained from the public export; rendering/audio assets and unrelated fields are omitted.",
+  "models": {
+    "SniperMonkey": {
+      "$type": "Il2CppAssets.Scripts.Models.Towers.TowerModel, Assembly-CSharp",
+      "tiers": [
+        0,
+        0,
+        0
+      ],
+      "isParagon": false,
+      "baseId": "SniperMonkey",
+      "behaviors": [
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnUpgradeModel, Assembly-CSharp",
+          "name": "CreateEffectOnUpgradeModel_SniperMonkey"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnPlaceModel, Assembly-CSharp",
+          "name": "CreateEffectOnPlaceModel_SniperMonkey"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnTowerPlaceModel, Assembly-CSharp",
+          "name": "CreateSoundOnTowerPlaceModel_SniperMonkey"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnUpgradeModel, Assembly-CSharp",
+          "name": "CreateSoundOnUpgradeModel_SniperMonkey"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnSellModel, Assembly-CSharp",
+          "name": "CreateSoundOnSellModel_SniperMonkey"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnSellModel, Assembly-CSharp",
+          "name": "CreateEffectOnSellModel_SniperMonkey"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.PlayAnimationIndexModel, Assembly-CSharp",
+          "name": "PlayAnimationIndexModel_SniperMonkey"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.AttackModel, Assembly-CSharp",
+          "weapons": [
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.WeaponModel, Assembly-CSharp",
+              "emission": {
+                "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions.InstantDamageEmissionModel, Assembly-CSharp",
+                "behaviors": null,
+                "name": ""
+              },
+              "projectile": {
+                "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.ProjectileModel, Assembly-CSharp",
+                "id": "Projectile",
+                "pierce": 1,
+                "filters": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                    "isActive": true,
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterAllExceptTargetModel, Assembly-CSharp",
+                    "name": ""
+                  }
+                ],
+                "behaviors": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.ProjectileFilterModel, Assembly-CSharp",
+                    "filters": [
+                      {
+                        "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                        "isActive": true,
+                        "name": ""
+                      },
+                      {
+                        "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterAllExceptTargetModel, Assembly-CSharp",
+                        "name": ""
+                      }
+                    ],
+                    "name": "ProjectileFilterModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.InstantModel, Assembly-CSharp",
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.AgeModel, Assembly-CSharp",
+                    "name": "AgeModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModel, Assembly-CSharp",
+                    "damage": 2,
+                    "name": "DamageModel_Projectile_"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+                    "name": "DisplayModel_ProjectileDisplay"
+                  }
+                ],
+                "canCollideWithBloons": true,
+                "name": "ProjectileModel_Projectile"
+              },
+              "behaviors": [
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.Behaviors.EjectEffectModel, Assembly-CSharp",
+                  "name": ""
+                }
+              ],
+              "rate": 1.59,
+              "name": "WeaponModel_Weapon"
+            }
+          ],
+          "behaviors": [
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.RotateToTargetModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.AttackFilterModel, Assembly-CSharp",
+              "filters": [
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                  "isActive": true,
+                  "name": ""
+                }
+              ],
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.CheckTargetsWithoutOffsetsModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetFirstPrioCamoModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetLastPrioCamoModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetClosePrioCamoModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetStrongPrioCamoModel, Assembly-CSharp",
+              "name": ""
+            }
+          ],
+          "disableOnCreate": false,
+          "name": "AttackModel_Attack_",
+          "range": 9999999.0
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+          "name": "DisplayModel_TowerDisplay"
+        }
+      ],
+      "name": "SniperMonkey",
+      "range": 20.0,
+      "isGlobalRange": true
+    },
+    "SniperMonkey-320": {
+      "$type": "Il2CppAssets.Scripts.Models.Towers.TowerModel, Assembly-CSharp",
+      "tiers": [
+        3,
+        2,
+        0
+      ],
+      "isParagon": false,
+      "baseId": "SniperMonkey",
+      "behaviors": [
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnTowerPlaceModel, Assembly-CSharp",
+          "name": "CreateSoundOnTowerPlaceModel_SniperMonkey-320"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnPlaceModel, Assembly-CSharp",
+          "name": "CreateEffectOnPlaceModel_SniperMonkey-320"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnUpgradeModel, Assembly-CSharp",
+          "name": "CreateSoundOnUpgradeModel_SniperMonkey-320"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnSellModel, Assembly-CSharp",
+          "name": "CreateSoundOnSellModel_SniperMonkey-320"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnSellModel, Assembly-CSharp",
+          "name": "CreateEffectOnSellModel_SniperMonkey-320"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnUpgradeModel, Assembly-CSharp",
+          "name": "CreateEffectOnUpgradeModel_SniperMonkey-320"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.AttackModel, Assembly-CSharp",
+          "weapons": [
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.WeaponModel, Assembly-CSharp",
+              "emission": {
+                "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions.InstantDamageEmissionModel, Assembly-CSharp",
+                "behaviors": null,
+                "name": ""
+              },
+              "projectile": {
+                "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.ProjectileModel, Assembly-CSharp",
+                "id": "Projectile",
+                "pierce": 1,
+                "filters": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                    "isActive": false,
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterAllExceptTargetModel, Assembly-CSharp",
+                    "name": ""
+                  }
+                ],
+                "behaviors": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.ProjectileFilterModel, Assembly-CSharp",
+                    "filters": [
+                      {
+                        "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                        "isActive": false,
+                        "name": ""
+                      },
+                      {
+                        "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterAllExceptTargetModel, Assembly-CSharp",
+                        "name": ""
+                      }
+                    ],
+                    "name": "ProjectileFilterModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.InstantModel, Assembly-CSharp",
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.AgeModel, Assembly-CSharp",
+                    "name": "AgeModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.EmitOnDamageModel, Assembly-CSharp",
+                    "projectile": {
+                      "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.ProjectileModel, Assembly-CSharp",
+                      "id": "Shrapnel",
+                      "pierce": 2,
+                      "filters": [
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                          "isActive": false,
+                          "name": ""
+                        }
+                      ],
+                      "behaviors": [
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModel, Assembly-CSharp",
+                          "damage": 4,
+                          "name": "DamageModel_Shrapnel_"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.TravelStraitModel, Assembly-CSharp",
+                          "name": "TravelStraitModel_Shrapnel"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.ProjectileFilterModel, Assembly-CSharp",
+                          "filters": [
+                            {
+                              "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                              "isActive": false,
+                              "name": ""
+                            }
+                          ],
+                          "name": "ProjectileFilterModel_Shrapnel"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModifierForTagModel, Assembly-CSharp",
+                          "tag": "Camo",
+                          "tags": [
+                            "Camo"
+                          ],
+                          "damageMultiplier": 1,
+                          "damageAddative": 2,
+                          "mustIncludeAllTags": false,
+                          "ignoreTag": false,
+                          "name": "DamageModifierForTagModel_Shrapnel"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+                          "name": "DisplayModel_ProjectileDisplay"
+                        }
+                      ],
+                      "canCollideWithBloons": true,
+                      "name": "ProjectileModel_Shrapnel"
+                    },
+                    "emission": {
+                      "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions.ArcEmissionModel, Assembly-CSharp",
+                      "Count": 5,
+                      "count": 5,
+                      "behaviors": null,
+                      "name": ""
+                    },
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModel, Assembly-CSharp",
+                    "damage": 20,
+                    "name": "DamageModel_Projectile_"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModifierForTagModel, Assembly-CSharp",
+                    "tag": "Camo",
+                    "tags": [
+                      "Camo"
+                    ],
+                    "damageMultiplier": 1,
+                    "damageAddative": 2,
+                    "mustIncludeAllTags": false,
+                    "ignoreTag": false,
+                    "name": "DamageModifierForTagModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModifierForTagModel, Assembly-CSharp",
+                    "tag": "Ceramic",
+                    "tags": [
+                      "Ceramic"
+                    ],
+                    "damageMultiplier": 1,
+                    "damageAddative": 50,
+                    "mustIncludeAllTags": false,
+                    "ignoreTag": false,
+                    "name": "DamageModifierForTagModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+                    "name": "DisplayModel_ProjectileDisplay"
+                  }
+                ],
+                "canCollideWithBloons": true,
+                "name": "ProjectileModel_Projectile"
+              },
+              "behaviors": [
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.Behaviors.EjectEffectModel, Assembly-CSharp",
+                  "name": ""
+                }
+              ],
+              "rate": 1.59,
+              "name": "WeaponModel_Weapon"
+            }
+          ],
+          "behaviors": [
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.RotateToTargetModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.AttackFilterModel, Assembly-CSharp",
+              "filters": [
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                  "isActive": false,
+                  "name": ""
+                }
+              ],
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.CheckTargetsWithoutOffsetsModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetFirstPrioCamoModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetLastPrioCamoModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetClosePrioCamoModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetStrongPrioCamoModel, Assembly-CSharp",
+              "name": ""
+            }
+          ],
+          "disableOnCreate": false,
+          "name": "AttackModel_Attack_",
+          "range": 9999999.0
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+          "name": "DisplayModel_TowerDisplay"
+        }
+      ],
+      "name": "SniperMonkey-320",
+      "range": 20.0,
+      "isGlobalRange": true
+    },
+    "SniperMonkey-025": {
+      "$type": "Il2CppAssets.Scripts.Models.Towers.TowerModel, Assembly-CSharp",
+      "tiers": [
+        0,
+        2,
+        5
+      ],
+      "isParagon": false,
+      "baseId": "SniperMonkey",
+      "behaviors": [
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnTowerPlaceModel, Assembly-CSharp",
+          "name": "CreateSoundOnTowerPlaceModel_SniperMonkey-025"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnPlaceModel, Assembly-CSharp",
+          "name": "CreateEffectOnPlaceModel_SniperMonkey-025"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnUpgradeModel, Assembly-CSharp",
+          "name": "CreateSoundOnUpgradeModel_SniperMonkey-025"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnSellModel, Assembly-CSharp",
+          "name": "CreateSoundOnSellModel_SniperMonkey-025"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnSellModel, Assembly-CSharp",
+          "name": "CreateEffectOnSellModel_SniperMonkey-025"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnUpgradeModel, Assembly-CSharp",
+          "name": "CreateEffectOnUpgradeModel_SniperMonkey-025"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.AttackModel, Assembly-CSharp",
+          "weapons": [
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.WeaponModel, Assembly-CSharp",
+              "emission": {
+                "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions.InstantDamageEmissionModel, Assembly-CSharp",
+                "behaviors": null,
+                "name": ""
+              },
+              "projectile": {
+                "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.ProjectileModel, Assembly-CSharp",
+                "id": "Projectile",
+                "pierce": 5,
+                "filters": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                    "isActive": false,
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterAllExceptTargetModel, Assembly-CSharp",
+                    "name": ""
+                  }
+                ],
+                "behaviors": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.ProjectileFilterModel, Assembly-CSharp",
+                    "filters": [
+                      {
+                        "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                        "isActive": false,
+                        "name": ""
+                      },
+                      {
+                        "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterAllExceptTargetModel, Assembly-CSharp",
+                        "name": ""
+                      }
+                    ],
+                    "name": "ProjectileFilterModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.InstantModel, Assembly-CSharp",
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.AgeModel, Assembly-CSharp",
+                    "name": "AgeModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.EmitOnDamageModel, Assembly-CSharp",
+                    "projectile": {
+                      "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.ProjectileModel, Assembly-CSharp",
+                      "id": "Shrapnel",
+                      "pierce": 2,
+                      "filters": [
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                          "isActive": false,
+                          "name": ""
+                        }
+                      ],
+                      "behaviors": [
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModel, Assembly-CSharp",
+                          "damage": 1,
+                          "name": "DamageModel_Shrapnel_"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.TravelStraitModel, Assembly-CSharp",
+                          "name": "TravelStraitModel_Shrapnel"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.ProjectileFilterModel, Assembly-CSharp",
+                          "filters": [
+                            {
+                              "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                              "isActive": false,
+                              "name": ""
+                            }
+                          ],
+                          "name": "ProjectileFilterModel_Shrapnel"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModifierForTagModel, Assembly-CSharp",
+                          "tag": "Camo",
+                          "tags": [
+                            "Camo"
+                          ],
+                          "damageMultiplier": 1,
+                          "damageAddative": 2,
+                          "mustIncludeAllTags": false,
+                          "ignoreTag": false,
+                          "name": "DamageModifierForTagModel_Shrapnel"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModifierForTagModel, Assembly-CSharp",
+                          "tag": "Ceramic",
+                          "tags": [
+                            "Ceramic"
+                          ],
+                          "damageMultiplier": 1,
+                          "damageAddative": 1,
+                          "mustIncludeAllTags": false,
+                          "ignoreTag": false,
+                          "name": "DamageModifierForTagModel_Shrapnel"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+                          "name": "DisplayModel_ProjectileDisplay"
+                        }
+                      ],
+                      "canCollideWithBloons": true,
+                      "name": "ProjectileModel_Shrapnel"
+                    },
+                    "emission": {
+                      "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions.ArcEmissionModel, Assembly-CSharp",
+                      "Count": 5,
+                      "count": 5,
+                      "behaviors": null,
+                      "name": ""
+                    },
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModel, Assembly-CSharp",
+                    "damage": 2,
+                    "name": "DamageModel_Projectile_"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModifierForTagModel, Assembly-CSharp",
+                    "tag": "Camo",
+                    "tags": [
+                      "Camo"
+                    ],
+                    "damageMultiplier": 1,
+                    "damageAddative": 2,
+                    "mustIncludeAllTags": false,
+                    "ignoreTag": false,
+                    "name": "DamageModifierForTagModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModifierForTagModel, Assembly-CSharp",
+                    "tag": "Moabs",
+                    "tags": [
+                      "Moabs"
+                    ],
+                    "damageMultiplier": 1,
+                    "damageAddative": 4,
+                    "mustIncludeAllTags": false,
+                    "ignoreTag": false,
+                    "name": "DamageModifierForTagModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+                    "name": "DisplayModel_ProjectileDisplay"
+                  }
+                ],
+                "canCollideWithBloons": true,
+                "name": "ProjectileModel_Projectile"
+              },
+              "behaviors": [
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.Behaviors.EjectEffectModel, Assembly-CSharp",
+                  "name": ""
+                },
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.Behaviors.LeakDangerAttackSpeedModel, Assembly-CSharp",
+                  "name": ""
+                }
+              ],
+              "rate": 0.064925,
+              "name": "WeaponModel_Weapon"
+            }
+          ],
+          "behaviors": [
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.RotateToTargetModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.AttackFilterModel, Assembly-CSharp",
+              "filters": [
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                  "isActive": false,
+                  "name": ""
+                }
+              ],
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.CheckTargetsWithoutOffsetsModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetFirstPrioCamoModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetLastPrioCamoModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetClosePrioCamoModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetStrongPrioCamoModel, Assembly-CSharp",
+              "name": ""
+            }
+          ],
+          "disableOnCreate": false,
+          "name": "AttackModel_Attack_",
+          "range": 9999999.0
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+          "name": "DisplayModel_TowerDisplay"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Abilities.AbilityModel, Assembly-CSharp",
+          "modelName": "Ability",
+          "displayName": "Retaliation",
+          "cooldown": 10.0,
+          "enabled": true,
+          "isHidden": false,
+          "IsPassive": true,
+          "cooldownSpeedScale": 0.0,
+          "maxActivationsPerRound": -1,
+          "maxActivationsPerGame": 0,
+          "sharedCooldown": false
+        }
+      ],
+      "name": "SniperMonkey-025",
+      "range": 20.0,
+      "isGlobalRange": true
+    },
+    "BombShooter": {
+      "$type": "Il2CppAssets.Scripts.Models.Towers.TowerModel, Assembly-CSharp",
+      "tiers": [
+        0,
+        0,
+        0
+      ],
+      "isParagon": false,
+      "baseId": "BombShooter",
+      "behaviors": [
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnTowerPlaceModel, Assembly-CSharp",
+          "name": "CreateSoundOnTowerPlaceModel_BombShooter"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnPlaceModel, Assembly-CSharp",
+          "name": "CreateEffectOnPlaceModel_BombShooter"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnSellModel, Assembly-CSharp",
+          "name": "CreateEffectOnSellModel_BombShooter"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnSellModel, Assembly-CSharp",
+          "name": "CreateSoundOnSellModel_BombShooter"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnUpgradeModel, Assembly-CSharp",
+          "name": "CreateSoundOnUpgradeModel_BombShooter"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.PlayAnimationIndexModel, Assembly-CSharp",
+          "name": "PlayAnimationIndexModel_BombShooter"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnUpgradeModel, Assembly-CSharp",
+          "name": "CreateEffectOnUpgradeModel_BombShooter"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.AttackModel, Assembly-CSharp",
+          "weapons": [
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.WeaponModel, Assembly-CSharp",
+              "emission": {
+                "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions.SingleEmissionModel, Assembly-CSharp",
+                "behaviors": null,
+                "name": ""
+              },
+              "projectile": {
+                "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.ProjectileModel, Assembly-CSharp",
+                "id": "Projectile",
+                "pierce": 1,
+                "filters": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                    "isActive": true,
+                    "name": ""
+                  }
+                ],
+                "behaviors": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.TravelStraitModel, Assembly-CSharp",
+                    "name": "TravelStraitModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.CreateProjectileOnContactModel, Assembly-CSharp",
+                    "projectile": {
+                      "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.ProjectileModel, Assembly-CSharp",
+                      "id": "Explosion",
+                      "pierce": 22,
+                      "filters": [
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                          "isActive": true,
+                          "name": ""
+                        }
+                      ],
+                      "behaviors": [
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModel, Assembly-CSharp",
+                          "damage": 1,
+                          "name": "DamageModel_Explosion_"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.AgeModel, Assembly-CSharp",
+                          "name": "AgeModel_Explosion"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.ProjectileFilterModel, Assembly-CSharp",
+                          "filters": [
+                            {
+                              "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                              "isActive": true,
+                              "name": ""
+                            }
+                          ],
+                          "name": "ProjectileFilterModel_Explosion"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+                          "name": "DisplayModel_ProjectileDisplay"
+                        }
+                      ],
+                      "canCollideWithBloons": true,
+                      "name": "ProjectileModel_Explosion"
+                    },
+                    "emission": {
+                      "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions.SingleEmissionModel, Assembly-CSharp",
+                      "behaviors": null,
+                      "name": ""
+                    },
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.ProjectileFilterModel, Assembly-CSharp",
+                    "filters": [
+                      {
+                        "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                        "isActive": true,
+                        "name": ""
+                      }
+                    ],
+                    "name": "ProjectileFilterModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.CreateEffectOnContactModel, Assembly-CSharp",
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.CreateSoundOnProjectileCollisionModel, Assembly-CSharp",
+                    "name": "CreateSoundOnProjectileCollisionModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+                    "name": "DisplayModel_ProjectileDisplay"
+                  }
+                ],
+                "canCollideWithBloons": true,
+                "name": "ProjectileModel_Projectile"
+              },
+              "behaviors": [
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.Behaviors.EjectEffectModel, Assembly-CSharp",
+                  "name": ""
+                }
+              ],
+              "rate": 1.5,
+              "name": "WeaponModel_Weapon"
+            }
+          ],
+          "behaviors": [
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.RotateToTargetModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.AttackFilterModel, Assembly-CSharp",
+              "filters": [
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                  "isActive": true,
+                  "name": ""
+                }
+              ],
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetFirstModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetLastModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetCloseModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetStrongModel, Assembly-CSharp",
+              "name": ""
+            }
+          ],
+          "disableOnCreate": false,
+          "name": "AttackModel_Attack_",
+          "range": 40.0
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+          "name": "DisplayModel_TowerDisplay"
+        }
+      ],
+      "name": "BombShooter",
+      "range": 40.0,
+      "isGlobalRange": false
+    },
+    "MortarMonkey": {
+      "$type": "Il2CppAssets.Scripts.Models.Towers.TowerModel, Assembly-CSharp",
+      "tiers": [
+        0,
+        0,
+        0
+      ],
+      "isParagon": false,
+      "baseId": "MortarMonkey",
+      "behaviors": [
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnTowerPlaceModel, Assembly-CSharp",
+          "name": "CreateSoundOnTowerPlaceModel_MortarMonkey"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnSellModel, Assembly-CSharp",
+          "name": "CreateEffectOnSellModel_MortarMonkey"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnPlaceModel, Assembly-CSharp",
+          "name": "CreateEffectOnPlaceModel_MortarMonkey"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnUpgradeModel, Assembly-CSharp",
+          "name": "CreateSoundOnUpgradeModel_MortarMonkey"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnSellModel, Assembly-CSharp",
+          "name": "CreateSoundOnSellModel_MortarMonkey"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.PlayAnimationIndexModel, Assembly-CSharp",
+          "name": "PlayAnimationIndexModel_MortarMonkey"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnUpgradeModel, Assembly-CSharp",
+          "name": "CreateEffectOnUpgradeModel_MortarMonkey"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.AttackModel, Assembly-CSharp",
+          "weapons": [
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.WeaponModel, Assembly-CSharp",
+              "emission": {
+                "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions.RandomTargetSpreadModel, Assembly-CSharp",
+                "behaviors": null,
+                "name": ""
+              },
+              "projectile": {
+                "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.ProjectileModel, Assembly-CSharp",
+                "id": "Projectile",
+                "pierce": 1,
+                "filters": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterAllModel, Assembly-CSharp",
+                    "name": ""
+                  }
+                ],
+                "behaviors": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.ProjectileFilterModel, Assembly-CSharp",
+                    "filters": [
+                      {
+                        "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterAllModel, Assembly-CSharp",
+                        "name": ""
+                      }
+                    ],
+                    "name": "ProjectileFilterModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.AgeModel, Assembly-CSharp",
+                    "name": "AgeModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.InstantModel, Assembly-CSharp",
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.CreateProjectileOnExhaustFractionModel, Assembly-CSharp",
+                    "projectile": {
+                      "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.ProjectileModel, Assembly-CSharp",
+                      "id": "Explosion",
+                      "pierce": 25,
+                      "filters": [
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                          "isActive": true,
+                          "name": ""
+                        }
+                      ],
+                      "behaviors": [
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModel, Assembly-CSharp",
+                          "damage": 2,
+                          "name": "DamageModel_Explosion_"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.AgeModel, Assembly-CSharp",
+                          "name": "AgeModel_Explosion"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.ProjectileFilterModel, Assembly-CSharp",
+                          "filters": [
+                            {
+                              "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                              "isActive": true,
+                              "name": ""
+                            }
+                          ],
+                          "name": "ProjectileFilterModel_Explosion"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.CreateSoundOnProjectileCollisionModel, Assembly-CSharp",
+                          "name": "CreateSoundOnProjectileCollisionModel_Explosion"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.ChipMapBasedObjectModel, Assembly-CSharp",
+                          "name": "ChipMapBasedObjectModel_Explosion"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+                          "name": "DisplayModel_ProjectileDisplay"
+                        }
+                      ],
+                      "canCollideWithBloons": true,
+                      "name": "ProjectileModel_Explosion"
+                    },
+                    "emission": {
+                      "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions.SingleEmissionModel, Assembly-CSharp",
+                      "behaviors": null,
+                      "name": ""
+                    },
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.CreateEffectOnExhaustFractionModel, Assembly-CSharp",
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.CreateEffectOnExpireModel, Assembly-CSharp",
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.CreateSoundOnProjectileExhaustModel, Assembly-CSharp",
+                    "name": "CreateSoundOnProjectileExhaustModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+                    "name": "DisplayModel_ProjectileDisplay"
+                  }
+                ],
+                "canCollideWithBloons": false,
+                "name": "ProjectileModel_Projectile"
+              },
+              "behaviors": [
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.Behaviors.EjectEffectModel, Assembly-CSharp",
+                  "name": ""
+                }
+              ],
+              "rate": 2,
+              "name": "WeaponModel_Weapon"
+            }
+          ],
+          "behaviors": [
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.AttackFilterModel, Assembly-CSharp",
+              "filters": [
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                  "isActive": true,
+                  "name": ""
+                }
+              ],
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetSelectedPointModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.RotateToPointerModel, Assembly-CSharp",
+              "rate": 9999999,
+              "name": ""
+            }
+          ],
+          "disableOnCreate": false,
+          "name": "AttackModel_Attack_",
+          "range": 9999999.0
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+          "name": "DisplayModel_TowerDisplay"
+        }
+      ],
+      "name": "MortarMonkey",
+      "range": 30.0,
+      "isGlobalRange": false
+    },
+    "Alchemist-020": {
+      "$type": "Il2CppAssets.Scripts.Models.Towers.TowerModel, Assembly-CSharp",
+      "tiers": [
+        0,
+        2,
+        0
+      ],
+      "isParagon": false,
+      "baseId": "Alchemist",
+      "behaviors": [
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnPlaceModel, Assembly-CSharp",
+          "name": "CreateEffectOnPlaceModel_Alchemist-020"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnSellModel, Assembly-CSharp",
+          "name": "CreateSoundOnSellModel_Alchemist-020"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnUpgradeModel, Assembly-CSharp",
+          "name": "CreateSoundOnUpgradeModel_Alchemist-020"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnSellModel, Assembly-CSharp",
+          "name": "CreateEffectOnSellModel_Alchemist-020"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CanBuffIndicatorModel, Assembly-CSharp",
+          "name": "CanBuffIndicatorModel_Alchemist-020_",
+          "isGlobalRange": false
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnTowerPlaceModel, Assembly-CSharp",
+          "name": "CreateSoundOnTowerPlaceModel_Alchemist-020"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnUpgradeModel, Assembly-CSharp",
+          "name": "CreateEffectOnUpgradeModel_Alchemist-020"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.AttackModel, Assembly-CSharp",
+          "weapons": [
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.WeaponModel, Assembly-CSharp",
+              "emission": {
+                "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions.SingleEmissionModel, Assembly-CSharp",
+                "behaviors": [],
+                "name": ""
+              },
+              "projectile": {
+                "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.ProjectileModel, Assembly-CSharp",
+                "id": "Projectile",
+                "pierce": 1,
+                "filters": null,
+                "behaviors": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.CreateProjectileOnExhaustFractionModel, Assembly-CSharp",
+                    "projectile": {
+                      "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.ProjectileModel, Assembly-CSharp",
+                      "id": "AcidSplash",
+                      "pierce": 15,
+                      "filters": [
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                          "isActive": true,
+                          "name": ""
+                        }
+                      ],
+                      "behaviors": [
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModel, Assembly-CSharp",
+                          "damage": 1,
+                          "name": "DamageModel_AcidSplash_"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.ProjectileFilterModel, Assembly-CSharp",
+                          "filters": [
+                            {
+                              "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                              "isActive": true,
+                              "name": ""
+                            }
+                          ],
+                          "name": "ProjectileFilterModel_AcidSplash"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.AddBehaviorToBloonModel, Assembly-CSharp",
+                          "filters": null,
+                          "behaviors": [
+                            {
+                              "$type": "Il2CppAssets.Scripts.Models.Bloons.Behaviors.DamageOverTimeModel, Assembly-CSharp",
+                              "damage": 1,
+                              "name": "alchemist:acid"
+                            }
+                          ],
+                          "name": ""
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModifierForTagModel, Assembly-CSharp",
+                          "tag": "Moabs",
+                          "tags": [
+                            "Moabs"
+                          ],
+                          "damageMultiplier": 1,
+                          "damageAddative": 4,
+                          "mustIncludeAllTags": false,
+                          "ignoreTag": false,
+                          "name": "DamageModifierForTagModel_AcidSplash"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModifierForTagModel, Assembly-CSharp",
+                          "tag": "Moabs,Fortified",
+                          "tags": [
+                            "Moabs",
+                            "Fortified"
+                          ],
+                          "damageMultiplier": 1,
+                          "damageAddative": 15,
+                          "mustIncludeAllTags": true,
+                          "ignoreTag": false,
+                          "name": "DamageModifierForTagModel_AcidSplash"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.RemoveBloonModifiersModel, Assembly-CSharp",
+                          "name": ""
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.AcidPoolModel, Assembly-CSharp",
+                          "pierce": 5,
+                          "name": "AcidPoolModel_AcidSplash"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.AgeModel, Assembly-CSharp",
+                          "name": "AgeModel_AcidSplash"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+                          "name": "DisplayModel_ProjectileDisplay"
+                        }
+                      ],
+                      "canCollideWithBloons": true,
+                      "name": "ProjectileModel_AcidSplash"
+                    },
+                    "emission": {
+                      "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions.SingleEmissionModel, Assembly-CSharp",
+                      "behaviors": [],
+                      "name": ""
+                    },
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.ScaleProjectileModel, Assembly-CSharp",
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.CreateEffectOnExhaustFractionModel, Assembly-CSharp",
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.ArriveAtTargetModel, Assembly-CSharp",
+                    "name": "ArriveAtTargetModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.AgeModel, Assembly-CSharp",
+                    "name": "AgeModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+                    "name": "DisplayModel_ProjectileDisplay"
+                  }
+                ],
+                "canCollideWithBloons": true,
+                "name": "ProjectileModel_Projectile"
+              },
+              "behaviors": null,
+              "rate": 2,
+              "name": "WeaponModel_Weapon"
+            }
+          ],
+          "behaviors": [
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.RotateToTargetModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.AttackFilterModel, Assembly-CSharp",
+              "filters": [
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                  "isActive": true,
+                  "name": ""
+                }
+              ],
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetFirstModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetLastModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetCloseModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetStrongModel, Assembly-CSharp",
+              "name": ""
+            }
+          ],
+          "disableOnCreate": false,
+          "name": "AttackModel_Attack_",
+          "range": 45.0
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+          "name": "DisplayModel_TowerDisplay"
+        }
+      ],
+      "name": "Alchemist-020",
+      "range": 45.0,
+      "isGlobalRange": false
+    },
+    "MonkeyBuccaneer": {
+      "$type": "Il2CppAssets.Scripts.Models.Towers.TowerModel, Assembly-CSharp",
+      "tiers": [
+        0,
+        0,
+        0
+      ],
+      "isParagon": false,
+      "baseId": "MonkeyBuccaneer",
+      "behaviors": [
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnTowerPlaceModel, Assembly-CSharp",
+          "name": "CreateSoundOnTowerPlaceModel_MonkeyBuccaneer"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnUpgradeModel, Assembly-CSharp",
+          "name": "CreateSoundOnUpgradeModel_MonkeyBuccaneer"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnSellModel, Assembly-CSharp",
+          "name": "CreateSoundOnSellModel_MonkeyBuccaneer"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnUpgradeModel, Assembly-CSharp",
+          "name": "CreateEffectOnUpgradeModel_MonkeyBuccaneer"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnPlaceModel, Assembly-CSharp",
+          "name": "CreateEffectOnPlaceModel_MonkeyBuccaneer"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnSellModel, Assembly-CSharp",
+          "name": "CreateEffectOnSellModel_MonkeyBuccaneer"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.PlayAnimationIndexModel, Assembly-CSharp",
+          "name": "PlayAnimationIndexModel_MonkeyBuccaneer"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.AttackModel, Assembly-CSharp",
+          "weapons": [
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.WeaponModel, Assembly-CSharp",
+              "emission": {
+                "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions.SingleEmissionModel, Assembly-CSharp",
+                "behaviors": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions.Behaviors.EmissionRotationOffTowerDirectionModel, Assembly-CSharp",
+                    "name": ""
+                  }
+                ],
+                "name": ""
+              },
+              "projectile": {
+                "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.ProjectileModel, Assembly-CSharp",
+                "id": "Projectile",
+                "pierce": 4,
+                "filters": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                    "isActive": true,
+                    "name": ""
+                  }
+                ],
+                "behaviors": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModel, Assembly-CSharp",
+                    "damage": 1,
+                    "name": "DamageModel_Projectile_"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.TravelStraitModel, Assembly-CSharp",
+                    "name": "TravelStraitModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.ProjectileFilterModel, Assembly-CSharp",
+                    "filters": [
+                      {
+                        "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                        "isActive": true,
+                        "name": ""
+                      }
+                    ],
+                    "name": "ProjectileFilterModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+                    "name": "DisplayModel_ProjectileDisplay"
+                  }
+                ],
+                "canCollideWithBloons": true,
+                "name": "ProjectileModel_Projectile"
+              },
+              "behaviors": [
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.Behaviors.FireAlternateWeaponModel, Assembly-CSharp",
+                  "weaponId": 1,
+                  "name": ""
+                }
+              ],
+              "rate": 1,
+              "name": "WeaponModel_Weapon"
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.WeaponModel, Assembly-CSharp",
+              "emission": {
+                "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions.SingleEmissionModel, Assembly-CSharp",
+                "behaviors": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions.Behaviors.EmissionRotationOffTowerDirectionModel, Assembly-CSharp",
+                    "name": ""
+                  }
+                ],
+                "name": ""
+              },
+              "projectile": {
+                "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.ProjectileModel, Assembly-CSharp",
+                "id": "Projectile",
+                "pierce": 4,
+                "filters": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                    "isActive": true,
+                    "name": ""
+                  }
+                ],
+                "behaviors": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModel, Assembly-CSharp",
+                    "damage": 1,
+                    "name": "DamageModel_Projectile_"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.TravelStraitModel, Assembly-CSharp",
+                    "name": "TravelStraitModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.ProjectileFilterModel, Assembly-CSharp",
+                    "filters": [
+                      {
+                        "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                        "isActive": true,
+                        "name": ""
+                      }
+                    ],
+                    "name": "ProjectileFilterModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+                    "name": "DisplayModel_ProjectileDisplay"
+                  }
+                ],
+                "canCollideWithBloons": true,
+                "name": "ProjectileModel_Projectile"
+              },
+              "behaviors": [
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.Behaviors.FireWhenAlternateWeaponIsReadyModel, Assembly-CSharp",
+                  "weaponId": 1,
+                  "name": ""
+                },
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.Behaviors.FilterTargetAngleFilterModel, Assembly-CSharp",
+                  "name": ""
+                }
+              ],
+              "rate": 0.05,
+              "name": "WeaponModel_Weapon Secondary"
+            }
+          ],
+          "behaviors": [
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.AttackFilterModel, Assembly-CSharp",
+              "filters": [
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                  "isActive": true,
+                  "name": ""
+                }
+              ],
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.RotateToTargetModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetFirstPrioCamoModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetLastPrioCamoModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetClosePrioCamoModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetStrongPrioCamoModel, Assembly-CSharp",
+              "name": ""
+            }
+          ],
+          "disableOnCreate": false,
+          "name": "AttackModel_Attack_",
+          "range": 60.0
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+          "name": "DisplayModel_TowerDisplay"
+        }
+      ],
+      "name": "MonkeyBuccaneer",
+      "range": 60.0,
+      "isGlobalRange": false
+    },
+    "GlueGunner": {
+      "$type": "Il2CppAssets.Scripts.Models.Towers.TowerModel, Assembly-CSharp",
+      "tiers": [
+        0,
+        0,
+        0
+      ],
+      "isParagon": false,
+      "baseId": "GlueGunner",
+      "behaviors": [
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnPlaceModel, Assembly-CSharp",
+          "name": "CreateEffectOnPlaceModel_GlueGunner"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnTowerPlaceModel, Assembly-CSharp",
+          "name": "CreateSoundOnTowerPlaceModel_GlueGunner"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnSellModel, Assembly-CSharp",
+          "name": "CreateSoundOnSellModel_GlueGunner"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnUpgradeModel, Assembly-CSharp",
+          "name": "CreateSoundOnUpgradeModel_GlueGunner"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.PlayAnimationIndexModel, Assembly-CSharp",
+          "name": "PlayAnimationIndexModel_GlueGunner"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnSellModel, Assembly-CSharp",
+          "name": "CreateEffectOnSellModel_GlueGunner"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnUpgradeModel, Assembly-CSharp",
+          "name": "CreateEffectOnUpgradeModel_GlueGunner"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.AttackModel, Assembly-CSharp",
+          "weapons": [
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.WeaponModel, Assembly-CSharp",
+              "emission": {
+                "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions.SingleEmissionModel, Assembly-CSharp",
+                "behaviors": null,
+                "name": ""
+              },
+              "projectile": {
+                "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.ProjectileModel, Assembly-CSharp",
+                "id": "Projectile",
+                "pierce": 1,
+                "filters": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                    "isActive": true,
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterOutTagModel, Assembly-CSharp",
+                    "tag": "Moabs",
+                    "name": "FilterOutTagModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterGlueLevelModel, Assembly-CSharp",
+                    "name": "FilterGlueLevelModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterOutTagModel, Assembly-CSharp",
+                    "tag": "Boss",
+                    "name": "FilterOutTagModel_Projectile"
+                  }
+                ],
+                "behaviors": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.TravelStraitModel, Assembly-CSharp",
+                    "name": "TravelStraitModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.SlowModel, Assembly-CSharp",
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.ProjectileFilterModel, Assembly-CSharp",
+                    "filters": [
+                      {
+                        "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                        "isActive": true,
+                        "name": ""
+                      },
+                      {
+                        "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterOutTagModel, Assembly-CSharp",
+                        "tag": "Moabs",
+                        "name": "FilterOutTagModel_Projectile"
+                      },
+                      {
+                        "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterGlueLevelModel, Assembly-CSharp",
+                        "name": "FilterGlueLevelModel_Projectile"
+                      },
+                      {
+                        "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterOutTagModel, Assembly-CSharp",
+                        "tag": "Boss",
+                        "name": "FilterOutTagModel_Projectile"
+                      }
+                    ],
+                    "name": "ProjectileFilterModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.SlowModifierForTagModel, Assembly-CSharp",
+                    "tag": "Moabs",
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.CreateSoundOnProjectileCollisionModel, Assembly-CSharp",
+                    "name": "CreateSoundOnProjectileCollisionModel_Projectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+                    "name": "DisplayModel_ProjectileDisplay"
+                  }
+                ],
+                "canCollideWithBloons": true,
+                "name": "ProjectileModel_Projectile"
+              },
+              "behaviors": null,
+              "rate": 1,
+              "name": "WeaponModel_Weapon"
+            }
+          ],
+          "behaviors": [
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.RotateToTargetModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.AttackFilterModel, Assembly-CSharp",
+              "filters": [
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                  "isActive": true,
+                  "name": ""
+                },
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterOutTagModel, Assembly-CSharp",
+                  "tag": "Moabs",
+                  "name": "FilterOutTagModel_Attack"
+                },
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterGlueLevelModel, Assembly-CSharp",
+                  "name": "FilterGlueLevelModel_Attack"
+                },
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterOutTagModel, Assembly-CSharp",
+                  "tag": "Boss",
+                  "name": "FilterOutTagModel_Attack"
+                }
+              ],
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetFirstModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetLastModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetCloseModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetStrongModel, Assembly-CSharp",
+              "name": ""
+            }
+          ],
+          "disableOnCreate": false,
+          "name": "AttackModel_Attack_",
+          "range": 46.0
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+          "name": "DisplayModel_TowerDisplay"
+        }
+      ],
+      "name": "GlueGunner",
+      "range": 46.0,
+      "isGlobalRange": false
+    },
+    "Druid-030": {
+      "$type": "Il2CppAssets.Scripts.Models.Towers.TowerModel, Assembly-CSharp",
+      "range": 35,
+      "isGlobalRange": false,
+      "tiers": [
+        0,
+        3,
+        0
+      ],
+      "isParagon": false,
+      "baseId": "Druid",
+      "behaviors": [
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnPlaceModel, Assembly-CSharp",
+          "name": "CreateEffectOnPlaceModel_Druid-030"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnSellModel, Assembly-CSharp",
+          "name": "CreateSoundOnSellModel_Druid-030"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnUpgradeModel, Assembly-CSharp",
+          "name": "CreateSoundOnUpgradeModel_Druid-030"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnSellModel, Assembly-CSharp",
+          "name": "CreateEffectOnSellModel_Druid-030"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateSoundOnTowerPlaceModel, Assembly-CSharp",
+          "name": "CreateSoundOnTowerPlaceModel_Druid-030"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.CreateEffectOnUpgradeModel, Assembly-CSharp",
+          "name": "CreateEffectOnUpgradeModel_Druid-030"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.AttackModel, Assembly-CSharp",
+          "weapons": [
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.WeaponModel, Assembly-CSharp",
+              "emission": {
+                "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions.RandomEmissionModel, Assembly-CSharp",
+                "count": 8,
+                "behaviors": null,
+                "name": ""
+              },
+              "projectile": {
+                "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.ProjectileModel, Assembly-CSharp",
+                "id": "BaseProjectile",
+                "pierce": 1,
+                "filters": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                    "isActive": true,
+                    "name": ""
+                  }
+                ],
+                "behaviors": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModel, Assembly-CSharp",
+                    "damage": 1,
+                    "name": "DamageModel_BaseProjectile_"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.TravelStraitModel, Assembly-CSharp",
+                    "name": "TravelStraitModel_BaseProjectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.ProjectileFilterModel, Assembly-CSharp",
+                    "filters": [
+                      {
+                        "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                        "isActive": true,
+                        "name": ""
+                      }
+                    ],
+                    "name": "ProjectileFilterModel_BaseProjectile"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.RemoveBloonModifiersModel, Assembly-CSharp",
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+                    "name": "DisplayModel_ProjectileDisplay"
+                  }
+                ],
+                "canCollideWithBloons": true,
+                "name": "ProjectileModel_BaseProjectile"
+              },
+              "behaviors": [
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.Behaviors.OffsetModel, Assembly-CSharp",
+                  "range": 45,
+                  "name": ""
+                },
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.Behaviors.PierceFromLivesGainedModel, Assembly-CSharp",
+                  "name": ""
+                }
+              ],
+              "rate": 1.1,
+              "modelName": "Weapon",
+              "name": "WeaponModel_Weapon"
+            }
+          ],
+          "behaviors": [
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.RotateToTargetModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.AttackFilterModel, Assembly-CSharp",
+              "filters": [
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                  "isActive": true,
+                  "name": ""
+                }
+              ],
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetFirstModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetLastModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetCloseModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetStrongModel, Assembly-CSharp",
+              "name": ""
+            }
+          ],
+          "range": 35,
+          "disableOnCreate": false,
+          "name": "AttackModel_Attack_"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.AttackModel, Assembly-CSharp",
+          "weapons": [
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.WeaponModel, Assembly-CSharp",
+              "emission": {
+                "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions.InstantDamageEmissionModel, Assembly-CSharp",
+                "behaviors": null,
+                "name": ""
+              },
+              "projectile": {
+                "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.ProjectileModel, Assembly-CSharp",
+                "id": "Collidable",
+                "pierce": 9999999,
+                "filters": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                    "isActive": true,
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterOutTagModel, Assembly-CSharp",
+                    "tag": "Moabs",
+                    "name": "FilterOutTagModel_Collidable"
+                  }
+                ],
+                "behaviors": [
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.ProjectileFilterModel, Assembly-CSharp",
+                    "filters": [
+                      {
+                        "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                        "isActive": true,
+                        "name": ""
+                      },
+                      {
+                        "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterOutTagModel, Assembly-CSharp",
+                        "tag": "Moabs",
+                        "name": "FilterOutTagModel_Collidable"
+                      }
+                    ],
+                    "name": "ProjectileFilterModel_Collidable"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.JungleVineEffectModel, Assembly-CSharp",
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.CollideOnlyWithTargetModel, Assembly-CSharp",
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModel, Assembly-CSharp",
+                    "damage": 9999999,
+                    "name": "DamageModel_Collidable_"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.InstantModel, Assembly-CSharp",
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.AgeModel, Assembly-CSharp",
+                    "name": "AgeModel_Collidable"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.CreateSoundOnProjectileCollisionModel, Assembly-CSharp",
+                    "name": "CreateSoundOnProjectileCollisionModel_Collidable"
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.CreateProjectileOnContactModel, Assembly-CSharp",
+                    "projectile": {
+                      "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.ProjectileModel, Assembly-CSharp",
+                      "id": "Projectile",
+                      "pierce": 20,
+                      "filters": [
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                          "isActive": true,
+                          "name": ""
+                        }
+                      ],
+                      "behaviors": [
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.AgeModel, Assembly-CSharp",
+                          "name": "AgeModel_Projectile"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModel, Assembly-CSharp",
+                          "damage": 1,
+                          "name": "DamageModel_Projectile_"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.RefreshPierceModel, Assembly-CSharp",
+                          "name": ""
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.ClearHitBloonsModel, Assembly-CSharp",
+                          "name": ""
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.ProjectileFilterModel, Assembly-CSharp",
+                          "filters": [
+                            {
+                              "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                              "isActive": true,
+                              "name": ""
+                            }
+                          ],
+                          "name": "ProjectileFilterModel_Projectile"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.DestroyProjectileIfTowerDestroyedModel, Assembly-CSharp",
+                          "name": "DestroyProjectileIfTowerDestroyedModel_Projectile"
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.ProjectileZeroRotationModel, Assembly-CSharp",
+                          "name": ""
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.FadeProjectileModel, Assembly-CSharp",
+                          "name": ""
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors.RemoveBloonModifiersModel, Assembly-CSharp",
+                          "name": ""
+                        },
+                        {
+                          "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+                          "name": "DisplayModel_ProjectileDisplay"
+                        }
+                      ],
+                      "canCollideWithBloons": true,
+                      "name": "ProjectileModel_Projectile"
+                    },
+                    "emission": {
+                      "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions.SingleEmissionModel, Assembly-CSharp",
+                      "behaviors": null,
+                      "name": ""
+                    },
+                    "name": ""
+                  },
+                  {
+                    "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+                    "name": "DisplayModel_ProjectileDisplay"
+                  }
+                ],
+                "canCollideWithBloons": true,
+                "name": "ProjectileModel_Collidable"
+              },
+              "behaviors": [
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.Behaviors.JungleVineLimitProjectileModel, Assembly-CSharp",
+                  "name": ""
+                },
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.Behaviors.EjectEffectModel, Assembly-CSharp",
+                  "name": ""
+                },
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Weapons.Behaviors.PierceFromLivesGainedModel, Assembly-CSharp",
+                  "name": ""
+                }
+              ],
+              "rate": 2.6,
+              "modelName": "Weapon",
+              "name": "WeaponModel_Weapon"
+            }
+          ],
+          "behaviors": [
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.AttackFilterModel, Assembly-CSharp",
+              "filters": [
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterInvisibleModel, Assembly-CSharp",
+                  "isActive": true,
+                  "name": ""
+                },
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterOutOffscreenModel, Assembly-CSharp",
+                  "name": ""
+                },
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterOutOffscreenModel, Assembly-CSharp",
+                  "name": ""
+                },
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterBloonIfDamageTypeModel, Assembly-CSharp",
+                  "name": ""
+                },
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterBadImmunityModel, Assembly-CSharp",
+                  "name": ""
+                },
+                {
+                  "$type": "Il2CppAssets.Scripts.Models.Towers.Filters.FilterWithTagsModel, Assembly-CSharp",
+                  "tags": [
+                    "Moabs",
+                    "Frontier"
+                  ],
+                  "name": ""
+                }
+              ],
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetFirstModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetLastModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetCloseModel, Assembly-CSharp",
+              "name": ""
+            },
+            {
+              "$type": "Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack.Behaviors.TargetStrongModel, Assembly-CSharp",
+              "name": ""
+            }
+          ],
+          "range": 9999999,
+          "disableOnCreate": false,
+          "name": "AttackModel_JungleVine_"
+        },
+        {
+          "$type": "Il2CppAssets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
+          "name": "DisplayModel_TowerDisplay"
+        }
+      ],
+      "name": "Druid-030"
+    }
+  }
+}

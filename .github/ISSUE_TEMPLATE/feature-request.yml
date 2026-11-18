@@ -1,0 +1,25 @@
+name: Feature request
+description: Suggest an improvement to artifact comparisons or build planning.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search existing issues first. Suggestions do not guarantee implementation or a delivery date.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Describe what you are trying to do and what gets in the way.
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Suggested improvement and example
+      description: Explain how the feature would help with a specific build or decision.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or workarounds

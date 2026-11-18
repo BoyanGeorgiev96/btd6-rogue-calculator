@@ -1,0 +1,36 @@
+name: Calculation correction
+description: Report incorrect artifact multipliers, imported stats, or modeled mechanics.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search existing issues and check the calculator's Reference for known exclusions first. Missing evidence is welcome as an open question; distinguish observations from assumptions.
+        Remove personal information from links, screenshots, and exported files.
+  - type: textarea
+    id: setup
+    attributes:
+      label: Build and reproduction steps
+      description: Include a shared build link or the tower/hero, upgrades/level, artifacts, rarities, target, conditions, and selected attack/ability.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Actual and expected result
+      description: Identify the multiplier, stat, or timing in question and explain the expected calculation. State any assumptions or unknowns.
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Game and calculator versions
+      description: Include the BTD6 version and Rogue Lab footer version. Enter unknown where needed.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Link source fields or official patch notes, or describe reproducible gameplay measurements and their conditions. If evidence is unavailable, say so; do not guess mechanics.
+    validations:
+      required: true

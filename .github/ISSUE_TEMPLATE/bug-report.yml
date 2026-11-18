@@ -1,0 +1,40 @@
+name: Bug report
+description: Report a problem with the calculator interface, saves, or sharing.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search existing issues first. Use Calculation correction for incorrect results or game mechanics.
+        Remove personal information from build links, screenshots, and exported files. Report security vulnerabilities privately using [the security policy](https://github.com/BoyanGeorgiev96/btd6-rogue-calculator/security/policy).
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include the workspace and controls you used.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-actual
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: build
+    attributes:
+      label: Build or setup
+      description: Share a build link or relevant tower/hero, upgrades/level, artifacts, rarities, target, and conditions. Attach screenshots or an exported build if useful.
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and device
+      placeholder: "For example: Chrome 142, Windows 11, desktop"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Rogue Lab version
+      description: Copy the version from the app footer, or enter unknown.
+    validations:
+      required: true

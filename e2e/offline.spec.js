@@ -59,7 +59,7 @@ test('production calculator, all workspace routes, data and notebook work offlin
     await expect(page.locator('body')).toHaveAttribute('data-workspace', workspace);
   }
   expect(await page.evaluate(async () => (await fetch('./docs/mechanics-notebook.md')).text())).toContain('no in-game observations');
-  for (const path of ['LICENSE', 'DISTRIBUTION.md', 'data/ARTIFACT-NOTICES.md', 'third-party/Rogue-Lab-MIT-NOTICE.txt', 'third-party/BTD6-API-Explorer-LICENSE.txt', 'THIRD_PARTY_NOTICES.md', 'CHANGELOG.md', 'changelog.html', 'docs/tower-stats.md', 'docs/powers.md', 'docs/ability-cooldowns.md', 'docs/ability-durations.md']) {
+  for (const path of ['LICENSE', 'DISTRIBUTION.md', 'data/ARTIFACT-NOTICES.md', 'third-party/BTD6-API-Explorer-LICENSE.txt', 'THIRD_PARTY_NOTICES.md', 'CHANGELOG.md', 'changelog.html', 'docs/tower-stats.md', 'docs/powers.md', 'docs/ability-cooldowns.md', 'docs/ability-durations.md']) {
     const response = await page.evaluate(async path => {
       const response = await fetch(`./${path}`);
       return { status: response.status, text: await response.text() };

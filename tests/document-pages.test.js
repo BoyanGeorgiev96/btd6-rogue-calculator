@@ -10,13 +10,13 @@ test('documentation renders readable headings, tables, inline formatting and saf
   assert.match(html, /<td><code>a\|b<\/code><\/td>/);
   assert.match(html, /&lt;script&gt;alert\(1\)&lt;\/script&gt;/);
   assert.match(html, /href="ability-durations.html#review"/);
-  assert.doesNotMatch(html, /<script>/);
+  assert.doesNotMatch(html, /<script\b/i);
 });
 
 test('documentation rejects executable links and raw markup while retaining HTTPS and fragments', () => {
   const html = renderDocument('[bad](javascript:alert) [data](data:text/html,bad) [remote](//evil.test) [good](https://example.com) [section](#saves) <img src=x onerror=alert(1)>');
   assert.doesNotMatch(html, /href="(?:javascript:|data:|\/\/)/);
-  assert.doesNotMatch(html, /<img/);
+  assert.doesNotMatch(html, /<img\b/i);
   assert.match(html, /href="https:\/\/example.com"/);
   assert.match(html, /href="#saves"/);
 });

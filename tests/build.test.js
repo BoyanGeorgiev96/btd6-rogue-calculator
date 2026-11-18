@@ -73,8 +73,8 @@ test('production build ships only active data and preserves the last build on re
   for (const path of ['src/app.js', 'src/style.css']) {
     assert.ok((await readFile(join(directory, 'dist', path))).length < (await readFile(join(directory, path))).length, `${path} is minified`);
   }
-  for (const path of ['LICENSE', 'DISTRIBUTION.md', 'data/ARTIFACT-NOTICES.md', 'third-party/Rogue-Lab-MIT-NOTICE.txt', 'third-party/BTD6-API-Explorer-LICENSE.txt', 'THIRD_PARTY_NOTICES.md', 'CHANGELOG.md', 'docs/tower-stats.md', 'docs/powers.md', 'docs/ability-cooldowns.md', 'docs/ability-durations.md']) {
-    assert.equal(await readFile(join(directory, 'dist', path), 'utf8'), await readFile(join(directory, path), 'utf8'));
+  for (const path of ['LICENSE', 'DISTRIBUTION.md', 'data/ARTIFACT-NOTICES.md', 'third-party/Rogue-Lab-MIT-NOTICE.txt', 'third-party/BTD6-API-Explorer-LICENSE.txt', 'THIRD_PARTY_NOTICES.md', 'CHANGELOG.md', 'docs/user-guide.md', 'docs/user-guide.html', 'docs/calculation-scope.html', 'docs/tower-stats.md', 'docs/powers.md', 'docs/ability-cooldowns.md', 'docs/ability-durations.md']) {
+    if (!path.endsWith('.html')) assert.equal(await readFile(join(directory, 'dist', path), 'utf8'), await readFile(join(directory, path), 'utf8'));
     assert.ok(worker.includes(`"url":"${path}"`), `${path} is available offline`);
   }
   assert.doesNotMatch(worker, /candidate|refresh-report|tower-source/);

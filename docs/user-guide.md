@@ -148,7 +148,7 @@ Rows link to bundled v57 descriptions, implemented rules, and matching pinned v5
 
 ## Offline use and updates
 
-After a connected visit to the production build over HTTPS or localhost, wait for **Offline copy ready** before disconnecting. The cached release includes all workspaces, bundled catalogs, and the mechanics notebook. External fonts and source websites need a connection; system fonts remain available offline. Browser cache eviction or clearing site data can remove offline access, so keep JSON backups.
+After a connected visit to the production build over HTTPS or localhost, wait for **Offline copy ready** before disconnecting. The cached release includes all workspaces, bundled catalogs, this guide, linked documentation, and the mechanics notebook. External fonts and source websites need a connection; system fonts remain available offline. Browser cache eviction or clearing site data can remove offline access, so keep JSON backups.
 
 The production calculator checks for updates on opening; **Check for updates** checks again. When **Update ready** appears, save/export unfinished plans, close all tabs for that calculator, and reopen. Reloading while other tabs remain open can keep the older release. Updates do not force reloads or change calculations in a running tab. Code and data install together with integrity checks; failed installations retain the previous offline release.
 

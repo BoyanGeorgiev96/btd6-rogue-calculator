@@ -8,10 +8,7 @@ without warranty; see GPLv3 sections 15–16.
 Distribution terms adopted on 2026-11-18. Rather than rely on a mere-aggregation
 claim for the engine and artifact catalog, the project distributes the combined
 calculator under GPLv3. Original project code, documentation, and custom CSS/SVG
-artwork are offered under GPLv3. The earlier MIT copyright, permission, and
-warranty notice is retained in third-party/Rogue-Lab-MIT-NOTICE.txt; rights
-already granted under MIT are not withdrawn. Existing MIT permissions do not
-relicense upstream material or make the combined distribution MIT-only.
+artwork are offered under GPLv3.
 
 ## Covered material and retained rights
 

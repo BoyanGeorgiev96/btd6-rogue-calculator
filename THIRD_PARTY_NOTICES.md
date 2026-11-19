@@ -1,6 +1,6 @@
 # Third-party notices
 
-Rogue Lab is distributed as a combined work under [GNU GPLv3](LICENSE) (GPL-3.0-only), including original code, documentation, custom CSS/SVG artwork, and covered artifact-catalog adaptations. The [earlier MIT notice](third-party/Rogue-Lab-MIT-NOTICE.txt) is retained; previously granted rights are not withdrawn. See [distribution scope and matching source](DISTRIBUTION.md). No project license grants rights in upstream material beyond those available from its rights holders.
+Rogue Lab is distributed as a combined work under [GNU GPLv3](LICENSE) (GPL-3.0-only), including original code, documentation, custom CSS/SVG artwork, and covered artifact-catalog adaptations. See [distribution scope and matching source](DISTRIBUTION.md). No project license grants rights in upstream material beyond those available from its rights holders.
 
 This document records provenance, upstream permissions, and license notices; it does not grant rights on behalf of upstream authors or Ninja Kiwi. Last updated: 2026-11-18.
 

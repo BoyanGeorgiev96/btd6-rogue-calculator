@@ -66,6 +66,6 @@ Rogue Lab is maintained by Boyan Georgiev. Bug reports, feature ideas, and calcu
 
 ## License
 
-Rogue Lab is distributed as a combined work under [GNU GPLv3](LICENSE) (GPL-3.0-only), without warranty. Copyright (c) 2026 Boyan Georgiev for original contributions. The [earlier MIT notice](third-party/Rogue-Lab-MIT-NOTICE.txt) is preserved; previously granted MIT rights remain available for original material.
+Rogue Lab is distributed as a combined work under [GNU GPLv3](LICENSE) (GPL-3.0-only), without warranty. Copyright (c) 2026 Boyan Georgiev for original contributions.
 
 Every build includes matching editable source at `source/rogue-lab-source.tar.gz`, linked from Reference. See [distribution terms and rebuild instructions](DISTRIBUTION.md), [artifact modification notices](data/ARTIFACT-NOTICES.md), and [third-party notices](THIRD_PARTY_NOTICES.md). Imported game content, names, trademarks, and other third-party rights remain separate; this project grants only rights it can grant.

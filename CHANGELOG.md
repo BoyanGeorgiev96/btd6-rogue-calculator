@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Remove the pre-publication MIT notice and its references; the project remains GPL-3.0-only.
+
 ## 0.1.2 — 2026-11-18 — Beta
 
 - Fix offline reloads of user-guide and documentation section links.

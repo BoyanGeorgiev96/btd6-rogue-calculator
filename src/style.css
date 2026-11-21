@@ -76,9 +76,14 @@ html{scroll-padding-top:var(--live-stats-height,160px)}.live-stat-bar{position:s
 
 #coverage-dashboard .coverage-filters{align-items:end;flex-wrap:wrap}#coverage-dashboard label{flex:1 1 230px}#coverage-dashboard input,#coverage-dashboard select{display:block;width:100%;max-width:100%;margin-top:8px;padding:10px;border:1px solid var(--line);border-radius:5px;background:var(--bg);color:var(--text);font:inherit;min-height:44px}#coverage-dashboard table{min-width:660px;table-layout:fixed}#coverage-dashboard th:first-child{width:26%}#coverage-dashboard th:nth-child(2){width:22%}#coverage-dashboard th,#coverage-dashboard td{white-space:normal;text-align:left;vertical-align:top;overflow-wrap:anywhere;line-height:1.6}#coverage-dashboard td:last-child{color:var(--text)}#coverage-dashboard td p{margin:8px 0}#coverage-dashboard summary{color:var(--green);cursor:pointer}#coverage-dashboard .comparison-table{max-height:650px;overflow:auto}#coverage-dashboard thead th{position:sticky;top:0;background:var(--bg);z-index:1}#coverage-dashboard .comparison-table:focus-visible{outline:2px solid var(--green);outline-offset:4px}@media(max-width:800px){#coverage-dashboard input,#coverage-dashboard select{font-size:16px}}
 /* Offline controls stay outside the sticky calculator statistics. */
-.offline-panel { padding: 1rem 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; line-height: 1.6; }
+.offline-panel { display:flex; flex-wrap:wrap; align-items:center; gap:8px 16px; padding:1rem 0; border-top:1px solid var(--line); color:var(--muted); font-size:12px; line-height:1.6; }
 .offline-panel p { max-width: 75ch; }
+.offline-panel p:first-child { flex-basis:100%; margin:0; }
 .offline-panel button { color: var(--green); }
+.update-notice { display:flex; flex-wrap:wrap; align-items:baseline; gap:4px 10px; margin:0 0 16px; padding:12px 16px; border:1px solid #597343; border-radius:6px; background:#263322; color:var(--text); font-size:14px; }
+.update-notice strong { color:var(--green); }
+.update-notice button { padding:7px 12px; border:1px solid #597343; border-radius:4px; background:var(--bg); color:var(--green); font:inherit; cursor:pointer; }
+.update-notice button:disabled { opacity:.65; cursor:wait; }
 
 #stat-modifiers .ability-timer{display:flex;flex-direction:column;gap:4px;border-top:1px solid var(--line);padding-top:6px}#stat-modifiers [data-stat=ability]{flex-basis:190px;max-height:210px;overflow-y:auto}#stat-modifiers .ability-timer .stat-value{font-size:15px;color:var(--text)}
 #stat-modifiers .stat-value{flex-basis:auto;margin:0;text-align:left;align-self:flex-start}

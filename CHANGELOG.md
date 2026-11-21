@@ -2,7 +2,10 @@
 
 ## Unreleased
 
-- Remove the pre-publication MIT notice and its references; the project remains GPL-3.0-only.
+## 0.2.0 — 2026-11-21 — Beta
+
+- Add links from conditional artifacts to their battle-condition controls.
+- Apply Sticky Situation's glued-target damage bonus to MOAB and Boss estimates when the glued condition is enabled.
 
 ## 0.1.2 — 2026-11-18 — Beta
 

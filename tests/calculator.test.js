@@ -63,6 +63,13 @@ test('regular status damage does not overstate boss damage against immune target
   const r=calc({CrystalCrash:'Legendary'},{category:'Support',tower:'Engineer Monkey',frozen:true});
   assert.ok(r.damage>1);assert.equal(r.bossDamage,1);assert.equal(r.bossDps,1);
 });
+test('Sticky Situation bonus applies to glued Boss targets',()=>{
+  const context={category:'Primary',tower:'Dart Monkey',targetType:'boss',baseDamage:3,baseRate:2,glued:true};
+  const base=calc({},context),glued=calc({StickySituation:'Legendary'},context);
+  assert.equal(glued.bossHit,6);
+  assert.equal(glued.targetDpsValue,base.targetDpsValue*2);
+  assert.equal(glued.bossDps,base.bossDps*2);
+});
 test('One Monkey Army doubles hero boss damage without doubling regular hit damage',()=>{
   const r=calc({OneMonkeyArmy:'Legendary'},{category:'Hero',tower:'Hero',heroLevel:1,baseDamage:5,baseRate:2});
   assert.equal(r.damage,1);assert.equal(r.hit,5);assert.equal(r.bossDamage,2);assert.equal(r.bossHit,10);assert.equal(r.bossDps,2);assert.equal(r.attacks,2);

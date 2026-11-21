@@ -48,7 +48,7 @@ export const artifactRules = {
   ]),
   ConfuddlingSpelling: rule({ statusDamageMultiplier: 0 }, [effect('regularDamage', multiply('statusDamageMultiplier'), { category: ['Hero', 'Magic'], flag: 'stunned' })]),
   CrystalCrash: rule({ statusDamageMultiplier: 0 }, [effect('regularDamage', multiply('statusDamageMultiplier'), { category: ['Hero', 'Support'], flag: 'frozen' })]),
-  StickySituation: rule({ statusDamageMultiplier: 0 }, [effect('regularDamage', multiply('statusDamageMultiplier'), { category: ['Hero', 'Primary'], flag: 'glued' })]),
+  StickySituation: rule({ statusDamageMultiplier: 0 }, [effect('damage', multiply('statusDamageMultiplier'), { category: ['Hero', 'Primary'], flag: 'glued' })]),
   HomeBrewAlchemy: rule({ attackBonusPercent: 0 }, [effect('attackRate', increase('attackBonusPercent'), { tower: 'Alchemist' })], { excluded: ['Critical damage'] }),
   OneShot: rule({}, [effect('attackRate', multiply(.5), { tower: 'Sniper Monkey' })], { excluded: ['Critical damage'] }),
   SwellingSpikes: rule({}, [effect('attackRate', multiply(.5), { tower: 'Spike Factory' })]),

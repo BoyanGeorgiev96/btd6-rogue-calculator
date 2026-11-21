@@ -19,7 +19,7 @@ import { analyzeArtifact, sortArtifacts, artifactEvidence } from './artifact-dis
 import { artifactTools, initBuildWorkbench } from './build-workbench-ui.js';
 import { targetTypes } from './target-stats.js';
 import { getAbilityTimers, applyAbilityPreset, setManualAbilityCooldown, applyTowerPreset, getPresetVariant, getPresetSourceUrl, restoreTowerContext, setManualStat, validUpgradePath, validateTowerCatalog, validateHeroCatalog, validatePowerCatalog } from './tower-stats.js';
-import { artifactSummary } from './artifact-summary.js';
+import { artifactConditionHints, artifactSummary } from './artifact-summary.js';
 import {calculate,defaults,sanitizeState,supported,towers} from './calculator.js';
 const $=s=>document.querySelector(s);
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -115,7 +115,10 @@ function renderList(){
     const v=a.variants.find(v=>v.rarity===rarity), enabled=Boolean(state.selected[a.id]);
     const blocked=!canAddArtifact(state.selected,a.id);
     const symbol=a.boss?'✦':/Quickening|Strong|Speed|Synergy|TitForTat|BBGatling|Squadron|Specialist/.test(a.id)?'ϟ':/Precision|Damage|Harder|Discord|Steady/.test(a.id)?'⌖':'◇';
-    return `<article class="artifact-card ${enabled?'is-selected':''}" data-id="${a.id}"><div class="card-main" ${blocked?`title="${artifactLimitMessage}"`: ''}><label class="artifact-check"><input type="checkbox" data-select="${a.id}" aria-label="Enable ${escape(a.name)}" ${blocked?'aria-disabled="true" aria-describedby="artifact-capacity-status"':''} ${enabled?'checked':''}></label><div class="artifact-icon ${escape(a.category.toLowerCase().replaceAll(' ','-'))}">${symbol}</div><div class="artifact-info"><div class="artifact-category">${escape(a.boss?'Boss artifact':a.category)}${!supported.has(a.id)?' <span class="reference-tag">Reference only</span>':''}</div><h3>${escape(a.name)}</h3><p>${escape(artifactSummary(a,v,state.context,catalog.artifacts,state.selected))}</p></div><select class="rarity ${rarity.toLowerCase()}" id="rarity-${a.id}" data-rarity="${a.id}" aria-label="${escape(a.name)} rarity">${a.variants.map(v=>`<option ${v.rarity===rarity?'selected':''}>${v.rarity}</option>`).join('')}</select></div><details class="artifact-details" ${expanded.has(a.id)?'open':''}><summary>Details &amp; preview</summary>${artifactTools(a,rarity,state,catalog.artifacts,currentResult,analysis)}<p>${escape(v.description)}</p>${!supported.has(a.id)?'<p class="reference-warning">Reference only. This artifact is not included in calculated totals.</p>':''}${artifactEvidence(a,v).map(e=>`<p class="effect-evidence"><strong>${escape(e.label)} · ${escape(e.status)}</strong><br>${escape(e.detail)}</p>`).join('')}<a href="https://btd6apiexplorer.github.io/rogue" target="_blank" rel="noreferrer">View source catalog ↗</a></details></article>`;
+    const summary=artifactSummary(a,v,state.context,catalog.artifacts,state.selected);
+    const hints=artifactConditionHints(a,state.context);
+    const hintLinks=hints.map(hint=>`<a class="condition-hint" href="#condition-${hint.flag}" data-condition-hint="${hint.flag}">Set ${escape(hint.label)} →</a>`).join(' ');
+    return `<article class="artifact-card ${enabled?'is-selected':''}" data-id="${a.id}"><div class="card-main" ${blocked?`title="${artifactLimitMessage}"`: ''}><label class="artifact-check"><input type="checkbox" data-select="${a.id}" aria-label="Enable ${escape(a.name)}" ${blocked?'aria-disabled="true" aria-describedby="artifact-capacity-status"':''} ${enabled?'checked':''}></label><div class="artifact-icon ${escape(a.category.toLowerCase().replaceAll(' ','-'))}">${symbol}</div><div class="artifact-info"><div class="artifact-category">${escape(a.boss?'Boss artifact':a.category)}${!supported.has(a.id)?' <span class="reference-tag">Reference only</span>':''}</div><h3>${escape(a.name)}</h3><p>${escape(summary)}${hintLinks?` <span class="condition-hints">${hintLinks}</span>`:''}</p></div><select class="rarity ${rarity.toLowerCase()}" id="rarity-${a.id}" data-rarity="${a.id}" aria-label="${escape(a.name)} rarity">${a.variants.map(v=>`<option ${v.rarity===rarity?'selected':''}>${v.rarity}</option>`).join('')}</select></div><details class="artifact-details" ${expanded.has(a.id)?'open':''}><summary>Details &amp; preview</summary>${artifactTools(a,rarity,state,catalog.artifacts,currentResult,analysis)}<p>${escape(v.description)}</p>${!supported.has(a.id)?'<p class="reference-warning">Reference only. This artifact is not included in calculated totals.</p>':''}${artifactEvidence(a,v).map(e=>`<p class="effect-evidence"><strong>${escape(e.label)} · ${escape(e.status)}</strong><br>${escape(e.detail)}</p>`).join('')}<a href="https://btd6apiexplorer.github.io/rogue" target="_blank" rel="noreferrer">View source catalog ↗</a></details></article>`;
   }).join(''):`<div class="empty-state"><span>⌕</span><h3>${view==='selected'&&!Object.keys(state.selected).length?'No artifacts selected.':'No artifacts match these filters.'}</h3><button id="reset-filters" class="text-button">Browse calculator artifacts →</button></div>`;
 }
 function clearArtifactFilters(){
@@ -251,6 +254,15 @@ async function init(){
   });
   $('#artifact-list').addEventListener('click',event=>{
     const target=event.target;
+    const hint=target.closest('[data-condition-hint]');
+    if(hint){
+      event.preventDefault();
+      const flag=hint.dataset.conditionHint, control=$(`#condition-${flag}`);
+      $('.summary').dataset.setupCollapsed='false';
+      $('#advanced-settings').open=true;$('.conditions').open=true;
+      control?.scrollIntoView({block:'center',behavior:'smooth'});control?.focus({preventScroll:true});
+      return;
+    }
     if(target.id==='reset-filters'){clearArtifactFilters();$('[data-view="modeled"]').click();$('#search').focus();return;}
     const checkbox=target.closest('[data-select]');
     if(checkbox?.getAttribute('aria-disabled')==='true'){event.preventDefault();return;}

@@ -4,7 +4,7 @@ Compare artifact bonuses for a tower, hero, or power in BTD6 Rogue Legends. Choo
 
 Results lead with artifact multipliers. Expand the stats for absolute tower values and ability timings. You can preview changes, compare builds and offers, plan Early/Mid/Late upgrades, and save or share builds without an account.
 
-Current version: **0.2.0 · Beta**. See [CHANGELOG.md](CHANGELOG.md) for release notes and the [release policy](docs/development.md#versioning-and-releases) for versioning rules.
+Current version: **0.3.0 · Beta**. See [CHANGELOG.md](CHANGELOG.md) for release notes and the [release policy](docs/development.md#versioning-and-releases) for versioning rules.
 
 ## Using the calculator
 

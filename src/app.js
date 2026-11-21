@@ -65,7 +65,7 @@ function renderPresetInfo(){
   const variant=getPresetVariant(towerCatalog,c);
   const activeConditions=[['early','First 20 seconds'],['close','Close targeting'],['aura','Artifact auras'],['glued','Glued'],['frozen','Frozen'],['stunned','Stunned / tranced']].filter(([key])=>c[key]).map(([,label])=>label);
   $('#cooks-count-label').hidden=!state.selected.TooManyCooks;
-  if(state.selected.TooManyCooks)activeConditions.push(`${c.otherMilitaryCount} other Military aura sources`);
+  if(state.selected.TooManyCooks)activeConditions.push(`Too Many Cooks: ${c.otherMilitaryCount} other aura sources`);
   const activeComponent=variant?.components.find(component=>component.id===c.componentId);
   $('#active-settings').textContent=[activeComponent?.name,c.statMode==='manual'?'Manual stats':null,c.abilityMode==='manual'?'Manual ability timer':null,c.criticalMode==='expected'?'Critical estimates enabled':null,...activeConditions].filter(Boolean).join(' · ');
   $('#live-stat-settings').textContent=$('#active-settings').textContent;
@@ -117,7 +117,8 @@ function renderList(){
     const symbol=a.boss?'✦':/Quickening|Strong|Speed|Synergy|TitForTat|BBGatling|Squadron|Specialist/.test(a.id)?'ϟ':/Precision|Damage|Harder|Discord|Steady/.test(a.id)?'⌖':'◇';
     const summary=artifactSummary(a,v,state.context,catalog.artifacts,state.selected);
     const hints=artifactConditionHints(a,state.context);
-    const hintLinks=hints.map(hint=>`<a class="condition-hint" href="#condition-${hint.flag}" data-condition-hint="${hint.flag}">Set ${escape(hint.label)} →</a>`).join(' ');
+    if(a.id==='TooManyCooks')hints.push({flag:'other-military-count',label:'aura source count'});
+    const hintLinks=hints.map(hint=>{const target=hint.flag==='other-military-count'?'other-military-count':`condition-${hint.flag}`;return `<a class="condition-hint" href="#${target}" data-condition-hint="${hint.flag}">Set ${escape(hint.label)} →</a>`;}).join(' ');
     return `<article class="artifact-card ${enabled?'is-selected':''}" data-id="${a.id}"><div class="card-main" ${blocked?`title="${artifactLimitMessage}"`: ''}><label class="artifact-check"><input type="checkbox" data-select="${a.id}" aria-label="Enable ${escape(a.name)}" ${blocked?'aria-disabled="true" aria-describedby="artifact-capacity-status"':''} ${enabled?'checked':''}></label><div class="artifact-icon ${escape(a.category.toLowerCase().replaceAll(' ','-'))}">${symbol}</div><div class="artifact-info"><div class="artifact-category">${escape(a.boss?'Boss artifact':a.category)}${!supported.has(a.id)?' <span class="reference-tag">Reference only</span>':''}</div><h3>${escape(a.name)}</h3><p>${escape(summary)}${hintLinks?` <span class="condition-hints">${hintLinks}</span>`:''}</p></div><select class="rarity ${rarity.toLowerCase()}" id="rarity-${a.id}" data-rarity="${a.id}" aria-label="${escape(a.name)} rarity">${a.variants.map(v=>`<option ${v.rarity===rarity?'selected':''}>${v.rarity}</option>`).join('')}</select></div><details class="artifact-details" ${expanded.has(a.id)?'open':''}><summary>Details &amp; preview</summary>${artifactTools(a,rarity,state,catalog.artifacts,currentResult,analysis)}<p>${escape(v.description)}</p>${!supported.has(a.id)?'<p class="reference-warning">Reference only. This artifact is not included in calculated totals.</p>':''}${artifactEvidence(a,v).map(e=>`<p class="effect-evidence"><strong>${escape(e.label)} · ${escape(e.status)}</strong><br>${escape(e.detail)}</p>`).join('')}<a href="https://btd6apiexplorer.github.io/rogue" target="_blank" rel="noreferrer">View source catalog ↗</a></details></article>`;
   }).join(''):`<div class="empty-state"><span>⌕</span><h3>${view==='selected'&&!Object.keys(state.selected).length?'No artifacts selected.':'No artifacts match these filters.'}</h3><button id="reset-filters" class="text-button">Browse calculator artifacts →</button></div>`;
 }
@@ -257,7 +258,7 @@ async function init(){
     const hint=target.closest('[data-condition-hint]');
     if(hint){
       event.preventDefault();
-      const flag=hint.dataset.conditionHint, control=$(`#condition-${flag}`);
+      const flag=hint.dataset.conditionHint, control=$(`#${flag==='other-military-count'?'other-military-count':`condition-${flag}`}`);
       $('.summary').dataset.setupCollapsed='false';
       $('#advanced-settings').open=true;$('.conditions').open=true;
       control?.scrollIntoView({block:'center',behavior:'smooth'});control?.focus({preventScroll:true});

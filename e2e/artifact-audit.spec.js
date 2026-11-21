@@ -10,7 +10,7 @@ for(const width of [1440,390])test(`artifact audit ${width}: conversions, penalt
  await page.locator('#apply-preview').click();await expect(page.locator('[data-modifier="dps"]')).toContainText('×0.58');await expect(page.locator('[data-modifier="range"]')).toContainText('×0.72');
  await page.locator('#undo-build').click();await expect(page.locator('[data-select="MonkeyAcademy"]')).not.toBeChecked();
  await page.locator('[data-select="TooManyCooks"]').check();await conditions(page);await page.locator('#other-military-count').fill('2');
- await expect(page.locator('#live-stat-warning')).toContainText('maximum 15): 2');
+ await expect(page.locator('#active-settings')).toContainText('Too Many Cooks: 2 other aura sources');await expect(page.locator('#live-stat-warning')).toBeHidden();
  await page.locator('.saved-builds > summary').click();await page.locator('#build-name').fill('Converted Military');await page.locator('#save-build').click();
  await page.locator('#other-military-count').fill('3');await page.locator('#undo-build').click();await expect(page.locator('#other-military-count')).toHaveValue('2');
  const state=await page.evaluate(()=>JSON.parse(localStorage.getItem('rogue-lab-v1')));

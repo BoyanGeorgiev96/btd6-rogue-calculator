@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## 0.3.0 — 2026-11-21 — Beta
+
+- Link Too Many Cooks directly to its aura-count control and clarify that zero is a valid count.
+
 ## 0.2.0 — 2026-11-21 — Beta
 
 - Add links from conditional artifacts to their battle-condition controls.

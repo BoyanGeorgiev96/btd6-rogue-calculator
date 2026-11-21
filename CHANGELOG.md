@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+## 0.4.0 — 2026-11-21 — Beta
+
+- Show a visible notice when a new offline build is ready, with Update now actions near the top and bottom of the page.
+- Allow a confirmed update to apply and reload when this is the only open Rogue Lab tab; prompt users to close all tabs when others are open.
+
 ## 0.3.0 — 2026-11-21 — Beta
 
 - Link Too Many Cooks directly to its aura-count control and clarify that zero is a valid count.

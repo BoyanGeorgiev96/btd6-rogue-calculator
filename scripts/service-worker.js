@@ -5,6 +5,16 @@ const cacheName = prefix + RELEASE;
 const shell = new URL('index.html', base).href;
 const assets = new Set(FILES.map(file => new URL(file.url, base).href));
 
+self.addEventListener('message', event => {
+  if (event.data?.type !== 'UPDATE_NOW') return;
+  event.waitUntil((async () => {
+    const clients = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
+    const appClients = clients.filter(client => client.url.startsWith(base.href));
+    event.ports[0]?.postMessage({ ok: appClients.length === 1, openTabs: appClients.length });
+    if (appClients.length === 1) await self.skipWaiting();
+  })());
+});
+
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(cacheName);

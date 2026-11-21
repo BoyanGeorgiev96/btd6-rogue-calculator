@@ -19,6 +19,7 @@
   </div>
   <main>
     <section class="workspace-heading"><h1 id="workspace-title" tabindex="-1">Calculator</h1><p id="workspace-description" hidden></p></section>
+    <section id="update-notice" class="update-notice" aria-live="polite" hidden><strong>A new Rogue Lab version is ready.</strong><span id="update-notice-message">Save or export unfinished plans before applying the update.</span><button data-update-now type="button">Update now</button></section>
     <div id="app-message" role="status" class="message" hidden></div>
     <div id="calculator-workspace" data-workspace-panel="calculator">
     <div id="calculator-build-slot"></div>
@@ -103,7 +104,7 @@
     <details id="tower-comparison" class="tower-comparison"><summary>Which towers benefit from this build?</summary><details class="comparison-methodology"><summary>Methodology &amp; scope</summary><p>Manual overrides are not carried into these rows. Different towers and upgrades have different costs and mechanics. This table is not a purchase recommendation. No direct attack means unavailable modeled DPS, not an ineffective tower.</p></details><p id="tower-comparison-context"></p><div class="build-actions"><button id="add-tower-preset">Add current preset</button><label>Sort by<select id="tower-comparison-sort"><option value="factor">Artifact DPS multiplier</option><option value="gain">Artifact DPS gain</option><option value="dps">Total modeled DPS</option></select></label></div><div class="comparison-table"><table><thead><tr><th scope="col">Tower / component</th><th scope="col">Target DPS ×</th><th scope="col">Target hit ×</th><th scope="col">Attack speed ×</th><th scope="col">Pierce ×</th><th scope="col">Range ×</th><th scope="col">Ability cooldown ×</th></tr></thead><tbody id="tower-comparison-rows"></tbody></table></div></details>
 
 
-    <section class="offline-panel" aria-label="Offline availability" hidden><p id="offline-status" role="status"></p><button id="offline-check" class="text-button" type="button" hidden>Check for updates</button></section>
+    <section class="offline-panel" aria-label="Offline availability" hidden><p id="offline-status" role="status"></p><button id="offline-check" class="text-button" type="button" hidden>Check for updates</button><button data-update-now class="text-button" type="button" hidden>Update now</button></section>
   </main>
   <footer class="site-footer"><a href="./changelog.html" aria-label="Rogue Lab v__APP_VERSION__ · Beta — Changelog">v__APP_VERSION__ · Beta</a><a href="./docs/user-guide.html">User guide</a><a href="./DISTRIBUTION.md">GPLv3 · no warranty</a><a href="https://github.com/BoyanGeorgiev96/btd6-rogue-calculator/issues/new" target="_blank" rel="noopener noreferrer">Report a bug ↗</a></footer>
   <script type="module" src="./src/app.js"></script>

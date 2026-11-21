@@ -79,6 +79,10 @@ html{scroll-padding-top:var(--live-stats-height,160px)}.live-stat-bar{position:s
 .offline-panel { padding: 1rem 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; line-height: 1.6; }
 .offline-panel p { max-width: 75ch; }
 .offline-panel button { color: var(--green); }
+.update-notice { display:flex; flex-wrap:wrap; align-items:baseline; gap:4px 10px; margin:0 0 16px; padding:12px 16px; border:1px solid #597343; border-radius:6px; background:#263322; color:var(--text); font-size:14px; }
+.update-notice strong { color:var(--green); }
+.update-notice button { padding:7px 12px; border:1px solid #597343; border-radius:4px; background:var(--bg); color:var(--green); font:inherit; cursor:pointer; }
+.update-notice button:disabled { opacity:.65; cursor:wait; }
 
 #stat-modifiers .ability-timer{display:flex;flex-direction:column;gap:4px;border-top:1px solid var(--line);padding-top:6px}#stat-modifiers [data-stat=ability]{flex-basis:190px;max-height:210px;overflow-y:auto}#stat-modifiers .ability-timer .stat-value{font-size:15px;color:var(--text)}
 #stat-modifiers .stat-value{flex-basis:auto;margin:0;text-align:left;align-self:flex-start}

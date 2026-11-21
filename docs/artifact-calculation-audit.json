@@ -1965,7 +1965,7 @@
       "newlyModeled": false,
       "status": "modeled",
       "effects": [
-        "regularDamage"
+        "damage"
       ],
       "exclusions": [],
       "reason": null

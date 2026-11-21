@@ -72,7 +72,6 @@ export function calculate(artifacts, selected, context, rules = artifactRules) {
   if(capacityWarning)warnings.push(capacityWarning);
   if(c.baseDamageExcluded)warnings.push('Selected component is excluded from ordinary hit damage, attack DPS, pierce and artifact critical estimates. Ability timers remain independent.');
   for(const {definition} of entries)if(definition.caveat&&matches(definition.caveat.when,c,categories))warnings.push(definition.caveat.text);
-  for(const {definition} of entries)if(definition.countNote&&matches(definition.countNote.when,c,categories))warnings.push(`${definition.countNote.label}: ${c[definition.countNote.key]}.`);
   const sourceTrace=targetDamageTrace(c);
   const baseTargetDamage=sourceTrace.value;
   const trace=[...sourceTrace.steps];

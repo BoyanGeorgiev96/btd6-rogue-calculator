@@ -197,7 +197,7 @@ artifactRules.RubberBullets=rule({},[effect('damageSet',{operation:'multiplier',
 artifactRules.TooManyCooks=rule({attackBonusPercent:0},[
   effect('attackRate',increase('attackBonusPercent'),category('Military')),
   {...effect('attackRate',{operation:'cooldownMultiplier',value:1.05},category('Military')),stackCount:'otherMilitaryCount'}
-],{excluded:['Provider availability and subtower/category exceptions; other Military aura sources are entered manually'],countNote:{when:category('Military'),key:'otherMilitaryCount',label:'Too Many Cooks: other Military aura sources assumed (excluding this tower; maximum 15)'}});
+],{excluded:['Provider availability and subtower/category exceptions; other Military aura sources are entered manually']});
 for(const id of ['IntelligenceAgent','GrowingSteady','TooManyCooks'])artifactRules[id].effects[0].verified=verifiedCooldowns[id];
 
 artifactRules.PowerNexus=rule({attackBonusPercent:0,damageBonusPercent:1},[
